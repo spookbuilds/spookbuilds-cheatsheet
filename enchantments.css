@@ -1,0 +1,282 @@
+/* GLOBAL */
+:root {
+    --shadow: #0b0806;
+    --leather: #1b100b;
+    --burnt-orange: #c65a00;
+    --ember: #ff8c00;
+    --parchment: #e8d8b5;
+}
+
+body {
+    margin: 0;
+    font-family: "IM Fell English", serif;
+    background: var(--shadow);
+    color: var(--parchment);
+    background:
+    radial-gradient(
+        circle at top,
+        #2a1608,
+        #0b0806 70%
+    );
+
+    min-height: 100vh;
+}
+
+h1, h2, h3 {
+    font-family: "Cinzel", serif;
+}
+
+
+/* SPELLBOOK COVER */
+
+.cover {
+    text-align: center;
+    padding: 80px 20px;
+}
+
+
+.cover h1 {
+    color: #ff7b00;
+    font-size: 45px;
+    text-shadow: 0 0 15px #ff7b00;
+}
+
+
+.cover p {
+    font-size: 18px;
+}
+
+
+.quest {
+    color: #ff7b00;
+    margin-top: 30px;
+}
+
+.level-card {
+
+    max-width:400px;
+
+    margin:40px auto;
+
+    padding:25px;
+
+    text-align:center;
+
+    background:var(--leather);
+
+    border:1px solid var(--burnt-orange);
+
+    box-shadow:
+    0 0 15px rgba(198,90,0,0.3);
+
+}
+
+
+/* SPELL SCHOOL CARDS */
+
+.spell-schools {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+}
+
+
+.spell-card {
+
+    width: 250px;
+    padding: 25px;
+
+    background:
+    linear-gradient(
+        145deg,
+        #24150d,
+        #120a06
+    );
+
+    border: 1px solid #c65a00;
+
+    border-radius: 4px;
+
+    color: #e8d8b5;
+
+    text-decoration: none;
+
+    box-shadow:
+    0 0 15px rgba(198,90,0,0.25);
+
+    transition: 0.4s;
+
+    position: relative;
+
+    overflow: hidden;
+
+    break-inside: avoid;
+
+    margin-bottom:25px;
+}
+
+.spell-card::before {
+
+    content:"";
+
+    position:absolute;
+
+    top:0;
+    left:0;
+
+    width:100%;
+    height:3px;
+
+    background:#ff8c00;
+
+    opacity:0.7;
+
+}
+
+
+.spell-card:hover {
+
+    transform:
+    translateY(-5px)
+    rotate(-1deg);
+
+    box-shadow:
+    0 0 25px #ff8c00;
+}
+
+
+.spell-card h2 {
+
+    color: #ff7b00;
+
+}
+
+
+.divider {
+
+    text-align:center;
+
+    color:#c65a00;
+
+    margin:40px;
+
+}
+
+
+pre {
+    background:#080604;
+    border-left:4px solid #ff8c00;
+    padding:15px;
+    font-family:monospace;
+    color:#e8d8b5;
+    overflow-x:auto;
+    border-radius:5px;
+}
+
+footer {
+
+    text-align:center;
+
+    padding:40px 20px;
+
+    margin-top:60px;
+
+    color:#c65a00;
+
+    opacity:0.8;
+
+    font-size:16px;
+
+}
+
+/* SPELL PAGES */
+
+
+.page-header {
+
+    text-align:center;
+
+    padding:60px 20px;
+
+}
+
+
+.page-header h1 {
+
+    color:var(--ember);
+
+    text-shadow:
+    0 0 15px var(--ember);
+
+}
+
+
+
+.back-button {
+
+    display:inline-block;
+
+    margin-top:20px;
+
+    color:var(--parchment);
+
+    text-decoration:none;
+
+    border:1px solid var(--burnt-orange);
+
+    padding:10px 20px;
+
+    border-radius:5px;
+
+    transition:0.3s;
+
+}
+
+
+
+.back-button:hover {
+
+    background:var(--burnt-orange);
+
+    color:white;
+
+}
+
+
+
+.spell-container {
+
+    max-width:1200px;
+
+    margin:auto;
+
+    padding:20px;
+
+    columns: 2;
+
+    column-gap:25px;
+
+}
+
+
+
+.spell-type {
+
+    color:var(--ember);
+
+    font-style:italic;
+
+}
+
+
+@media (max-width: 800px) {
+
+    .spell-container {
+
+        columns:1;
+
+    }
+
+}
