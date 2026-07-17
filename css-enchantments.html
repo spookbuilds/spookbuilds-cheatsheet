@@ -57,8 +57,10 @@
         <h2>🔥 Display Flex</h2>   <!-- EDIT -->
 
         <div class="spell-tags">                <!-- EDIT -->
-            <span>CSS</span>                    
+            <span>CSS</span>
+            <span>Layout</span>
             <span>Flexbox</span>
+            <span>Containers</span>
         </div>
 
         <div class="code-container">
@@ -68,7 +70,11 @@
         </button>
 
     <pre><code>                                 <!-- EDIT -->
-display:flex;
+.container {
+
+    display: flex;
+
+}
     </code></pre>
         </div>
 
@@ -76,11 +82,21 @@ display:flex;
 
         <ul>                                    <!-- EDIT -->
 
-            <li>First line to use Flexbox.</li>
-            <li>Turns element into a flex container.</li>
-            <li>Children become flex items.</li>
-            <li>Enables alignment and spacing.</li>
-            <li>Parent gets <code>display:flex;</code>, not the children.</li>
+            <li>Turns the selected element into a flex container.</li>
+            <li>Direct children become flex items.</li>
+            <li>Used for arranging elements horizontally or vertically.</li>
+            <li>Applied to the parent element.</li>
+
+        </ul>
+
+        <h3>🔗 Often Used With</h3>
+
+        <ul>                                    <!-- EDIT -->
+
+            <li>justify-content</li>
+            <li>align-items</li>
+            <li>gap</li>
+            <li>flex-direction</li>
 
         </ul>
 
@@ -99,8 +115,10 @@ display:flex;
         <h2>🔥 Justify Content</h2>   <!-- EDIT -->
 
         <div class="spell-tags">                <!-- EDIT -->
-            <span>CSS</span>                    
+            <span>CSS</span>
+            <span>Layout</span>
             <span>Flexbox</span>
+            <span>Alignment</span>
         </div>
 
         <div class="code-container">
@@ -110,7 +128,13 @@ display:flex;
         </button>
 
     <pre><code>                                 <!-- EDIT -->
-justify-content:center;
+.container {
+
+    display:flex;
+
+    justify-content:center;
+
+}
     </code></pre>
         </div>
 
@@ -118,7 +142,31 @@ justify-content:center;
 
         <ul>                                    <!-- EDIT -->
 
-            <li>Centers (or other positioning) flexbox on the X axis.</li>
+            <li>Controls alignment on the main axis.</li>
+            <li>Default flex direction is row.</li>
+            <li>In a row:<br>
+                          horizontal = justify<br>
+                          vertical = align<br>
+                              </li>
+            <li>Common values:<br>
+                          <code>justify-content:flex-start;</code><br>
+                          <code>justify-content:center;</code><br>
+                          <code>justify-content:flex-end;</code><br>
+                          <code>justify-content:space-between;</code><br>
+                          <code>justify-content:space-around;</code><br>
+                          <code>justify-content:space-evenly;</code><br>
+                              </li>
+            
+
+        </ul>
+
+        <h3>🔗 Often Used With</h3>
+
+        <ul>                                    <!-- EDIT -->
+
+            <li>display:flex</li>
+            <li>flex-direction</li>
+            <li>gap</li>
 
         </ul>
 
@@ -137,8 +185,10 @@ justify-content:center;
         <h2>🔥 Align Items</h2>   <!-- EDIT -->
 
         <div class="spell-tags">                <!-- EDIT -->
-            <span>CSS</span>                    
+            <span>CSS</span>
+            <span>Layout</span>
             <span>Flexbox</span>
+            <span>Alignment</span>
         </div>
 
         <div class="code-container">
@@ -148,7 +198,13 @@ justify-content:center;
         </button>
 
     <pre><code>                                 <!-- EDIT -->
-align-items:center;
+.container {
+
+    display:flex;
+
+    align-items:center;
+
+}
     </code></pre>
         </div>
 
@@ -156,7 +212,24 @@ align-items:center;
 
         <ul>                                    <!-- EDIT -->
 
-            <li>Centers (or other positioning) flexbox on the Y axis.</li>
+            <li>Controls alignment on the cross axis.</li>
+            <li>justify = left/right</li>
+            <li>align = up/down</li>
+            <li>Common values:<br>
+                          <code>align-items:flex-start;</code><br>
+                          <code>align-items:center;</code><br>
+                          <code>align-items:flex-end;</code><br>
+                              </li>
+
+        </ul>
+
+        <h3>🔗 Often Used With</h3>
+
+        <ul>                                    <!-- EDIT -->
+
+            <li>justify-content</li>
+            <li>height</li>
+            <li>flex-direction</li>
 
         </ul>
 
@@ -175,8 +248,10 @@ align-items:center;
         <h2>🔥 Gap</h2>   <!-- EDIT -->
 
         <div class="spell-tags">                <!-- EDIT -->
-            <span>CSS</span>                    
+            <span>CSS</span>
+            <span>Spacing</span>
             <span>Flexbox</span>
+            <span>Grid</span>
         </div>
 
         <div class="code-container">
@@ -186,7 +261,13 @@ align-items:center;
         </button>
 
     <pre><code>                                 <!-- EDIT -->
-gap:10px;
+.card-container {
+
+    display:flex;
+
+    gap:10px;
+
+}
     </code></pre>
         </div>
 
@@ -194,7 +275,19 @@ gap:10px;
 
         <ul>                                    <!-- EDIT -->
 
-            <li>Adds a gap between boxes. (Any #px;) </li>
+            <li>Adds space between flex/grid children.</li>
+            <li><code>10px</code>means 10 pixels of space.</li>
+            <li>Does not add space around the outside.</li>
+
+        </ul>
+
+        <h3>🔗 Often Used With</h3>
+
+        <ul>                                    <!-- EDIT -->
+
+            <li>display:flex</li>
+            <li>display:grid</li>
+            <li>flex-wrap</li>
 
         </ul>
 
@@ -213,8 +306,10 @@ gap:10px;
         <h2>🔗 Link Display</h2>   <!-- EDIT -->
 
         <div class="spell-tags">                <!-- EDIT -->
-            <span>CSS</span>                    
+            <span>CSS</span>
+            <span>Text</span>
             <span>Links</span>
+            <span>Styling</span>
         </div>
 
         <div class="code-container">
@@ -224,7 +319,11 @@ gap:10px;
         </button>
 
     <pre><code>                                 <!-- EDIT -->
-text-decoration: none;
+a {
+
+    text-decoration:none;
+
+}
     </code></pre>
         </div>
 
@@ -232,7 +331,433 @@ text-decoration: none;
 
         <ul>                                    <!-- EDIT -->
 
-            <li>Removes the line under a link.</li>
+            <li>Removes default underline from links.</li>
+            <li>Commonly used when creating custom buttons.</li>
+            <li>Only affects text decoration.</li>
+            <li>e.g.: text-decoration:none;<br>
+                    text-decoration:underline;   </li>
+
+        </ul>
+
+        <h3>🔗 Often Used With</h3>
+
+        <ul>                                    <!-- EDIT -->
+
+            <li>color</li>
+            <li>background</li>
+            <li>padding</li>
+            <li>border-radius</li>
+
+        </ul>
+
+        <p class="spell-source">                <!-- EDIT -->
+        📅 Added: 17 July 2026
+        </p>
+
+    </article>
+
+
+
+<!-- SPELL CARD SIX -->
+
+    <article class="spell-card">
+
+        <h2>📦 Width</h2>   <!-- EDIT -->
+
+        <div class="spell-tags">                <!-- EDIT -->
+            <span>CSS</span>
+            <span>Sizing</span>
+            <span>Box Model</span>
+            <span>Layout</span>
+        </div>
+
+        <div class="code-container">
+
+        <button class="copy-spell">
+        Copy Spell 🪄
+        </button>
+
+    <pre><code>                                 <!-- EDIT -->
+.card {
+
+    width: 300px;
+
+}
+    </code></pre>
+        </div>
+
+        <h3>📜 Notes</h3>
+
+        <ul>                                    <!-- EDIT -->
+
+            <li>Controls how wide an element is.</li>
+            <li>Usually applied to containers, cards, images, sections.</li>
+            <li><code>300px</code>means the element is 300 pixels wide.</li>
+            <li>Width only affects the content area by default.</li>
+            <li>Padding and borders can make the final size larger 
+                unless using<code>box-sizing</code>.</li>
+
+        </ul>
+
+        <h3>🔗 Often Used With</h3>
+
+        <ul>                                    <!-- EDIT -->
+
+            <li>max-width</li>
+            <li>height</li>
+            <li>box-sizing</li>
+            <li>margin</li>
+
+        </ul>
+
+        <p class="spell-source">                <!-- EDIT -->
+        📅 Added: 17 July 2026
+        </p>
+
+    </article>
+
+
+
+<!-- SPELL CARD SEVEN -->
+
+    <article class="spell-card">
+
+        <h2>📦 Height</h2>   <!-- EDIT -->
+
+        <div class="spell-tags">                <!-- EDIT -->
+            <span>CSS</span>
+            <span>Sizing</span>
+            <span>Box Model</span>
+        </div>
+
+        <div class="code-container">
+
+        <button class="copy-spell">
+        Copy Spell 🪄
+        </button>
+
+    <pre><code>                                 <!-- EDIT -->
+.card {
+
+    height: 200px;
+
+}
+    </code></pre>
+        </div>
+
+        <h3>📜 Notes</h3>
+
+        <ul>                                    <!-- EDIT -->
+
+            <li>Controls element height.</li>
+            <li>Fixed heights can cause content overflow.</li>
+            <li>Often better to use<code>min-height</code></li>
+            <li>Images commonly use height with<code>object-fit</code></li>
+
+        </ul>
+
+        <h3>🔗 Often Used With</h3>
+
+        <ul>                                    <!-- EDIT -->
+
+            <li>width</li>
+            <li>min-height</li>
+            <li>overflow</li>
+            <li>object-fit</li>
+
+        </ul>
+
+        <p class="spell-source">                <!-- EDIT -->
+        📅 Added: 17 July 2026
+        </p>
+
+    </article>
+
+
+
+<!-- SPELL CARD EIGHT -->
+
+    <article class="spell-card">
+
+        <h2>📦 Margin</h2>   <!-- EDIT -->
+
+        <div class="spell-tags">                <!-- EDIT -->
+            <span>CSS</span>
+            <span>Spacing</span>
+            <span>Box Model</span>
+        </div>
+
+        <div class="code-container">
+
+        <button class="copy-spell">
+        Copy Spell 🪄
+        </button>
+
+    <pre><code>                                 <!-- EDIT -->
+.card {
+
+    margin: 20px;
+
+}
+    </code></pre>
+        </div>
+
+        <h3>📜 Notes</h3>
+
+        <ul>                                    <!-- EDIT -->
+
+            <li>Creates space OUTSIDE an element.</li>
+            <li>Pushes other elements away.</li>
+            <li>Does not affect the element's background.</li>
+            <li>Common versions:<br>
+                <code>margin-top:20px;</code><br>
+                <code>margin-right:10px;</code><br>
+                <code>margin-bottom:30px;</code><br>
+                <code>margin-left:5px;</code></li>
+            <li>Shortcut: <code>margin:10px 20px;</code>=<br>
+                <code>top/bottom = 10px</code><br>
+                <code>left/right = 20px</code><br></li>
+
+        </ul>
+
+        <h3>🔗 Often Used With</h3>
+
+        <ul>                                    <!-- EDIT -->
+
+            <li>padding</li>
+            <li>gap</li>
+            <li>width</li>
+            <li>flexbox</li>
+
+        </ul>
+
+        <p class="spell-source">                <!-- EDIT -->
+        📅 Added: 17 July 2026
+        </p>
+
+    </article>
+
+
+
+<!-- SPELL CARD NINE -->
+
+    <article class="spell-card">
+
+        <h2>📦 Padding</h2>   <!-- EDIT -->
+
+        <div class="spell-tags">                <!-- EDIT -->
+            <span>CSS</span>
+            <span>Spacing</span>
+            <span>Box Model</span>
+        </div>
+
+        <div class="code-container">
+
+        <button class="copy-spell">
+        Copy Spell 🪄
+        </button>
+
+    <pre><code>                                 <!-- EDIT -->
+.card {
+
+    padding: 20px;
+
+}
+    </code></pre>
+        </div>
+
+        <h3>📜 Notes</h3>
+
+        <ul>                                    <!-- EDIT -->
+
+            <li>Creates space INSIDE an element.</li>
+            <li>Moves content away from the border.</li>
+            <li>Background colour includes padding area.</li>
+
+        </ul>
+
+        <h3>🔗 Often Used With</h3>
+
+        <ul>                                    <!-- EDIT -->
+
+            <li>border</li>
+            <li>background</li>
+            <li>cards</li>
+            <li>buttons</li>
+
+        </ul>
+
+        <p class="spell-source">                <!-- EDIT -->
+        📅 Added: 17 July 2026
+        </p>
+
+    </article>
+
+
+
+<!-- SPELL CARD TEN -->
+
+    <article class="spell-card">
+
+        <h2>📦 Border</h2>   <!-- EDIT -->
+
+        <div class="spell-tags">                <!-- EDIT -->
+            <span>CSS</span>
+            <span>Styling</span>
+            <span>Box Model</span>
+        </div>
+
+        <div class="code-container">
+
+        <button class="copy-spell">
+        Copy Spell 🪄
+        </button>
+
+    <pre><code>                                 <!-- EDIT -->
+.card {
+
+    border: 1px solid black;
+
+}
+    </code></pre>
+        </div>
+
+        <h3>📜 Notes</h3>
+
+        <ul>                                    <!-- EDIT -->
+
+            <li>A border has three parts:<br>
+                <code>border: size style colour;</code><br>
+                <code>border: 2px solid orange;</code></li>
+            <li>Common styles:<br>
+                <code>solid;</code><br>
+                <code>dashed;</code><br>
+                <code>dotted;</code><br></li>
+
+        </ul>
+
+        <h3>🔗 Often Used With</h3>
+
+        <ul>                                    <!-- EDIT -->
+
+            <li>border-radius</li>
+            <li>box-shadow</li>
+            <li>cards</li>
+
+        </ul>
+
+        <p class="spell-source">                <!-- EDIT -->
+        📅 Added: 17 July 2026
+        </p>
+
+    </article>
+
+
+
+<!-- SPELL CARD ELEVEN -->
+
+    <article class="spell-card">
+
+        <h2>📦 Border Radius</h2>   <!-- EDIT -->
+
+        <div class="spell-tags">                <!-- EDIT -->
+            <span>CSS</span>
+            <span>Styling</span>
+            <span>Cards</span>
+        </div>
+
+        <div class="code-container">
+
+        <button class="copy-spell">
+        Copy Spell 🪄
+        </button>
+
+    <pre><code>                                 <!-- EDIT -->
+.card {
+
+    border-radius:10px;
+
+}
+    </code></pre>
+        </div>
+
+        <h3>📜 Notes</h3>
+
+        <ul>                                    <!-- EDIT -->
+
+            <li>Rounds corners of elements.</li>
+            <li>Larger values create more rounded corners.<br>
+                Example: <code>border-radius:50%;</code> creates circles.</li>
+
+        </ul>
+
+        <h3>🔗 Often Used With</h3>
+
+        <ul>                                    <!-- EDIT -->
+
+            <li>buttons</li>
+            <li>images</li>
+            <li>cards</li>
+
+        </ul>
+
+        <p class="spell-source">                <!-- EDIT -->
+        📅 Added: 17 July 2026
+        </p>
+
+    </article>
+
+
+
+<!-- SPELL CARD TWELVE -->
+
+    <article class="spell-card">
+
+        <h2>📦 Box Sizing</h2>   <!-- EDIT -->
+
+        <div class="spell-tags">                <!-- EDIT -->
+            <span>CSS</span>
+            <span>Box Model</span>
+            <span>Layout</span>
+        </div>
+
+        <div class="code-container">
+
+        <button class="copy-spell">
+        Copy Spell 🪄
+        </button>
+
+    <pre><code>                                 <!-- EDIT -->
+* {
+
+    box-sizing:border-box;
+
+}
+    </code></pre>
+        </div>
+
+        <h3>📜 Notes</h3>
+
+        <ul>                                    <!-- EDIT -->
+
+            <li>Changes how width and height are calculated.</li>
+            <li><code>border-box</code>includes:<br>
+                padding<br>
+                border</li>
+            <li>Prevents elements becoming larger than expected.</li>
+            <li>Without it, <code>width: 300px;</code> would be more after 
+                adding padding and/or border.</li>
+
+        </ul>
+
+        <h3>🔗 Often Used With</h3>
+
+        <ul>                                    <!-- EDIT -->
+
+            <li>width</li>
+            <li>height</li>
+            <li>layouts</li>
+            <li>flexbox</li>
 
         </ul>
 
