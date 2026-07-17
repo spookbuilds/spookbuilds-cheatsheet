@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>JavaScript Sorcery | SpookBuilds</title>
+
+    <link rel="stylesheet" href="enchantments.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&family=IM+Fell+English&display=swap" rel="stylesheet">
+
+</head>
+
+
+<body>
+
+
+<header class="page-header">
+
+    <h1>🔥 JavaScript Sorcery</h1>
+
+    <p>
+        JavaScript code - time to do magic!
+    </p>
+
+    <a href="spellbook.html" class="back-button">
+        ← Return to Spellbook
+    </a>
+
+</header>
+
+
+<div class="search-container">
+
+    <p class="search-label">
+        🔮 Search JavaScript Sorcery 
+    </p>
+
+    <input 
+    type="text" 
+    id="spell-search"
+    placeholder="Search Git spells..."
+    >
+
+</div>
+
+
+<main class="spell-container">
+
+
+<!-- SPELL CARD ONE -->
+
+    <article class="spell-card">
+
+        <h2>⚡ addEventListener()</h2>   <!-- EDIT -->
+
+        <div class="spell-tags">                <!-- EDIT -->
+            <span>JavaScript</span>                    
+            <span>DOM</span>
+            <span>Events</span>
+        </div>
+
+        <div class="code-container">
+
+        <button class="copy-spell">
+        Copy Spell 🪄
+        </button>
+
+    <pre><code>                                 <!-- EDIT -->
+const button = document.querySelector(".button");
+
+button.addEventListener("click", function () {
+
+    alert("Hello!");
+
+});
+    </code></pre>
+        </div>
+
+        <h3>📜 Notes</h3>
+
+        <ul>                                    <!-- EDIT -->
+
+            <li><code>button</code> → the element you're listening to.</li>
+            <li><code>addEventListener()</code> → waits for an event.</li>
+            <li><code>"click"</code> → the event to listen for.</li>
+            <li><code>"click"</code> can be <code>"input"</code>, <code>"keydown"</code> etc.</li>
+            <li><code>function ()</code> → code to run.</li>
+            <li><code>{ }</code> → everything inside runs after the click.</li>
+
+        </ul>
+
+        <h3>🔗 Often used with...</h3>
+
+        <ul>                                    <!-- EDIT -->
+
+            <li>querySelector()</li>
+            <li>querySelectorAll()</li>
+            <li>textContent</li>
+            <li>value</li>
+            <li>preventDefault()</li>
+
+        </ul>
+
+        <p class="spell-source">                <!-- EDIT -->
+        📅 Added: 17 July 2026
+        </p>
+
+    </article>
+
+
+
+<!-- SPELL CARD TWO -->
+
+    <article class="spell-card">
+
+        <h2>⚡ querySelector()</h2>   <!-- EDIT -->
+
+        <div class="spell-tags">                <!-- EDIT -->
+            <span>JavaScript</span>                    
+            <span>DOM</span>
+            <span>Events</span>
+        </div>
+
+        <div class="code-container">
+
+        <button class="copy-spell">
+        Copy Spell 🪄
+        </button>
+
+    <pre><code>                                 <!-- EDIT -->
+const button = document.querySelector(".button");
+    </code></pre>
+        </div>
+
+        <h3>📜 Notes</h3>
+
+        <ul>                                    <!-- EDIT -->
+
+            <li><code>const</code>→ creates a variable.</li>
+            <li><code>button</code>→ your variable name.</li>
+            <li><code>document</code>→ the webpage.</li>
+            <li><code>querySelector()</code>→ finds an element.</li>
+            <li><code>".button"</code>→ looks for a class 
+                called <code>button</code>.</li>
+
+        </ul>
+
+        <p class="spell-source">                <!-- EDIT -->
+        📅 Added: 17 July 2026
+        </p>
+
+    </article>
+
+
+<!-- SPELL CARD THREE -->
+
+    <article class="spell-card">
+
+        <h2>⚡ querySelectorAll()</h2>   <!-- EDIT -->
+
+        <div class="spell-tags">                <!-- EDIT -->
+            <span>JavaScript</span>                    
+            <span>DOM</span>
+            <span>Events</span>
+        </div>
+
+        <div class="code-container">
+
+        <button class="copy-spell">
+        Copy Spell 🪄
+        </button>
+
+    <pre><code>                                 <!-- EDIT -->
+const cards = document.querySelectorAll(".card");
+
+cards.forEach(card => {
+
+    card.textContent = "Hello";
+
+});
+    </code></pre>
+        </div>
+
+        <h3>📜 Notes</h3>
+
+        <ul>                                    <!-- EDIT -->
+
+            <li>Selects all matching elements.</li>
+            <li>Returns a NodeList.</li>
+            <li>Often used with<code>forEach()</code></li>
+            <li>Use when multiple elements need changing.</li>
+
+        </ul>
+
+        <p class="spell-source">                <!-- EDIT -->
+        📅 Added: 17 July 2026
+        </p>
+
+    </article>
+
+
+
+<!-- SPELL CARD FOUR -->
+
+    <article class="spell-card">
+
+        <h2>⚡ forEach()</h2>   <!-- EDIT -->
+
+        <div class="spell-tags">                <!-- EDIT -->
+            <span>JavaScript</span>                    
+            <span>DOM</span>
+            <span>Events</span>
+        </div>
+
+        <div class="code-container">
+
+        <button class="copy-spell">
+        Copy Spell 🪄
+        </button>
+
+    <pre><code>                                 <!-- EDIT -->
+buttons.forEach(button => {
+
+    console.log(button);
+
+});
+    </code></pre>
+        </div>
+
+        <h3>📜 Notes</h3>
+
+        <ul>                                    <!-- EDIT -->
+
+            <li><code>buttons</code>→ the array or NodeList.</li>
+            <li><code>forEach()</code>→ loops through every item.</li>
+            <li><code>button</code>→ current item.</li>
+            <li><code>=></code>→ arrow function.</li>
+            <li><code>{}</code>→ code repeated for every item.</li>
+
+        </ul>
+
+        <p class="spell-source">                <!-- EDIT -->
+        📅 Added: 17 July 2026
+        </p>
+
+    </article>
+
+</main>
+
+
+<footer>
+
+<p>
+✦ Grimoire established July 2026 ✦
+</p>
+
+<p>
+Created by RJ • SpookBuilds
+</p>
+
+</footer>
+
+<button id="back-to-top" title="Return to the top of the page">
+
+🕯️
+
+</button>
+
+<script src="grimoire.js"></script>
+
+</body>
+
+</html>

@@ -252,9 +252,9 @@ footer {
 
     margin:auto;
 
-    padding:20px;
+    padding:0px 200px;
 
-    columns: 2;
+    columns: 3;
 
     column-gap:25px;
 
