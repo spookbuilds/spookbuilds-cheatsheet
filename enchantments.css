@@ -280,3 +280,171 @@ footer {
     }
 
 }
+
+/* SEARCH SPELL */
+
+.search-container {
+
+    text-align:center;
+
+    margin:40px auto;
+
+}
+
+
+#spell-search {
+
+    width:300px;
+
+    padding:15px;
+
+    background:#120d08;
+
+    color:var(--parchment);
+
+    border:1px solid var(--burnt-orange);
+
+    border-radius:5px;
+
+    font-family:"IM Fell English", serif;
+
+    font-size:18px;
+
+    outline:none;
+
+    box-shadow:
+    0 0 10px rgba(198,90,0,0.3);
+
+}
+
+.search-label {
+
+    color:var(--ember);
+
+    font-family:"Cinzel", serif;
+
+    font-size:20px;
+
+}
+
+
+#spell-search:focus {
+
+    box-shadow:
+    0 0 20px var(--ember);
+
+}
+
+
+.spell-tags {
+
+    display:flex;
+
+    flex-wrap:wrap;
+
+    gap:8px;
+
+    margin:15px 0;
+
+}
+
+
+.spell-tags span {
+
+    background:#2b170d;
+
+    color:var(--ember);
+
+    border:1px solid var(--burnt-orange);
+
+    padding:5px 10px;
+
+    border-radius:20px;
+
+    font-size:14px;
+
+}
+
+
+/* BACK TO TOP */
+
+#back-to-top {
+
+    position: fixed;
+
+    bottom: 30px;
+
+    right: 30px;
+
+    width: 60px;
+
+    height: 60px;
+
+    border-radius: 50%;
+
+    border: 2px solid var(--burnt-orange);
+
+    background: var(--leather);
+
+    color: var(--ember);
+
+    font-size: 28px;
+
+    cursor: pointer;
+
+    display: none;
+
+    transition: 0.3s;
+
+    box-shadow:
+    0 0 15px rgba(198,90,0,0.3);
+
+}
+
+#back-to-top:hover {
+
+    transform: scale(1.1);
+
+    box-shadow:
+    0 0 25px var(--ember);
+
+}
+
+.spell-card li code,
+.spell-card p code {
+
+    background: rgba(255, 140, 0, 0.12);
+
+    color: var(--ember);
+
+    padding: 2px 6px;
+
+    border-radius: 4px;
+
+    font-family: monospace;
+
+}
+
+
+.code-container pre {
+
+    background:#080604;
+
+    border-left:4px solid #ff8c00;
+
+    padding:15px;
+
+    overflow-x:auto;
+
+}
+
+
+.code-container code {
+
+    background:none;
+
+    color:#f5e6c8;
+
+    padding:0;
+
+}

@@ -32,6 +32,20 @@
 </header>
 
 
+<div class="search-container">
+
+    <p class="search-label">
+        🔮 Search the HTML Grimoire
+    </p>
+
+    <input 
+    type="text" 
+    id="spell-search"
+    placeholder="Search HTML spells..."
+    >
+
+</div>
+
 
 <main class="spell-container">
 
@@ -40,333 +54,560 @@
 
     <article class="spell-card">
 
-        <h2>📖 HTML Document Structure</h2>
+            <h2>📖 HTML Document Structure</h2>
 
-        <p class="spell-type">
-            School: HTML Foundations
-        </p>
+            <div class="spell-tags">
+
+                <span>HTML</span>
+                <span>Beginner</span>
+                <span>Structure</span>
+
+            </div>
+
+            <p class="spell-type">
+                School: HTML Foundations
+            </p>
 
 
-        <p>
-            Every HTML page begins with this structure.
-            It tells the browser what type of document it is
-            and provides the foundation for your webpage.
-        </p>
+            <p>
+                Every HTML page begins with this structure.
+                It tells the browser what type of document it is
+                and provides the foundation for your webpage.
+            </p>
 
+
+            <h3>🕯️ Incantation</h3>
+
+
+        <div class="code-container">
+
+        <button class="copy-spell">
+        Copy Spell 🪄
+        </button>
+
+        <pre><code>
+    &lt;!DOCTYPE html&gt;
+
+    &lt;html lang="en"&gt;
+
+    &lt;head&gt;
+
+        &lt;meta charset="UTF-8"&gt;
+
+        &lt;title&gt;
+            My Website
+        &lt;/title&gt;
+
+    &lt;/head&gt;
+
+    &lt;body&gt;
+
+    &lt;/body&gt;
+
+    &lt;/html&gt;
+    </code></pre>
+        </div>
+
+
+            <h3>📜 Notes</h3>
+
+            <p>
+                The head contains information about the page.
+                The body contains everything visible to the user.
+            </p>
+
+
+    </article>
+
+
+
+
+        <!-- NEXT SPELL -->
+
+    <article class="spell-card">
+
+            <h2>✒️ Headings</h2>
+
+            <div class="spell-tags">
+
+                <span>HTML</span>
+                <span>Beginner</span>
+                <span>Text</span>
+
+            </div>
+
+
+            <p class="spell-type">
+                School: HTML Text Spells
+            </p>
+
+
+            <p>
+                Headings create hierarchy on a webpage.
+                h1 is the most important heading,
+                while h6 is the smallest.
+            </p>
+
+        <div class="code-container">
+
+        <button class="copy-spell">
+        Copy Spell 🪄
+        </button>
+
+        <pre><code>
+    &lt;h1&gt;Main Heading&lt;/h1&gt;
+
+    &lt;h2&gt;Section Heading&lt;/h2&gt;
+
+    &lt;h3&gt;Sub Heading&lt;/h3&gt;
+        </code></pre>
+        </div>
+
+
+            <h3>📜 Notes</h3>
+
+            <p>
+                Use headings in order.
+                Don't choose them based only on size —
+                use them for structure.
+            </p>
+
+
+    </article>
+
+
+    <article class="spell-card">
+
+            <h2>✒️ Paragraphs</h2>
+
+        <div class="spell-tags">
+
+            <span>HTML</span>
+            <span>Beginner</span>
+            <span>Text</span>
+
+        </div>
+
+            <p class="spell-type">
+            School: HTML Text Spells
+            </p>
+
+            <p>
+            Paragraph tags create blocks of readable text.
+            They are used for descriptions, explanations,
+            and general page content.
+            </p>
+
+
+            <h3>🕯️ Incantation</h3>
+
+        <div class="code-container">
+
+        <button class="copy-spell">
+        Copy Spell 🪄
+        </button>
+
+        <pre><code>
+    &lt;p&gt;
+        This is a paragraph of text.
+    &lt;/p&gt;
+        </code></pre>
+        </div>
+
+
+            <h3>📜 Notes</h3>
+
+            <p>
+            Browsers automatically add spacing between
+            paragraph elements. Use CSS to customise
+            their appearance.
+            </p>
+
+    </article>
+
+    <article class="spell-card">
+
+            <h2>🔗 Link Spells</h2>
+
+        <div class="spell-tags">
+
+            <span>HTML</span>
+            <span>Beginner</span>
+            <span>Navigation</span>
+
+        </div>
+
+            <p class="spell-type">
+            School: HTML Navigation Magic
+            </p>
+
+            <p>
+            Links allow users to travel between pages,
+            websites, and sections of your application.
+            </p>
+
+
+            <h3>🕯️ Incantation</h3>
+
+        <div class="code-container">
+
+        <button class="copy-spell">
+        Copy Spell 🪄
+        </button>
+
+        <pre><code>
+    &lt;a href="https://example.com"&gt;
+        Visit Website
+    &lt;/a&gt;
+        </code></pre>
+        </div>
+
+
+            <h3>📜 Notes</h3>
+
+            <p>
+            The href attribute contains the destination.
+            Use target="_blank" when opening external
+            links in a new tab.
+            </p>
+
+    </article>
+
+    <article class="spell-card">
+
+            <h2>🖼️ Image Summoning</h2>
+
+        <div class="spell-tags">
+
+            <span>HTML</span>
+            <span>Beginner</span>
+            <span>Media</span>
+
+        </div>
+
+            <p class="spell-type">
+            School: HTML Media Magic
+            </p>
+
+            <p>
+            Images bring visual elements into a webpage.
+            The src attribute tells the browser where
+            to find the image.
+            </p>
+
+
+            <h3>🕯️ Incantation</h3>
+
+        <div class="code-container">
+
+        <button class="copy-spell">
+        Copy Spell 🪄
+        </button>
+
+        <pre><code>
+    &lt;img 
+    src="image.jpg" 
+    alt="Description of image"&gt;
+    </code></pre>
+    </div>
+
+
+            <h3>📜 Notes</h3>
+
+            <p>
+            Always include alt text.
+            It improves accessibility and helps users
+            who cannot view the image.
+            </p>
+
+    </article>
+
+    <article class="spell-card">
+
+            <h2>📜 List Rituals</h2>
+
+        <div class="spell-tags">
+
+            <span>HTML</span>
+            <span>Beginner</span>
+            <span>Organisation</span>
+
+        </div>
+
+            <p class="spell-type">
+            School: HTML Organisation Magic
+            </p>
+
+            <p>
+            Lists organise information into readable groups.
+            HTML has ordered and unordered lists.
+            </p>
+
+
+            <h3>🕯️ Incantation</h3>
+
+        <div class="code-container">
+
+        <button class="copy-spell">
+        Copy Spell 🪄
+        </button>
+
+        <pre><code>
+    &lt;ul&gt;
+
+        &lt;li&gt;HTML&lt;/li&gt;
+        &lt;li&gt;CSS&lt;/li&gt;
+        &lt;li&gt;JavaScript&lt;/li&gt;
+
+    &lt;/ul&gt;
+
+
+    &lt;ol&gt;
+
+        &lt;li&gt;Step One&lt;/li&gt;
+        &lt;li&gt;Step Two&lt;/li&gt;
+
+    &lt;/ol&gt;
+        </code></pre>
+        </div>
+
+
+            <h3>📜 Notes</h3>
+
+            <p>
+            ul creates bullet lists.
+            ol creates numbered lists.
+            Each item is wrapped in li.
+            </p>
+
+    </article>
+
+    <article class="spell-card">
+
+            <h2>🏛️ Semantic Structure</h2>
+
+        <div class="spell-tags">
+
+            <span>HTML</span>
+            <span>Intermediate</span>
+            <span>Structure</span>
+            <span>accessibility</span>
+
+        </div>
+
+            <p class="spell-type">
+            School: HTML Architecture
+            </p>
+
+            <p>
+            Semantic tags describe the purpose of content.
+            They make websites easier to understand for
+            developers, browsers, and accessibility tools.
+            </p>
+
+
+            <h3>🕯️ Incantation</h3>
+
+        <div class="code-container">
+
+        <button class="copy-spell">
+        Copy Spell 🪄
+        </button>
+
+        <pre><code>
+    &lt;header&gt;
+
+    &lt;main&gt;
+
+    &lt;section&gt;
+
+    &lt;article&gt;
+
+    &lt;footer&gt;
+        </code></pre>
+        </div>
+
+
+            <h3>📜 Notes</h3>
+
+            <p>
+            Prefer semantic elements over using divs
+            for everything.
+            </p>
+
+    </article>
+
+
+    <article class="spell-card">
+
+            <h2>🧙 Forms</h2>
+
+        <div class="spell-tags">
+
+            <span>HTML</span>
+            <span>Intermediate</span>
+            <span>Forms</span>
+            <span>Input</span>
+
+        </div>
+
+            <p class="spell-type">
+                School: HTML Foundations
+            </p>
+
+
+            <p>
+                Forms are for user input.
+            </p>
+
+
+            <h3>🕯️ Incantation</h3>
+
+
+        <div class="code-container">
+
+        <button class="copy-spell">
+        Copy Spell 🪄
+        </button>
+
+        <pre><code>
+    &lt;form&gt;
+
+    &lt;label&gt;
+    Username:
+    &lt;/label&gt;
+
+    &lt;input 
+    type="text"
+    name="username"&gt;
+
+    &lt;button&gt;
+    Submit
+    &lt;/button&gt;
+
+    &lt;/form&gt;
+        </code></pre>
+        </div>
+
+
+            <h3>📜 Notes</h3>
+
+            <p>
+                Forms collect user input. Labels improve accessibility and 
+                inputs define what information is collected.
+            </p>
+
+
+    </article>
+
+
+    <article class="spell-card">
+
+            <h2>🧱 Div Containers</h2>
+
+        <div class="spell-tags">
+
+            <span>HTML</span>
+            <span>Beginner</span>
+            <span>Structure</span>
+            <span>Layout</span>
+
+        </div>
+
+            <p class="spell-type">
+                School: HTML Foundations
+            </p>
+
+
+            <p>
+                Container for cards.
+            </p>
+
+
+            <h3>🕯️ Incantation</h3>
+
+
+        <div class="code-container">
+
+        <button class="copy-spell">
+        Copy Spell 🪄
+        </button>
+
+        <pre><code>
+    &lt;div class="card"&gt;
+
+    &lt;h2&gt;
+    Title
+    &lt;/h2&gt;
+
+    &lt;p&gt;
+    Content
+    &lt;/p&gt;
+
+    &lt;/div&gt;
+        </code></pre>
+        </div>
+
+
+            <h3>📜 Notes</h3>
+
+            <p>
+                Divs are generic containers used to group elements. 
+                Prefer semantic elements when possible.
+            </p>
+
+
+    </article>
+
+
+    <article class="spell-card">
+
+        <h2>📖 Classes and IDs</h2>
+
+        <div class="spell-tags">
+
+            <span>HTML</span>
+            <span>CSS</span>
+            <span>Selectors</span>
+            <span>Structure</span>
+
+        </div>
 
         <h3>🕯️ Incantation</h3>
 
+        <div class="code-container">
 
-<div class="code-container">
+            <button class="copy-spell">
+                Copy Spell 🪄
+            </button>
 
-<button class="copy-spell">
-Copy Spell 🪄
-</button>
+        <pre><code>
+    &lt;div class="spell-card" id="html"&gt;
 
-<pre><code>
-&lt;!DOCTYPE html&gt;
-
-&lt;html lang="en"&gt;
-
-&lt;head&gt;
-
-    &lt;meta charset="UTF-8"&gt;
-
-    &lt;title&gt;
-        My Website
-    &lt;/title&gt;
-
-&lt;/head&gt;
-
-
-&lt;body&gt;
-
-
-&lt;/body&gt;
-
-&lt;/html&gt;
-</code></pre>
-</div>
-
+    &lt;/div&gt;
+        </code></pre>
+        </div>
 
         <h3>📜 Notes</h3>
 
-        <p>
-            The head contains information about the page.
-            The body contains everything visible to the user.
-        </p>
+        <ul>
 
+            <li>Classes can be reused on multiple elements.</li>
+
+            <li>IDs should only be used once per page.</li>
+
+            <li>Classes are selected with <code>.</code></li>
+
+            <li>IDs are selected with <code>#</code></li>
+
+        </ul>
+
+        <p class="spell-source">
+        📅 Added:
+        17 July 2026
+        </p>
 
     </article>
-
-
-
-
-    <!-- NEXT SPELL -->
-
-    <article class="spell-card">
-
-        <h2>✒️ Headings</h2>
-
-
-        <p class="spell-type">
-            School: HTML Text Spells
-        </p>
-
-
-        <p>
-            Headings create hierarchy on a webpage.
-            h1 is the most important heading,
-            while h6 is the smallest.
-        </p>
-
-<div class="code-container">
-
-<button class="copy-spell">
-Copy Spell 🪄
-</button>
-
-<pre><code>
-&lt;h1&gt;Main Heading&lt;/h1&gt;
-
-&lt;h2&gt;Section Heading&lt;/h2&gt;
-
-&lt;h3&gt;Sub Heading&lt;/h3&gt;
-</code></pre>
-</div>
-
-
-        <h3>📜 Notes</h3>
-
-        <p>
-            Use headings in order.
-            Don't choose them based only on size —
-            use them for structure.
-        </p>
-
-
-    </article>
-
-    <article class="spell-card">
-
-<h2>✒️ Paragraphs</h2>
-
-<p class="spell-type">
-School: HTML Text Spells
-</p>
-
-<p>
-Paragraph tags create blocks of readable text.
-They are used for descriptions, explanations,
-and general page content.
-</p>
-
-
-<h3>🕯️ Incantation</h3>
-
-<div class="code-container">
-
-<button class="copy-spell">
-Copy Spell 🪄
-</button>
-
-<pre><code>
-&lt;p&gt;
-    This is a paragraph of text.
-&lt;/p&gt;
-</code></pre>
-</div>
-
-
-<h3>📜 Notes</h3>
-
-<p>
-Browsers automatically add spacing between
-paragraph elements. Use CSS to customise
-their appearance.
-</p>
-
-</article>
-
-<article class="spell-card">
-
-<h2>🔗 Link Spells</h2>
-
-<p class="spell-type">
-School: HTML Navigation Magic
-</p>
-
-<p>
-Links allow users to travel between pages,
-websites, and sections of your application.
-</p>
-
-
-<h3>🕯️ Incantation</h3>
-
-<div class="code-container">
-
-<button class="copy-spell">
-Copy Spell 🪄
-</button>
-
-<pre><code>
-&lt;a href="https://example.com"&gt;
-    Visit Website
-&lt;/a&gt;
-</code></pre>
-</div>
-
-
-<h3>📜 Notes</h3>
-
-<p>
-The href attribute contains the destination.
-Use target="_blank" when opening external
-links in a new tab.
-</p>
-
-</article>
-
-<article class="spell-card">
-
-<h2>🖼️ Image Summoning</h2>
-
-<p class="spell-type">
-School: HTML Media Magic
-</p>
-
-<p>
-Images bring visual elements into a webpage.
-The src attribute tells the browser where
-to find the image.
-</p>
-
-
-<h3>🕯️ Incantation</h3>
-
-<div class="code-container">
-
-<button class="copy-spell">
-Copy Spell 🪄
-</button>
-
-<pre><code>
-&lt;img 
-src="image.jpg" 
-alt="Description of image"&gt;
-</code></pre>
-</div>
-
-
-<h3>📜 Notes</h3>
-
-<p>
-Always include alt text.
-It improves accessibility and helps users
-who cannot view the image.
-</p>
-
-</article>
-
-<article class="spell-card">
-
-<h2>📜 List Rituals</h2>
-
-<p class="spell-type">
-School: HTML Organisation Magic
-</p>
-
-<p>
-Lists organise information into readable groups.
-HTML has ordered and unordered lists.
-</p>
-
-
-<h3>🕯️ Incantation</h3>
-
-<div class="code-container">
-
-<button class="copy-spell">
-Copy Spell 🪄
-</button>
-
-<pre><code>
-&lt;ul&gt;
-
-    &lt;li&gt;HTML&lt;/li&gt;
-    &lt;li&gt;CSS&lt;/li&gt;
-    &lt;li&gt;JavaScript&lt;/li&gt;
-
-&lt;/ul&gt;
-
-
-&lt;ol&gt;
-
-    &lt;li&gt;Step One&lt;/li&gt;
-    &lt;li&gt;Step Two&lt;/li&gt;
-
-&lt;/ol&gt;
-</code></pre>
-</div>
-
-
-<h3>📜 Notes</h3>
-
-<p>
-ul creates bullet lists.
-ol creates numbered lists.
-Each item is wrapped in li.
-</p>
-
-</article>
-
-<article class="spell-card">
-
-<h2>🏛️ Semantic Structure</h2>
-
-<p class="spell-type">
-School: HTML Architecture
-</p>
-
-<p>
-Semantic tags describe the purpose of content.
-They make websites easier to understand for
-developers, browsers, and accessibility tools.
-</p>
-
-
-<h3>🕯️ Incantation</h3>
-
-<div class="code-container">
-
-<button class="copy-spell">
-Copy Spell 🪄
-</button>
-
-<pre><code>
-&lt;header&gt;
-
-&lt;main&gt;
-
-&lt;section&gt;
-
-&lt;article&gt;
-
-&lt;footer&gt;
-</code></pre>
-</div>
-
-
-<h3>📜 Notes</h3>
-
-<p>
-Prefer semantic elements over using divs
-for everything.
-</p>
-
-</article>
-
 
 
 </main>
@@ -383,6 +624,12 @@ Created by RJ • SpookBuilds
 </p>
 
 </footer>
+
+<button id="back-to-top" title="Return to the top of the page">
+
+🕯️
+
+</button>
 
 <script src="grimoire.js"></script>
 
