@@ -448,3 +448,211 @@ footer {
     padding:0;
 
 }
+
+
+/* QUICK FILTERS */
+
+.quick-filters {
+
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:center;
+    gap:10px;
+
+    margin:20px 0;
+
+}
+
+
+.filter-button {
+
+    background:#1b100b;
+
+    border:1px solid #c65a00;
+
+    color:#e8d8b5;
+
+    padding:8px 15px;
+
+    border-radius:50px;
+
+    font-family:"IM Fell English", serif;
+
+    cursor:pointer;
+
+    transition:0.3s;
+
+}
+
+
+.filter-button:hover {
+
+    background:#c65a00;
+
+    color:#120d08;
+
+    box-shadow:
+    0 0 10px #ff8c00;
+
+}
+
+
+.filter-button.active {
+
+    background:#ff8c00;
+
+    color:#120d08;
+
+}
+
+
+.active-filter-text {
+
+    color:#ff8c00;
+
+    text-align:center;
+
+    margin-top:20px;
+
+}
+
+
+.spell-tags {
+
+    display:flex;
+    flex-wrap:wrap;
+    gap:8px;
+
+}
+
+
+.spell-tag {
+
+    background:#2d1a0d;
+
+    border:1px solid #c65a00;
+
+    color:#e8d8b5;
+
+    padding:6px 12px;
+
+    border-radius:50px;
+
+    font-family:"IM Fell English", serif;
+
+    cursor:pointer;
+
+    transition:0.3s;
+
+}
+
+
+.spell-tag:hover {
+
+    background:#ff8c00;
+
+    color:#120d08;
+
+}
+
+.spell-tag.active {
+
+    background:#ff8c00;
+
+    color:#120d08;
+
+    box-shadow:0 0 10px #ff8c00;
+
+}
+
+
+/* ACTIVE FILTER CHIPS */
+
+
+.active-filter-container {
+
+    text-align:center;
+
+    margin-top:20px;
+
+}
+
+
+.active-filter-text {
+
+    color:#ff8c00;
+
+}
+
+
+#active-filters {
+
+    display:flex;
+
+    justify-content:center;
+
+    flex-wrap:wrap;
+
+    gap:10px;
+
+}
+
+
+
+.filter-chip {
+
+
+    background:#c65a00;
+
+    color:#120d08;
+
+    padding:8px 14px;
+
+    border-radius:50px;
+
+    font-family:"IM Fell English", serif;
+
+    cursor:pointer;
+
+    transition:0.3s;
+
+
+}
+
+
+
+.filter-chip:hover {
+
+    background:#ff8c00;
+
+    box-shadow:
+    0 0 10px #ff8c00;
+
+}
+
+
+
+.no-filter {
+
+    color:#e8d8b5;
+
+    opacity:0.7;
+
+}
+
+
+.remove-filter {
+
+    background:none;
+
+    border:none;
+
+    cursor:pointer;
+
+    color:#120d08;
+
+    font-size:12px;
+
+    margin-left:5px;
+
+}

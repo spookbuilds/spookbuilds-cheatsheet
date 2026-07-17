@@ -41,8 +41,73 @@
     <input 
     type="text" 
     id="spell-search"
-    placeholder="Search Git spells..."
+    placeholder="Search spells..."
     >
+
+
+    <p class="search-label">
+        ✨ Quick Filters
+    </p>
+
+
+    <div class="quick-filters">
+
+        <button class="filter-button">
+            HTML
+        </button>
+
+        <button class="filter-button">
+            CSS
+        </button>
+
+        <button class="filter-button">
+            JavaScript
+        </button>
+
+        <button class="filter-button">
+            Flexbox
+        </button>
+
+        <button class="filter-button">
+            Layout
+        </button>
+
+        <button class="filter-button">
+            DOM
+        </button>
+
+        <button class="filter-button">
+            Events
+        </button>
+
+        <button class="filter-button">
+            Forms
+        </button>
+
+        <button class="filter-button">
+            Responsive
+        </button>
+
+    </div>
+
+
+    <div class="active-filter-container">
+
+    <p class="active-filter-text">
+        Current Filters:
+    </p>
+
+
+    <div id="active-filters">
+
+        <span class="no-filter">
+            None
+        </span>
+
+    </div>
+
+</div>
+
 
 </div>
 
@@ -56,8 +121,8 @@
 
         <h2>🪄 Initialising a Repository</h2>   <!-- EDIT -->
 
-        <div class="spell-tags">
-            <span>Git</span>                    <!-- EDIT -->
+        <div class="spell-tags">                <!-- EDIT -->
+            <button class="spell-tag">Git</button>
         </div>
 
         <div class="code-container">
@@ -93,8 +158,8 @@ git init
 
         <h2>📦 Stage Everything</h2>   <!-- EDIT -->
 
-        <div class="spell-tags">
-            <span>Git</span>                    <!-- EDIT -->
+        <div class="spell-tags">                <!-- EDIT -->
+            <button class="spell-tag">Git</button>                    
         </div>
 
         <div class="code-container">
@@ -130,8 +195,8 @@ git add .
 
         <h2>📝 Create a Commit</h2>   <!-- EDIT -->
 
-        <div class="spell-tags">
-            <span>Git</span>                    <!-- EDIT -->
+        <div class="spell-tags">                   <!-- EDIT -->
+            <button class="spell-tag">Git</button>                    
         </div>
 
         <div class="code-container">
@@ -169,8 +234,8 @@ git commit
 
         <h2>🚀 Push to GitHub</h2>   <!-- EDIT -->
 
-        <div class="spell-tags">
-            <span>Git</span>                    <!-- EDIT -->
+        <div class="spell-tags">                <!-- EDIT -->
+            <button class="spell-tag">Git</button>                    
         </div>
 
         <div class="code-container">
@@ -207,8 +272,8 @@ git push origin main
 
         <h2>🧬 Clone Repository</h2>   <!-- EDIT -->
 
-        <div class="spell-tags">
-            <span>Git</span>                    <!-- EDIT -->
+        <div class="spell-tags">                <!-- EDIT -->
+            <button class="spell-tag">Git</button>                    
         </div>
 
         <div class="code-container">
@@ -245,8 +310,8 @@ git clone git@github.com:spookbuilds/project-name.git
 
         <h2>🌿 Branching - Create Branch</h2>   <!-- EDIT -->
 
-        <div class="spell-tags">
-            <span>GitHub</span>                    <!-- EDIT -->
+        <div class="spell-tags">                <!-- EDIT -->
+            <button class="spell-tag">GitHub</button>                    
         </div>
 
         <div class="code-container">
@@ -282,8 +347,8 @@ git branch branch-name
 
         <h2>🌿 Branching - Switch Branch</h2>   <!-- EDIT -->
 
-        <div class="spell-tags">
-            <span>GitHub</span>                    <!-- EDIT -->
+        <div class="spell-tags">                <!-- EDIT -->
+            <button class="spell-tag">GitHub</button>                    
         </div>
 
         <div class="code-container">
@@ -319,8 +384,8 @@ git checkout branch-name
 
         <h2>🌿 Branching - Create & Switch Branch</h2>   <!-- EDIT -->
 
-        <div class="spell-tags">
-            <span>GitHub</span>                    <!-- EDIT -->
+        <div class="spell-tags">                <!-- EDIT -->
+            <button class="spell-tag">GitHub</button>                    
         </div>
 
         <div class="code-container">
@@ -356,8 +421,8 @@ git checkout -b branch-name
 
         <h2>🌿 Branching - Merge Branches</h2>   <!-- EDIT -->
 
-        <div class="spell-tags">
-            <span>GitHub</span>                    <!-- EDIT -->
+        <div class="spell-tags">                <!-- EDIT -->
+            <button class="spell-tag">GitHub</button>                    
         </div>
 
         <div class="code-container">
@@ -393,8 +458,8 @@ git merge branch-name
 
         <h2>🌿 Branching - View Branches</h2>   <!-- EDIT -->
 
-        <div class="spell-tags">
-            <span>GitHub</span>                    <!-- EDIT -->
+        <div class="spell-tags">                <!-- EDIT -->
+            <button class="spell-tag">GitHub</button>                    
         </div>
 
         <div class="code-container">
@@ -430,8 +495,8 @@ git branch
 
         <h2>🌿 Branching - Delete Branch</h2>   <!-- EDIT -->
 
-        <div class="spell-tags">
-            <span>GitHub</span>                    <!-- EDIT -->
+        <div class="spell-tags">                <!-- EDIT -->
+            <button class="spell-tag">GitHub</button>                   
         </div>
 
         <div class="code-container">
@@ -469,7 +534,7 @@ git branch -d branch-name
         <h2>🌿 Branching - Delete Branch</h2>   
 
         <div class="spell-tags">                 <!-- EDIT -->
-            <span>GitHub</span>                  
+            <button class="spell-tag">GitHub</button>                  
         </div>
 
         <div class="code-container">
@@ -506,7 +571,7 @@ git push origin --delete branchname
         <h2>📂 Print Working Directory</h2>   
 
         <div class="spell-tags">                 <!-- EDIT -->
-            <span>Terminal</span>                  
+            <button class="spell-tag">Terminal</button>                  
         </div>
 
         <div class="code-container">
@@ -544,7 +609,7 @@ pwd
         <h2>📂List Files</h2>   
 
         <div class="spell-tags">                 <!-- EDIT -->
-            <span>Terminal</span>                  
+            <button class="spell-tag">Terminal</button>                  
         </div>
 
         <div class="code-container">
@@ -582,7 +647,7 @@ ls
         <h2>📂Change Directory</h2>   
 
         <div class="spell-tags">                 <!-- EDIT -->
-            <span>Terminal</span>                  
+            <button class="spell-tag">Terminal</button>                  
         </div>
 
         <div class="code-container">
@@ -619,7 +684,7 @@ cd folder-name
         <h2>📂Create Folder</h2>   
 
         <div class="spell-tags">                 <!-- EDIT -->
-            <span>Terminal</span>                  
+            <button class="spell-tag">Terminal</button>                  
         </div>
 
         <div class="code-container">
@@ -656,7 +721,7 @@ mkdir project-name
         <h2>📂Create Files</h2>   
 
         <div class="spell-tags">                 <!-- EDIT -->
-            <span>Terminal</span>                  
+            <button class="spell-tag">Terminal</button>                  
         </div>
 
         <div class="code-container">
@@ -693,7 +758,7 @@ touch index.html style.css script.js
         <h2>🖊️ Open VS Code</h2>   
 
         <div class="spell-tags">                 <!-- EDIT -->
-            <span>Terminal</span>                  
+            <button class="spell-tag">Terminal</button>                  
         </div>
 
         <div class="code-container">
@@ -730,7 +795,7 @@ code .
         <h2>🗑️ Delete File</h2>   
 
         <div class="spell-tags">                 <!-- EDIT -->
-            <span>Terminal</span>                  
+            <button class="spell-tag">Terminal</button>                  
         </div>
 
         <div class="code-container">
@@ -767,7 +832,7 @@ rm filename
         <h2>🗑️ Delete Folder</h2>   
 
         <div class="spell-tags">                 <!-- EDIT -->
-            <span>Terminal</span>                  
+            <button class="spell-tag">Terminal</button>                 
         </div>
 
         <div class="code-container">
@@ -804,7 +869,7 @@ rm -r foldername
         <h2>📂Folder Navigation</h2>   
 
         <div class="spell-tags">                 <!-- EDIT -->
-            <span>Terminal</span>                  
+            <button class="spell-tag">Terminal</button>                  
         </div>
 
         <div class="code-container">
@@ -841,7 +906,7 @@ cd ~/foldername
         <h2>📂Node</h2>   
 
         <div class="spell-tags">                 <!-- EDIT -->
-            <span>Terminal</span>                  
+            <button class="spell-tag">Terminal</button>                  
         </div>
 
         <div class="code-container">
@@ -878,7 +943,7 @@ node
         <h2>📂Node</h2>   
 
         <div class="spell-tags">                 <!-- EDIT -->
-            <span>Terminal</span>                  
+            <button class="spell-tag">Terminal</button>                  
         </div>
 
         <div class="code-container">

@@ -29,20 +29,85 @@
         ← Return to Spellbook
     </a>
 
-</header>
+</header> 
 
 
 <div class="search-container">
 
     <p class="search-label">
-        🔮 Search CSS Enchantments 
+        🔮 Search CSS Enchantments
     </p>
 
     <input 
     type="text" 
     id="spell-search"
-    placeholder="Search Git spells..."
+    placeholder="Search spells..."
     >
+
+
+    <p class="search-label">
+        ✨ Quick Filters
+    </p>
+
+
+    <div class="quick-filters">
+
+        <button class="filter-button">
+            HTML
+        </button>
+
+        <button class="filter-button">
+            CSS
+        </button>
+
+        <button class="filter-button">
+            JavaScript
+        </button>
+
+        <button class="filter-button">
+            Flexbox
+        </button>
+
+        <button class="filter-button">
+            Layout
+        </button>
+
+        <button class="filter-button">
+            DOM
+        </button>
+
+        <button class="filter-button">
+            Events
+        </button>
+
+        <button class="filter-button">
+            Forms
+        </button>
+
+        <button class="filter-button">
+            Responsive
+        </button>
+
+    </div>
+
+
+    <div class="active-filter-container">
+
+    <p class="active-filter-text">
+        Current Filters:
+    </p>
+
+
+    <div id="active-filters">
+
+        <span class="no-filter">
+            None
+        </span>
+
+    </div>
+
+</div>
+
 
 </div>
 
@@ -57,10 +122,10 @@
         <h2>🔥 Display Flex</h2>   <!-- EDIT -->
 
         <div class="spell-tags">                <!-- EDIT -->
-            <span>CSS</span>
-            <span>Layout</span>
-            <span>Flexbox</span>
-            <span>Containers</span>
+            <button class="spell-tag">CSS</button>
+            <button class="spell-tag">Layout</button>
+            <button class="spell-tag">Flexbox</button>
+            <button class="spell-tag">Containers</button>
         </div>
 
         <div class="code-container">
@@ -115,10 +180,10 @@
         <h2>🔥 Justify Content</h2>   <!-- EDIT -->
 
         <div class="spell-tags">                <!-- EDIT -->
-            <span>CSS</span>
-            <span>Layout</span>
-            <span>Flexbox</span>
-            <span>Alignment</span>
+            <button class="spell-tag">CSS</button>
+            <button class="spell-tag">Layout</button>
+            <button class="spell-tag">Flexbox</button>
+            <button class="spell-tag">Alignment</button>
         </div>
 
         <div class="code-container">
@@ -185,10 +250,10 @@
         <h2>🔥 Align Items</h2>   <!-- EDIT -->
 
         <div class="spell-tags">                <!-- EDIT -->
-            <span>CSS</span>
-            <span>Layout</span>
-            <span>Flexbox</span>
-            <span>Alignment</span>
+            <button class="spell-tag">CSS</button>
+            <button class="spell-tag">Layout</button>
+            <button class="spell-tag">Flexbox</button>
+            <button class="spell-tag">Alignment</button>
         </div>
 
         <div class="code-container">
@@ -248,10 +313,10 @@
         <h2>🔥 Gap</h2>   <!-- EDIT -->
 
         <div class="spell-tags">                <!-- EDIT -->
-            <span>CSS</span>
-            <span>Spacing</span>
-            <span>Flexbox</span>
-            <span>Grid</span>
+            <button class="spell-tag">CSS</button>
+            <button class="spell-tag">Spacing</button>
+            <button class="spell-tag">Flexbox</button>
+            <button class="spell-tag">Grid</button>
         </div>
 
         <div class="code-container">
@@ -306,10 +371,10 @@
         <h2>🔗 Link Display</h2>   <!-- EDIT -->
 
         <div class="spell-tags">                <!-- EDIT -->
-            <span>CSS</span>
-            <span>Text</span>
-            <span>Links</span>
-            <span>Styling</span>
+            <button class="spell-tag">CSS</button>
+            <button class="spell-tag">Text</button>
+            <button class="spell-tag">Links</button>
+            <button class="spell-tag">Styling</button>
         </div>
 
         <div class="code-container">
@@ -365,10 +430,10 @@ a {
         <h2>📦 Width</h2>   <!-- EDIT -->
 
         <div class="spell-tags">                <!-- EDIT -->
-            <span>CSS</span>
-            <span>Sizing</span>
-            <span>Box Model</span>
-            <span>Layout</span>
+            <button class="spell-tag">CSS</button>
+            <button class="spell-tag">Sizing</button>
+            <button class="spell-tag">Box Model</button>
+            <button class="spell-tag">Layout</button>
         </div>
 
         <div class="code-container">
@@ -425,9 +490,9 @@ a {
         <h2>📦 Height</h2>   <!-- EDIT -->
 
         <div class="spell-tags">                <!-- EDIT -->
-            <span>CSS</span>
-            <span>Sizing</span>
-            <span>Box Model</span>
+            <button class="spell-tag">CSS</button>
+            <button class="spell-tag">Sizing</button>
+            <button class="spell-tag">Box Model</button>
         </div>
 
         <div class="code-container">
@@ -482,9 +547,9 @@ a {
         <h2>📦 Margin</h2>   <!-- EDIT -->
 
         <div class="spell-tags">                <!-- EDIT -->
-            <span>CSS</span>
-            <span>Spacing</span>
-            <span>Box Model</span>
+            <button class="spell-tag">CSS</button>
+            <button class="spell-tag">Spacing</button>
+            <button class="spell-tag">Box Model</button>
         </div>
 
         <div class="code-container">
@@ -546,9 +611,9 @@ a {
         <h2>📦 Padding</h2>   <!-- EDIT -->
 
         <div class="spell-tags">                <!-- EDIT -->
-            <span>CSS</span>
-            <span>Spacing</span>
-            <span>Box Model</span>
+            <button class="spell-tag">CSS</button>
+            <button class="spell-tag">Spacing</button>
+            <button class="spell-tag">Box Model</button>
         </div>
 
         <div class="code-container">
@@ -602,9 +667,9 @@ a {
         <h2>📦 Border</h2>   <!-- EDIT -->
 
         <div class="spell-tags">                <!-- EDIT -->
-            <span>CSS</span>
-            <span>Styling</span>
-            <span>Box Model</span>
+            <button class="spell-tag">CSS</button>
+            <button class="spell-tag">Styling</button>
+            <button class="spell-tag">Box Model</button>
         </div>
 
         <div class="code-container">
@@ -661,9 +726,9 @@ a {
         <h2>📦 Border Radius</h2>   <!-- EDIT -->
 
         <div class="spell-tags">                <!-- EDIT -->
-            <span>CSS</span>
-            <span>Styling</span>
-            <span>Cards</span>
+            <button class="spell-tag">CSS</button>
+            <button class="spell-tag">Styling</button>
+            <button class="spell-tag">Cards</button>
         </div>
 
         <div class="code-container">
@@ -716,9 +781,9 @@ a {
         <h2>📦 Box Sizing</h2>   <!-- EDIT -->
 
         <div class="spell-tags">                <!-- EDIT -->
-            <span>CSS</span>
-            <span>Box Model</span>
-            <span>Layout</span>
+            <button class="spell-tag">CSS</button>
+            <button class="spell-tag">Box Model</button>
+            <button class="spell-tag">Layout</button>
         </div>
 
         <div class="code-container">
@@ -776,10 +841,10 @@ a {
         <h2>🎨 Color</h2>   <!-- EDIT -->
 
         <div class="spell-tags">                <!-- EDIT -->
-            <span>CSS</span>
-            <span>Colours</span>
-            <span>Text</span>
-            <span>Styling</span>
+            <button class="spell-tag">CSS</button>
+            <button class="spell-tag">Colours</button>
+            <button class="spell-tag">Text</button>
+            <button class="spell-tag">Styling</button>
         </div>
 
         <div class="code-container">
@@ -837,10 +902,10 @@ h1 {
         <h2>🖌️ Background Color</h2>   <!-- EDIT -->
 
         <div class="spell-tags">                <!-- EDIT -->
-            <span>CSS</span>
-            <span>Colours</span>
-            <span>Backgrounds</span>
-            <span>Styling</span>
+            <button class="spell-tag">CSS</button>
+            <button class="spell-tag">Colours</button>
+            <button class="spell-tag">Background</button>
+            <button class="spell-tag">Styling</button>
         </div>
 
         <div class="code-container">
@@ -894,10 +959,10 @@ h1 {
         <h2>🌈 Linear Gradient</h2>   <!-- EDIT -->
 
         <div class="spell-tags">                <!-- EDIT -->
-            <span>CSS</span>
-            <span>Backgrounds</span>
-            <span>Gradients</span>
-            <span>Effects</span>
+            <button class="spell-tag">CSS</button>
+            <button class="spell-tag">Gradients</button>
+            <button class="spell-tag">Backgrounds</button>
+            <button class="spell-tag">Effects</button>
         </div>
 
         <div class="code-container">
@@ -958,9 +1023,9 @@ h1 {
         <h2>🖼️ Background Image</h2>   <!-- EDIT -->
 
         <div class="spell-tags">                <!-- EDIT -->
-            <span>CSS</span>
-            <span>Backgrounds</span>
-            <span>Images</span>
+            <button class="spell-tag">CSS</button>
+            <button class="spell-tag">Images</button>
+            <button class="spell-tag">Backgrounds</button>
         </div>
 
         <div class="code-container">
@@ -1014,9 +1079,9 @@ h1 {
         <h2>🔍 Background Size</h2>   <!-- EDIT -->
 
         <div class="spell-tags">                <!-- EDIT -->
-            <span>CSS</span>
-            <span>Backgrounds</span>
-            <span>Images</span>
+            <button class="spell-tag">CSS</button>
+            <button class="spell-tag">Images</button>
+            <button class="spell-tag">Backgrounds</button>
         </div>
 
         <div class="code-container">
@@ -1072,9 +1137,9 @@ h1 {
         <h2>📍 Background Position</h2>   <!-- EDIT -->
 
         <div class="spell-tags">                <!-- EDIT -->
-            <span>CSS</span>
-            <span>Positioning</span>
-            <span>Images</span>
+            <button class="spell-tag">CSS</button>
+            <button class="spell-tag">Images</button>
+            <button class="spell-tag">Positioning</button>
         </div>
 
         <div class="code-container">
@@ -1129,9 +1194,9 @@ h1 {
         <h2>✒️ Font Family</h2>   <!-- EDIT -->
 
         <div class="spell-tags">                <!-- EDIT -->
-            <span>CSS</span>
-            <span>Typography</span>
-            <span>Fonts</span>
+            <button class="spell-tag">CSS</button>
+            <button class="spell-tag">Typography</button>
+            <button class="spell-tag">Fonts</button>
         </div>
 
         <div class="code-container">
@@ -1188,9 +1253,9 @@ body {
         <h2>🔠 Font Size</h2>   <!-- EDIT -->
 
         <div class="spell-tags">                <!-- EDIT -->
-            <span>CSS</span>
-            <span>Typography</span>
-            <span>Text</span>
+            <button class="spell-tag">CSS</button>
+            <button class="spell-tag">Typography</button>
+            <button class="spell-tag">Text</button>
         </div>
 
         <div class="code-container">
@@ -1247,9 +1312,9 @@ h1 {
         <h2>💪 Font Weight</h2>   <!-- EDIT -->
 
         <div class="spell-tags">                <!-- EDIT -->
-            <span>CSS</span>
-            <span>Typography</span>
-            <span>Text</span>
+            <button class="spell-tag">CSS</button>
+            <button class="spell-tag">Typography</button>
+            <button class="spell-tag">Text</button>
         </div>
 
         <div class="code-container">
@@ -1304,9 +1369,9 @@ h1 {
         <h2>📏 Line Height</h2>   <!-- EDIT -->
 
         <div class="spell-tags">                <!-- EDIT -->
-            <span>CSS</span>
-            <span>Typography</span>
-            <span>Readability</span>
+            <button class="spell-tag">CSS</button>
+            <button class="spell-tag">Typography</button>
+            <button class="spell-tag">readability</button>
         </div>
 
         <div class="code-container">
@@ -1359,10 +1424,10 @@ p {
         <h2>✨ Transition</h2>   <!-- EDIT -->
 
         <div class="spell-tags">                <!-- EDIT -->
-            <span>CSS</span>
-            <span>Effects</span>
-            <span>Animation</span>
-            <span>Hover</span>
+            <button class="spell-tag">CSS</button>
+            <button class="spell-tag">Animation</button>
+            <button class="spell-tag">Hover</button>
+            <button class="spell-tag">Effects</button>
         </div>
 
         <div class="code-container">
@@ -1415,9 +1480,9 @@ p {
         <h2>🖱️ Hover State</h2>   <!-- EDIT -->
 
         <div class="spell-tags">                <!-- EDIT -->
-            <span>CSS</span>
-            <span>Pseudo Classes</span>
-            <span>Interaction</span>
+            <button class="spell-tag">CSS</button>
+            <button class="spell-tag">Pseudo Classes</button>
+            <button class="spell-tag">Interaction</button>
         </div>
 
         <div class="code-container">
@@ -1473,11 +1538,11 @@ p {
         <h2>🔄 Transform</h2>   <!-- EDIT -->
 
         <div class="spell-tags">                <!-- EDIT -->
-            <span>CSS</span>
-            <span>Effects</span>
-            <span>Animation</span>
-            <span>Transform</span>
-            <span>Positioning</span>
+            <button class="spell-tag">CSS</button>
+            <button class="spell-tag">Effects</button>
+            <button class="spell-tag">Animation</button>
+            <button class="spell-tag">Transform</button>
+            <button class="spell-tag">Positioning</button>
         </div>
 
         <div class="code-container">
@@ -1533,10 +1598,10 @@ p {
         <h2>🌑 Box Shadow</h2>   <!-- EDIT -->
 
         <div class="spell-tags">                <!-- EDIT -->
-            <span>CSS</span>
-            <span>Effects</span>
-            <span>Cards</span>
-            <span>Depth</span>
+            <button class="spell-tag">CSS</button>
+            <button class="spell-tag">Effects</button>
+            <button class="spell-tag">Cards</button>
+            <button class="spell-tag">Depth</button>
         </div>
 
         <div class="code-container">
@@ -1592,9 +1657,9 @@ p {
         <h2>✨ Text Shadow</h2>   <!-- EDIT -->
 
         <div class="spell-tags">                <!-- EDIT -->
-            <span>CSS</span>
-            <span>Text</span>
-            <span>Effects</span>
+            <button class="spell-tag">CSS</button>
+            <button class="spell-tag">Effects</button>
+            <button class="spell-tag">Text</button>
         </div>
 
         <div class="code-container">
@@ -1649,9 +1714,9 @@ h1 {
         <h2>👻 Opacity</h2>   <!-- EDIT -->
 
         <div class="spell-tags">                <!-- EDIT -->
-            <span>CSS</span>
-            <span>Effects</span>
-            <span>Transparency</span>
+            <button class="spell-tag">CSS</button>
+            <button class="spell-tag">Effects</button>
+            <button class="spell-tag">Transparency</button>
         </div>
 
         <div class="code-container">
@@ -1702,9 +1767,9 @@ h1 {
         <h2>🚫 Overflow</h2>   <!-- EDIT -->
 
         <div class="spell-tags">                <!-- EDIT -->
-            <span>CSS</span>
-            <span>Layout</span>
-            <span>Containers</span>
+            <button class="spell-tag">CSS</button>
+            <button class="spell-tag">Layout</button>
+            <button class="spell-tag">Containers</button>
         </div>
 
         <div class="code-container">
@@ -1757,9 +1822,9 @@ h1 {
         <h2>🖼️ Object Fit</h2>   <!-- EDIT -->
 
         <div class="spell-tags">                <!-- EDIT -->
-            <span>CSS</span>
-            <span>Images</span>
-            <span>Media</span>
+            <button class="spell-tag">CSS</button>
+            <button class="spell-tag">Images</button>
+            <button class="spell-tag">Media</button>
         </div>
 
         <div class="code-container">
@@ -1813,9 +1878,9 @@ h1 {
         <h2>🖱️ Cursor</h2>   <!-- EDIT -->
 
         <div class="spell-tags">                <!-- EDIT -->
-            <span>CSS</span>
-            <span>Interaction</span>
-            <span>Buttons</span>
+            <button class="spell-tag">CSS</button>
+            <button class="spell-tag">Interaction</button>
+            <button class="spell-tag">Buttons</button>
         </div>
 
         <div class="code-container">
@@ -1869,9 +1934,9 @@ button {
         <h2>📍 Position</h2>   <!-- EDIT -->
 
         <div class="spell-tags">                <!-- EDIT -->
-            <span>CSS</span>
-            <span>Layout</span>
-            <span>Positioning</span>
+            <button class="spell-tag">CSS</button>
+            <button class="spell-tag">Positioning</button>
+            <button class="spell-tag">Layout</button>
         </div>
 
         <div class="code-container">
@@ -1928,9 +1993,9 @@ button {
         <h2>📍 Relative</h2>   <!-- EDIT -->
 
         <div class="spell-tags">                <!-- EDIT -->
-            <span>CSS</span>
-            <span>Layout</span>
-            <span>Positioning</span>
+            <button class="spell-tag">CSS</button>
+            <button class="spell-tag">Positioning</button>
+            <button class="spell-tag">Layout</button>
         </div>
 
         <div class="code-container">
@@ -1986,9 +2051,9 @@ button {
         <h2>📍 Absolute</h2>   <!-- EDIT -->
 
         <div class="spell-tags">                <!-- EDIT -->
-            <span>CSS</span>
-            <span>Layout</span>
-            <span>Positioning</span>
+            <button class="spell-tag">CSS</button>
+            <button class="spell-tag">Positioning</button>
+            <button class="spell-tag">Layout</button>
         </div>
 
         <div class="code-container">
@@ -2046,9 +2111,9 @@ button {
         <h2>📍 Fixed</h2>   <!-- EDIT -->
 
         <div class="spell-tags">                <!-- EDIT -->
-            <span>CSS</span>
-            <span>Navigation</span>
-            <span>Positioning</span>
+            <button class="spell-tag">CSS</button>
+            <button class="spell-tag">Positioning</button>
+            <button class="spell-tag">Navigation</button>
         </div>
 
         <div class="code-container">
@@ -2108,9 +2173,9 @@ button {
         <h2>📍 Sticky</h2>   <!-- EDIT -->
 
         <div class="spell-tags">                <!-- EDIT -->
-            <span>CSS</span>
-            <span>Scrolling</span>
-            <span>Positioning</span>
+            <button class="spell-tag">CSS</button>
+            <button class="spell-tag">Positioning</button>
+            <button class="spell-tag">Scrolling</button>
         </div>
 
         <div class="code-container">
@@ -2164,9 +2229,9 @@ header {
         <h2>⬆️ Top / Bottom / Left / Right</h2>   <!-- EDIT -->
 
         <div class="spell-tags">                <!-- EDIT -->
-            <span>CSS</span>
-            <span>Coordinates</span>
-            <span>Positioning</span>
+            <button class="spell-tag">CSS</button>
+            <button class="spell-tag">Positioning</button>
+            <button class="spell-tag">Coordinates</button>
         </div>
 
         <div class="code-container">
@@ -2223,9 +2288,9 @@ header {
         <h2>🔝 Z-Index</h2>   <!-- EDIT -->
 
         <div class="spell-tags">                <!-- EDIT -->
-            <span>CSS</span>
-            <span>Layers</span>
-            <span>Positioning</span>
+            <button class="spell-tag">CSS</button>
+            <button class="spell-tag">Positioning</button>
+            <button class="spell-tag">Layers</button>
         </div>
 
         <div class="code-container">
@@ -2280,9 +2345,9 @@ header {
         <h2>📏 Max Width</h2>   <!-- EDIT -->
 
         <div class="spell-tags">                <!-- EDIT -->
-            <span>CSS</span>
-            <span>Responsive</span>
-            <span>Layout</span>
+            <button class="spell-tag">CSS</button>
+            <button class="spell-tag">Responsive</button>
+            <button class="spell-tag">Layout</button>
         </div>
 
         <div class="code-container">
@@ -2334,9 +2399,9 @@ header {
         <h2>🌍 Width %</h2>   <!-- EDIT -->
 
         <div class="spell-tags">                <!-- EDIT -->
-            <span>CSS</span>
-            <span>Responsive</span>
-            <span>Sizing</span>
+            <button class="spell-tag">CSS</button>
+            <button class="spell-tag">Responsive</button>
+            <button class="spell-tag">Sizing</button>
         </div>
 
         <div class="code-container">
@@ -2388,9 +2453,9 @@ header {
         <h2>📏 rem</h2>   <!-- EDIT -->
 
         <div class="spell-tags">                <!-- EDIT -->
-            <span>CSS</span>
-            <span>Typography</span>
-            <span>Responsive</span>
+            <button class="spell-tag">CSS</button>
+            <button class="spell-tag">Responsive</button>
+            <button class="spell-tag">Typography</button>
         </div>
 
         <div class="code-container">
@@ -2443,9 +2508,9 @@ h1 {
         <h2>📏 em</h2>   <!-- EDIT -->
 
         <div class="spell-tags">                <!-- EDIT -->
-            <span>CSS</span>
-            <span>Typography</span>
-            <span>Responsive</span>
+            <button class="spell-tag">CSS</button>
+            <button class="spell-tag">Responsive</button>
+            <button class="spell-tag">Typography</button>
         </div>
 
         <div class="code-container">
@@ -2496,9 +2561,9 @@ button {
         <h2>🖥️ Viewport Units</h2>   <!-- EDIT -->
 
         <div class="spell-tags">                <!-- EDIT -->
-            <span>CSS</span>
-            <span>Responsive</span>
-            <span>Sizing</span>
+            <button class="spell-tag">CSS</button>
+            <button class="spell-tag">Responsive</button>
+            <button class="spell-tag">Sizing</button>
         </div>
 
         <div class="code-container">
@@ -2550,9 +2615,9 @@ button {
         <h2>📱 Media Queries</h2>   <!-- EDIT -->
 
         <div class="spell-tags">                <!-- EDIT -->
-            <span>CSS</span>
-            <span>Responsive</span>
-            <span>Media Queries</span>
+            <button class="spell-tag">CSS</button>
+            <button class="spell-tag">Responsive</button>
+            <button class="spell-tag">Media Queries</button>
         </div>
 
         <div class="code-container">
