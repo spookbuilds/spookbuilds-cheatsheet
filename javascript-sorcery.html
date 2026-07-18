@@ -115,203 +115,10210 @@
 <main class="spell-container">
 
 
-<!-- SPELL CARD ONE -->
+<!-- SPELL CARD 1 -->
 
-    <article class="spell-card">
+<article class="spell-card" id="variables">
 
-        <h2>⚡ addEventListener()</h2>   <!-- EDIT -->
+<h2>⚡ Variables (let & const)</h2>
 
-        <div class="spell-tags">                <!-- EDIT -->
-            <button class="spell-tag">JavaScript</button>
-            <button class="spell-tag">DOM</button>
-            <button class="spell-tag">Events</button>
-        </div>
+<div class="spell-tags">
 
-        <div class="code-container">
+    <button class="spell-tag">JavaScript</button>
+    <button class="spell-tag">Beginner</button>
+    <button class="spell-tag">Variables</button>
+    <button class="spell-tag">Data</button>
 
-        <button class="copy-spell">
-        Copy Spell 🪄
-        </button>
+</div>
 
-    <pre><code>                                 <!-- EDIT -->
+<div class="code-container">
+
+<button class="copy-spell">
+    Copy Spell 🪄
+</button>
+
+<pre><code>
+// Can be changed
+
+let playerName = "RJ";
+
+
+// Cannot be changed
+
+const gameVersion = "1.0";
+</code></pre>
+
+</div>
+
+<h3>📜 Notes</h3>
+
+<ul>
+
+    <li>
+    Variables store information so JavaScript can remember and reuse it.
+    </li>
+
+    <li>
+    <code>let</code> creates a variable that can be reassigned.
+    </li>
+
+    <li>
+    <code>const</code> creates a variable that cannot be reassigned.
+    </li>
+
+    <li>
+    Modern JavaScript uses <code>const</code> by default unless the value needs to change.
+    </li>
+
+    <li>
+    Variable names should explain what the data represents.
+    </li>
+
+    <li>
+    JavaScript naming convention uses camelCase:
+    <code>playerScore</code>, <code>userName</code>
+    </li>
+
+</ul>
+
+<h3>🧩 Structure</h3>
+
+<ul>
+
+    <li>
+    <code>const</code> / <code>let</code> → creates the variable.
+    </li>
+
+    <li>
+    <code>playerName</code> → variable name.
+    </li>
+
+    <li>
+    <code>=</code> → assigns a value.
+    </li>
+
+    <li>
+    <code>"RJ"</code> → stored data.
+    </li>
+
+</ul>
+
+<h3>⚡ Quick Reference</h3>
+
+<table class="spell-table">
+
+<tr>
+<th>Keyword</th>
+<th>Can Change?</th>
+</tr>
+
+<tr>
+<td><code>const</code></td>
+<td>❌ No</td>
+</tr>
+
+<tr>
+<td><code>let</code></td>
+<td>✅ Yes</td>
+</tr>
+
+<tr>
+<td><code>var</code></td>
+<td>⚠️ Old (avoid)</td>
+</tr>
+
+</table>
+
+<h3>🔗 Often Used With</h3>
+
+<ul>
+
+    <li>
+    Functions → storing results and values.
+    </li>
+
+    <li>
+    Arrays → storing collections of data.
+    </li>
+
+    <li>
+    Objects → storing grouped information.
+    </li>
+
+    <li>
+    DOM → storing HTML elements.
+    </li>
+
+</ul>
+
+<p class="spell-source">
+    📅 Added: 18 July 2026
+</p>
+
+</article>
+
+
+
+<!-- SPELL CARD 2 -->
+
+<article class="spell-card" id="data-types">
+
+<h2>🧪 JavaScript Data Types</h2>
+
+<div class="spell-tags">
+
+    <button class="spell-tag">JavaScript</button>
+    <button class="spell-tag">Beginner</button>
+    <button class="spell-tag">Data</button>
+
+</div>
+
+<div class="code-container">
+
+<button class="copy-spell">
+    Copy Spell 🪄
+</button>
+
+<pre><code>
+const username = "RJ";
+
+const age = 32;
+
+const isLearning = true;
+
+const spells = ["HTML", "CSS", "JS"];
+</code></pre>
+
+</div>
+
+<h3>📜 Notes</h3>
+
+<ul>
+
+    <li>
+    Data types describe what kind of information a value contains.
+    </li>
+
+    <li>
+    Strings store text.
+    </li>
+
+    <li>
+    Numbers store numerical values.
+    </li>
+
+    <li>
+    Booleans store true/false values.
+    </li>
+
+    <li>
+    Arrays store multiple values in a list.
+    </li>
+
+    <li>
+    Objects store related information together.
+    </li>
+
+</ul>
+
+<h3>🧩 Structure</h3>
+
+<ul>
+
+    <li>
+    <code>"text"</code> → String
+    </li>
+
+    <li>
+    <code>32</code> → Number
+    </li>
+
+    <li>
+    <code>true / false</code> → Boolean
+    </li>
+
+    <li>
+    <code>[]</code> → Array
+    </li>
+
+    <li>
+    <code>{}</code> → Object
+    </li>
+
+</ul>
+
+<h3>🔗 Often Used With</h3>
+
+<ul>
+
+    <li>
+    Variables → storing values.
+    </li>
+
+    <li>
+    Functions → passing information.
+    </li>
+
+    <li>
+    Conditionals → checking values.
+    </li>
+
+    <li>
+    Arrays and Objects → organising data.
+    </li>
+
+</ul>
+
+<p class="spell-source">
+    📅 Added: 18 July 2026
+</p>
+
+</article>
+
+
+
+<!-- SPELL CARD 3 -->
+
+<article class="spell-card" id="strings">
+
+<h2>✒️ Strings</h2>
+
+<div class="spell-tags">
+
+    <button class="spell-tag">JavaScript</button>
+    <button class="spell-tag">Beginner</button>
+    <button class="spell-tag">Text</button>
+
+</div>
+
+<div class="code-container">
+
+<button class="copy-spell">
+    Copy Spell 🪄
+</button>
+
+<pre><code>
+const spellName = "Fireball";
+
+console.log(spellName);
+</code></pre>
+
+</div>
+
+<h3>📜 Notes</h3>
+
+<ul>
+
+    <li>
+    Strings are pieces of text.
+    </li>
+
+    <li>
+    Strings are wrapped in quotes.
+    </li>
+
+    <li>
+    You can use:
+    <code>" "</code>,
+    <code>' '</code>,
+    or
+    <code>` `</code>
+    </li>
+
+    <li>
+    String methods can modify or inspect text.
+    </li>
+
+</ul>
+
+<h3>🧩 Structure</h3>
+
+<ul>
+
+    <li>
+    <code>const</code> → creates variable.
+    </li>
+
+    <li>
+    <code>spellName</code> → variable name.
+    </li>
+
+    <li>
+    <code>"Fireball"</code> → string value.
+    </li>
+
+</ul>
+
+<h3>⚡ Quick Reference</h3>
+
+<table class="spell-table">
+
+<tr>
+<th>Method</th>
+<th>Purpose</th>
+</tr>
+
+<tr>
+<td><code>.length</code></td>
+<td>Count characters</td>
+</tr>
+
+<tr>
+<td><code>.toUpperCase()</code></td>
+<td>Uppercase text</td>
+</tr>
+
+<tr>
+<td><code>.toLowerCase()</code></td>
+<td>Lowercase text</td>
+</tr>
+
+<tr>
+<td><code>.trim()</code></td>
+<td>Remove spaces</td>
+</tr>
+
+</table>
+
+<h3>🔗 Often Used With</h3>
+
+<ul>
+
+    <li>
+    Template literals → inserting variables into text.
+    </li>
+
+    <li>
+    <code>.length</code> → counting characters.
+    </li>
+
+    <li>
+    <code>.toUpperCase()</code> → changing case.
+    </li>
+
+    <li>
+    DOM text updates → changing webpage content.
+    </li>
+
+</ul>
+
+<p class="spell-source">
+    📅 Added: 18 July 2026
+</p>
+
+</article>
+
+
+
+<!-- SPELL CARD 4 -->
+
+<article class="spell-card" id="addEventListener">
+
+<h2>⚡ addEventListener()</h2>
+
+<div class="spell-tags">
+
+    <button class="spell-tag">JavaScript</button>
+    <button class="spell-tag">Beginner</button>
+    <button class="spell-tag">DOM</button>
+    <button class="spell-tag">Events</button>
+
+</div>
+
+<div class="code-container">
+
+<button class="copy-spell">
+    Copy Spell 🪄
+</button>
+
+<pre><code>
 const button = document.querySelector(".button");
 
-button.addEventListener("click", function () {
+button.addEventListener("click", () => {
 
     alert("Hello!");
 
 });
-    </code></pre>
-        </div>
+</code></pre>
 
-        <h3>📜 Notes</h3>
+</div>
 
-        <ul>                                    <!-- EDIT -->
+<h3>📜 Notes</h3>
 
-            <li><code>button</code> → the element you're listening to.</li>
-            <li><code>addEventListener()</code> → waits for an event.</li>
-            <li><code>"click"</code> → the event to listen for.</li>
-            <li><code>"click"</code> can be <code>"input"</code>, <code>"keydown"</code> etc.</li>
-            <li><code>function ()</code> → code to run.</li>
-            <li><code>{ }</code> → everything inside runs after the click.</li>
+<ul>
 
-        </ul>
+    <li>
+    Runs code when an event happens.
+    </li>
 
-        <h3>🔗 Often used with...</h3>
+    <li>
+    Most common events are <code>"click"</code>, <code>"input"</code>, <code>"submit"</code> and <code>"keydown"</code>.
+    </li>
 
-        <ul>                                    <!-- EDIT -->
+    <li>
+    The code inside the function only runs after the event occurs.
+    </li>
 
-            <li>querySelector()</li>
-            <li>querySelectorAll()</li>
-            <li>textContent</li>
-            <li>value</li>
-            <li>preventDefault()</li>
+    <li>
+    One element can have multiple event listeners.
+    </li>
 
-        </ul>
+</ul>
 
-        <p class="spell-source">                <!-- EDIT -->
-        📅 Added: 17 July 2026
-        </p>
+<h3>🧩 Structure</h3>
 
-    </article>
+<ul>
+
+    <li>
+    <code>button</code> → element you're listening to.
+    </li>
+
+    <li>
+    <code>addEventListener()</code> → waits for an event.
+    </li>
+
+    <li>
+    <code>"click"</code> → event type.
+    </li>
+
+    <li>
+    <code>() => { }</code> → function to run.
+    </li>
+
+    <li>
+    Everything inside <code>{ }</code> runs after the event.
+    </li>
+
+</ul>
+
+<h3>⚡ Quick Reference</h3>
+
+<table class="spell-table">
+
+<tr>
+<th>Event</th>
+<th>Runs When...</th>
+</tr>
+
+<tr>
+<td><code>"click"</code></td>
+<td>Mouse click</td>
+</tr>
+
+<tr>
+<td><code>"input"</code></td>
+<td>User types</td>
+</tr>
+
+<tr>
+<td><code>"change"</code></td>
+<td>Input loses focus after changing</td>
+</tr>
+
+<tr>
+<td><code>"submit"</code></td>
+<td>Form submitted</td>
+</tr>
+
+<tr>
+<td><code>"keydown"</code></td>
+<td>Key pressed down</td>
+</tr>
+
+<tr>
+<td><code>"keyup"</code></td>
+<td>Key released</td>
+</tr>
+
+</table>
+
+<h3>🔗 Often Used With</h3>
+
+<ul>
+
+    <li>querySelector()</li>
+
+    <li>querySelectorAll()</li>
+
+    <li>Functions</li>
+
+    <li>event.target</li>
+
+    <li>preventDefault()</li>
+
+    <li>classList.toggle()</li>
+
+</ul>
+
+<p class="spell-source">
+    📅 Added: 18 July 2026
+</p>
+
+</article>
 
 
 
-<!-- SPELL CARD TWO -->
+<!-- SPELL CARD 5 -->
 
-    <article class="spell-card">
+<article class="spell-card" id="querySelector">
 
-        <h2>⚡ querySelector()</h2>   <!-- EDIT -->
+<h2>⚡ querySelector()</h2>
 
-        <div class="spell-tags">                <!-- EDIT -->
-            <button class="spell-tag">JavaScript</button>
-            <button class="spell-tag">DOM</button>
-            <button class="spell-tag">Events</button>
-        </div>
+<div class="spell-tags">
 
-        <div class="code-container">
+    <button class="spell-tag">JavaScript</button>
+    <button class="spell-tag">Beginner</button>
+    <button class="spell-tag">DOM</button>
 
-        <button class="copy-spell">
-        Copy Spell 🪄
-        </button>
+</div>
 
-    <pre><code>                                 <!-- EDIT -->
+<div class="code-container">
+
+<button class="copy-spell">
+    Copy Spell 🪄
+</button>
+
+<pre><code>
 const button = document.querySelector(".button");
-    </code></pre>
-        </div>
 
-        <h3>📜 Notes</h3>
+button.textContent = "Clicked!";
+</code></pre>
 
-        <ul>                                    <!-- EDIT -->
+</div>
 
-            <li><code>const</code>→ creates a variable.</li>
-            <li><code>button</code>→ your variable name.</li>
-            <li><code>document</code>→ the webpage.</li>
-            <li><code>querySelector()</code>→ finds an element.</li>
-            <li><code>".button"</code>→ looks for a class 
-                called <code>button</code>.</li>
+<h3>📜 Notes</h3>
 
-        </ul>
+<ul>
 
-        <p class="spell-source">                <!-- EDIT -->
-        📅 Added: 17 July 2026
-        </p>
+    <li>
+    Finds the first matching element on the page.
+    </li>
 
-    </article>
+    <li>
+    Uses CSS selectors.
+    </li>
+
+    <li>
+    Returns one HTML element.
+    </li>
+
+    <li>
+    Returns <code>null</code> if nothing matches.
+    </li>
+
+</ul>
+
+<h3>🧩 Structure</h3>
+
+<ul>
+
+    <li>
+    <code>document</code> → the webpage.
+    </li>
+
+    <li>
+    <code>querySelector()</code> → searches the page.
+    </li>
+
+    <li>
+    <code>".button"</code> → class selector.
+    </li>
+
+    <li>
+    Use <code>".class"</code> for classes.
+    </li>
+
+    <li>
+    Use <code>"#id"</code> for IDs.
+    </li>
+
+</ul>
+
+<h3>⚡ Quick Reference</h3>
+
+<table class="spell-table">
+
+<tr>
+<th>Selector</th>
+<th>Finds</th>
+</tr>
+
+<tr>
+<td><code>".card"</code></td>
+<td>Class</td>
+</tr>
+
+<tr>
+<td><code>"#title"</code></td>
+<td>ID</td>
+</tr>
+
+<tr>
+<td><code>"button"</code></td>
+<td>HTML element</td>
+</tr>
+
+<tr>
+<td><code>"input"</code></td>
+<td>Input element</td>
+</tr>
+
+</table>
+
+<h3>🔗 Often Used With</h3>
+
+<ul>
+
+    <li>addEventListener()</li>
+
+    <li>textContent</li>
+
+    <li>value</li>
+
+    <li>style</li>
+
+    <li>classList</li>
+
+</ul>
+
+<p class="spell-source">
+    📅 Added: 18 July 2026
+</p>
+
+</article>
 
 
-<!-- SPELL CARD THREE -->
 
-    <article class="spell-card">
+<!-- SPELL CARD 6 -->
 
-        <h2>⚡ querySelectorAll()</h2>   <!-- EDIT -->
+<article class="spell-card" id="querySelectorAll">
 
-        <div class="spell-tags">                <!-- EDIT -->
-            <button class="spell-tag">JavaScript</button>
-            <button class="spell-tag">DOM</button>
-            <button class="spell-tag">Events</button>
-        </div>
+<h2>⚡ querySelectorAll()</h2>
 
-        <div class="code-container">
+<div class="spell-tags">
 
-        <button class="copy-spell">
-        Copy Spell 🪄
-        </button>
+    <button class="spell-tag">JavaScript</button>
+    <button class="spell-tag">Beginner</button>
+    <button class="spell-tag">DOM</button>
 
-    <pre><code>                                 <!-- EDIT -->
+</div>
+
+<div class="code-container">
+
+<button class="copy-spell">
+    Copy Spell 🪄
+</button>
+
+<pre><code>
 const cards = document.querySelectorAll(".card");
 
 cards.forEach(card => {
 
-    card.textContent = "Hello";
+    card.classList.add("active");
 
 });
-    </code></pre>
-        </div>
+</code></pre>
 
-        <h3>📜 Notes</h3>
+</div>
 
-        <ul>                                    <!-- EDIT -->
+<h3>📜 Notes</h3>
 
-            <li>Selects all matching elements.</li>
-            <li>Returns a NodeList.</li>
-            <li>Often used with<code>forEach()</code></li>
-            <li>Use when multiple elements need changing.</li>
+<ul>
 
-        </ul>
+    <li>
+    Finds every matching element.
+    </li>
 
-        <p class="spell-source">                <!-- EDIT -->
-        📅 Added: 17 July 2026
-        </p>
+    <li>
+    Returns a NodeList.
+    </li>
 
-    </article>
+    <li>
+    Most commonly used with <code>forEach()</code>.
+    </li>
+
+    <li>
+    Perfect when changing multiple elements.
+    </li>
+
+</ul>
+
+<h3>🧩 Structure</h3>
+
+<ul>
+
+    <li>
+    <code>document</code> → webpage.
+    </li>
+
+    <li>
+    <code>querySelectorAll()</code> → finds every match.
+    </li>
+
+    <li>
+    <code>".card"</code> → class selector.
+    </li>
+
+    <li>
+    Result is stored in a NodeList.
+    </li>
+
+</ul>
+
+<h3>⚡ Quick Reference</h3>
+
+<table class="spell-table">
+
+<tr>
+<th>Returns</th>
+<th>Can use</th>
+</tr>
+
+<tr>
+<td>NodeList</td>
+<td><code>forEach()</code></td>
+</tr>
+
+<tr>
+<td>Multiple elements</td>
+<td><code>.length</code></td>
+</tr>
+
+<tr>
+<td>Not a single element</td>
+<td>Loop through it</td>
+</tr>
+
+</table>
+
+<h3>🔗 Often Used With</h3>
+
+<ul>
+
+    <li>forEach()</li>
+
+    <li>classList</li>
+
+    <li>addEventListener()</li>
+
+    <li>Arrays</li>
+
+    <li>querySelector()</li>
+
+</ul>
+
+<p class="spell-source">
+    📅 Added: 18 July 2026
+</p>
+
+</article>
 
 
 
-<!-- SPELL CARD FOUR -->
+<!-- SPELL CARD 7 -->
 
-    <article class="spell-card">
+<article class="spell-card" id="forEach">
 
-        <h2>⚡ forEach()</h2>   <!-- EDIT -->
+<h2>⚡ forEach()</h2>
 
-        <div class="spell-tags">                <!-- EDIT -->
-            <button class="spell-tag">JavaScript</button>
-            <button class="spell-tag">DOM</button>
-            <button class="spell-tag">Events</button>
-        </div>
+<div class="spell-tags">
 
-        <div class="code-container">
+    <button class="spell-tag">JavaScript</button>
+    <button class="spell-tag">Beginner</button>
+    <button class="spell-tag">Loops</button>
 
-        <button class="copy-spell">
-        Copy Spell 🪄
-        </button>
+</div>
 
-    <pre><code>                                 <!-- EDIT -->
+<div class="code-container">
+
+<button class="copy-spell">
+    Copy Spell 🪄
+</button>
+
+<pre><code>
+const buttons = document.querySelectorAll(".button");
+
 buttons.forEach(button => {
 
-    console.log(button);
+    button.classList.add("active");
 
 });
-    </code></pre>
-        </div>
+</code></pre>
 
-        <h3>📜 Notes</h3>
+</div>
 
-        <ul>                                    <!-- EDIT -->
+<h3>📜 Notes</h3>
 
-            <li><code>buttons</code>→ the array or NodeList.</li>
-            <li><code>forEach()</code>→ loops through every item.</li>
-            <li><code>button</code>→ current item.</li>
-            <li><code>=></code>→ arrow function.</li>
-            <li><code>{}</code>→ code repeated for every item.</li>
+<ul>
 
-        </ul>
+    <li>
+    Loops through every item in an array or NodeList.
+    </li>
 
-        <p class="spell-source">                <!-- EDIT -->
-        📅 Added: 17 July 2026
-        </p>
+    <li>
+    Runs the same code for each item.
+    </li>
 
-    </article>
+    <li>
+    Does not create a new array.
+    </li>
+
+    <li>
+    Perfect for updating lots of elements.
+</li>
+
+</ul>
+
+<h3>🧩 Structure</h3>
+
+<ul>
+
+    <li>
+    <code>buttons</code> → array or NodeList.
+    </li>
+
+    <li>
+    <code>forEach()</code> → loops through every item.
+    </li>
+
+    <li>
+    <code>button</code> → current item.
+    </li>
+
+    <li>
+    <code>() => { }</code> → code repeated for every item.
+    </li>
+
+</ul>
+
+<h3>⚡ Quick Reference</h3>
+
+<table class="spell-table">
+
+<tr>
+<th>Part</th>
+<th>Meaning</th>
+</tr>
+
+<tr>
+<td><code>buttons</code></td>
+<td>The list</td>
+</tr>
+
+<tr>
+<td><code>button</code></td>
+<td>Current item</td>
+</tr>
+
+<tr>
+<td><code>=></code></td>
+<td>Arrow function</td>
+</tr>
+
+<tr>
+<td><code>{ }</code></td>
+<td>Runs for every item</td>
+</tr>
+
+</table>
+
+<h3>🔗 Often Used With</h3>
+
+<ul>
+
+    <li>querySelectorAll()</li>
+
+    <li>classList</li>
+
+    <li>addEventListener()</li>
+
+    <li>Arrays</li>
+
+    <li>Functions</li>
+
+</ul>
+
+<p class="spell-source">
+    📅 Added: 18 July 2026
+</p>
+
+</article>
+
+
+
+<!-- SPELL CARD 8 -->
+
+<article class="spell-card" id="template-literals">
+
+<h2>⚡ Template Literals</h2>
+
+<div class="spell-tags">
+
+    <button class="spell-tag">JavaScript</button>
+    <button class="spell-tag">Beginner</button>
+    <button class="spell-tag">Strings</button>
+
+</div>
+
+<div class="code-container">
+
+<button class="copy-spell">
+    Copy Spell 🪄
+</button>
+
+<pre><code>
+const username = "RJ";
+
+const greeting = `Hello ${username}!`;
+
+console.log(greeting);
+</code></pre>
+
+</div>
+
+<h3>📜 Notes</h3>
+
+<ul>
+
+    <li>
+    Template literals allow variables inside strings.
+    </li>
+
+    <li>
+    Use backticks <code>` `</code>, not quotes.
+    </li>
+
+    <li>
+    Use <code>${ }</code> to insert values.
+    </li>
+
+    <li>
+    Makes long strings easier to read.
+    </li>
+
+    <li>
+    Often used when creating HTML with JavaScript.
+    </li>
+
+</ul>
+
+<h3>🧩 Structure</h3>
+
+<ul>
+
+    <li><code>` `</code> → template literal.</li>
+
+    <li><code>${ }</code> → insert JavaScript value.</li>
+
+    <li><code>username</code> → variable being inserted.</li>
+
+</ul>
+
+<h3>⚡ Quick Reference</h3>
+
+<table class="spell-table">
+
+<tr>
+<th>Syntax</th>
+<th>Purpose</th>
+</tr>
+
+<tr>
+<td><code>` `</code></td>
+<td>Template literal</td>
+</tr>
+
+<tr>
+<td><code>${variable}</code></td>
+<td>Insert variable</td>
+</tr>
+
+<tr>
+<td><code>\n</code></td>
+<td>New line</td>
+</tr>
+
+</table>
+
+<h3>🔗 Often Used With</h3>
+
+<ul>
+
+    <li>Variables</li>
+
+    <li>Strings</li>
+
+    <li>innerHTML</li>
+
+    <li>Arrays</li>
+
+    <li>Objects</li>
+
+</ul>
+
+<p class="spell-source">
+    📅 Added: 18 July 2026
+</p>
+
+</article>
+
+
+
+<!-- SPELL CARD 9 -->
+
+<article class="spell-card" id="numbers">
+
+<h2>⚡ Numbers</h2>
+
+<div class="spell-tags">
+
+    <button class="spell-tag">JavaScript</button>
+    <button class="spell-tag">Beginner</button>
+    <button class="spell-tag">Math</button>
+
+</div>
+
+<div class="code-container">
+
+<button class="copy-spell">
+Copy Spell 🪄
+</button>
+
+<pre><code>
+const score = 100;
+
+const bonus = 25;
+
+const total = score + bonus;
+
+console.log(total);
+</code></pre>
+
+</div>
+
+<h3>📜 Notes</h3>
+
+<ul>
+
+    <li>
+    Numbers are used for calculations.
+    </li>
+
+    <li>
+    No quotes are used.
+    </li>
+
+    <li>
+    JavaScript supports integers and decimals.
+    </li>
+
+    <li>
+    Can be added, subtracted, multiplied and divided.
+    </li>
+
+</ul>
+
+<h3>🧩 Structure</h3>
+
+<ul>
+
+    <li><code>+</code> → addition.</li>
+
+    <li><code>-</code> → subtraction.</li>
+
+    <li><code>*</code> → multiplication.</li>
+
+    <li><code>/</code> → division.</li>
+
+</ul>
+
+<h3>⚡ Quick Reference</h3>
+
+<table class="spell-table">
+
+<tr>
+<th>Operator</th>
+<th>Meaning</th>
+</tr>
+
+<tr>
+<td><code>+</code></td>
+<td>Add</td>
+</tr>
+
+<tr>
+<td><code>-</code></td>
+<td>Subtract</td>
+</tr>
+
+<tr>
+<td><code>*</code></td>
+<td>Multiply</td>
+</tr>
+
+<tr>
+<td><code>/</code></td>
+<td>Divide</td>
+</tr>
+
+<tr>
+<td><code>%</code></td>
+<td>Remainder</td>
+</tr>
+
+</table>
+
+<h3>🔗 Often Used With</h3>
+
+<ul>
+
+    <li>Variables</li>
+
+    <li>Math Methods</li>
+
+    <li>Operators</li>
+
+    <li>Conditionals</li>
+
+</ul>
+
+<p class="spell-source">
+    📅 Added: 18 July 2026
+</p>
+
+</article>
+
+
+
+<!-- SPELL CARD 10 -->
+
+<article class="spell-card" id="booleans">
+
+<h2>⚡ Booleans</h2>
+
+<div class="spell-tags">
+
+    <button class="spell-tag">JavaScript</button>
+    <button class="spell-tag">Beginner</button>
+    <button class="spell-tag">Logic</button>
+
+</div>
+
+<div class="code-container">
+
+<button class="copy-spell">
+    Copy Spell 🪄
+</button>
+
+<pre><code>
+const isLoggedIn = true;
+
+if (isLoggedIn) {
+
+    console.log("Welcome!");
+
+}
+</code></pre>
+
+</div>
+
+<h3>📜 Notes</h3>
+
+<ul>
+
+    <li>
+    Booleans can only be true or false.
+    </li>
+
+    <li>
+    Often used in decisions.
+    </li>
+
+    <li>
+    Commonly store states.
+    </li>
+
+    <li>
+    Used heavily with if statements.
+    </li>
+
+</ul>
+
+<h3>🧩 Structure</h3>
+
+<ul>
+
+    <li><code>true</code> → yes/on.</li>
+
+    <li><code>false</code> → no/off.</li>
+
+    <li><code>isLoggedIn</code> → boolean variable.</li>
+
+</ul>
+
+<h3>🔗 Often Used With</h3>
+
+<ul>
+
+    <li>if Statements</li>
+
+    <li>Comparison Operators</li>
+
+    <li>Logical Operators</li>
+
+    <li>Functions</li>
+
+</ul>
+
+<p class="spell-source">
+    📅 Added: 18 July 2026
+</p>
+
+</article>
+
+
+
+<!-- SPELL CARD 11 -->
+
+<article class="spell-card" id="comments">
+
+<h2>⚡ Comments</h2>
+
+<div class="spell-tags">
+
+    <button class="spell-tag">JavaScript</button>
+    <button class="spell-tag">Beginner</button>
+    <button class="spell-tag">Organisation</button>
+
+</div>
+
+<div class="code-container">
+
+<button class="copy-spell">
+    Copy Spell 🪄
+</button>
+
+<pre><code>
+// Single line comment
+
+/*
+Multiple
+line
+comment
+*/
+</code></pre>
+
+</div>
+
+<h3>📜 Notes</h3>
+
+<ul>
+
+    <li>
+    Comments are ignored by JavaScript.
+    </li>
+
+    <li>
+    Used to explain code.
+    </li>
+
+    <li>
+    Helpful for future-you.
+    </li>
+
+    <li>
+    Can temporarily disable code during testing.
+    </li>
+
+</ul>
+
+<h3>🧩 Structure</h3>
+
+<ul>
+
+    <li><code>//</code> → single line comment.</li>
+
+    <li><code>/* */</code> → multi-line comment.</li>
+
+</ul>
+
+<h3>🔗 Often Used With</h3>
+
+<ul>
+
+    <li>Functions</li>
+
+    <li>Complex Logic</li>
+
+    <li>Debugging</li>
+
+    <li>Projects</li>
+
+</ul>
+
+<p class="spell-source">
+    📅 Added: 18 July 2026
+</p>
+
+</article>
+
+
+
+<!-- SPELL CARD 12 -->
+
+<article class="spell-card" id="operators">
+
+<h2>⚡ Operators</h2>
+
+<div class="spell-tags">
+
+    <button class="spell-tag">JavaScript</button>
+    <button class="spell-tag">Beginner</button>
+    <button class="spell-tag">Math</button>
+
+</div>
+
+<div class="code-container">
+
+<button class="copy-spell">
+    Copy Spell 🪄
+</button>
+
+<pre><code>
+const total = 10 + 5;
+
+const difference = 10 - 5;
+
+const product = 10 * 5;
+
+const result = 10 / 5;
+</code></pre>
+
+</div>
+
+<h3>📜 Notes</h3>
+
+<ul>
+
+    <li>Operators perform actions on values.</li>
+
+    <li><code>+</code> add.</li>
+
+    <li><code>-</code> subtract.</li>
+
+    <li><code>*</code> multiply.</li>
+
+    <li><code>/</code> divide.</li>
+
+    <li><code>%</code> remainder.</li>
+
+</ul>
+
+<h3>🧩 Structure</h3>
+
+<ul>
+
+    <li><code>10 + 5</code> → add numbers.</li>
+
+    <li><code>10 * 5</code> → multiply numbers.</li>
+
+    <li><code>%</code> → returns the remainder.</li>
+
+</ul>
+
+<h3>🔗 Often Used With</h3>
+
+<ul>
+
+    <li>Numbers</li>
+
+    <li>Variables</li>
+
+    <li>if Statements</li>
+
+    <li>Loops</li>
+
+    <li>Functions</li>
+
+</ul>
+
+<p class="spell-source">
+    📅 Added: 18 July 2026
+</p>
+
+</article>
+
+
+
+<!-- SPELL CARD 13 -->
+
+<article class="spell-card" id="if-statement">
+
+<h2>⚡ if Statement</h2>
+
+<div class="spell-tags">
+
+    <button class="spell-tag">JavaScript</button>
+    <button class="spell-tag">Beginner</button>
+    <button class="spell-tag">Logic</button>
+    <button class="spell-tag">Conditionals</button>
+
+</div>
+
+<div class="code-container">
+
+<button class="copy-spell">
+    Copy Spell 🪄
+</button>
+
+<pre><code>
+const age = 18;
+
+if (age >= 18) {
+
+    console.log("You can vote.");
+
+}
+</code></pre>
+
+</div>
+
+<h3>📜 Notes</h3>
+
+<ul>
+
+    <li>
+    Runs code only if a condition is true.
+    </li>
+
+    <li>
+    If the condition is false, nothing happens.
+    </li>
+
+    <li>
+    Everything inside <code>{ }</code> runs only when the condition passes.
+    </li>
+
+    <li>
+    Used constantly throughout JavaScript.
+    </li>
+
+</ul>
+
+<h3>🧩 Structure</h3>
+
+<ul>
+
+    <li><code>if</code> → starts the condition.</li>
+
+    <li><code>()</code> → contains the test.</li>
+
+    <li><code>{ }</code> → code to run if true.</li>
+
+    <li><code>age >= 18</code> → comparison.</li>
+
+</ul>
+
+<h3>🔗 Often Used With</h3>
+
+<ul>
+
+    <li>Booleans</li>
+
+    <li>Comparison Operators</li>
+
+    <li>Logical Operators</li>
+
+    <li>Functions</li>
+
+</ul>
+
+<p class="spell-source">
+    📅 Added: 18 July 2026
+</p>
+
+</article>
+
+
+
+<!-- SPELL CARD 14 -->
+
+<article class="spell-card" id="else">
+
+<h2>⚡ else</h2>
+
+<div class="spell-tags">
+
+    <button class="spell-tag">JavaScript</button>
+    <button class="spell-tag">Beginner</button>
+    <button class="spell-tag">Logic</button>
+
+</div>
+
+<div class="code-container">
+
+<button class="copy-spell">
+    Copy Spell 🪄
+</button>
+
+<pre><code>
+const age = 15;
+
+if (age >= 18) {
+
+    console.log("Adult");
+
+}
+
+else {
+
+    console.log("Child");
+
+}
+</code></pre>
+
+</div>
+
+<h3>📜 Notes</h3>
+
+<ul>
+
+    <li>
+    Runs when the <code>if</code> condition is false.
+    </li>
+
+    <li>
+    Acts as the "otherwise" option.
+    </li>
+
+    <li>
+    Must come after an <code>if</code>.
+    </li>
+
+</ul>
+
+<h3>🧩 Structure</h3>
+
+<ul>
+
+    <li><code>if</code> checks first.</li>
+
+    <li><code>else</code> runs only if the check fails.</li>
+
+    <li>Only one of the two blocks will run.</li>
+
+</ul>
+
+<h3>🔗 Often Used With</h3>
+
+<ul>
+
+    <li>if Statements</li>
+
+    <li>Comparison Operators</li>
+
+    <li>Booleans</li>
+
+</ul>
+
+<p class="spell-source">
+    📅 Added: 18 July 2026
+</p>
+
+</article>
+
+
+
+<!-- SPELL CARD 15 -->
+
+<article class="spell-card" id="else-if">
+
+<h2>⚡ else if</h2>
+
+<div class="spell-tags">
+
+    <button class="spell-tag">JavaScript</button>
+    <button class="spell-tag">Intermediate</button>
+    <button class="spell-tag">Logic</button>
+
+</div>
+
+<div class="code-container">
+
+<button class="copy-spell">
+    Copy Spell 🪄
+</button>
+
+<pre><code>
+const score = 75;
+
+if (score >= 90) {
+
+    console.log("A");
+
+}
+
+else if (score >= 70) {
+
+    console.log("B");
+
+}
+
+else {
+
+    console.log("C");
+
+}
+</code></pre>
+
+</div>
+
+<h3>📜 Notes</h3>
+
+<ul>
+
+    <li>
+    Checks another condition if the previous one failed.
+    </li>
+
+    <li>
+    You can have as many <code>else if</code> blocks as needed.
+    </li>
+
+    <li>
+    JavaScript stops checking after finding the first true condition.
+    </li>
+
+</ul>
+
+<h3>🧩 Structure</h3>
+
+<ul>
+
+    <li><code>if</code> → first test.</li>
+
+    <li><code>else if</code> → second test.</li>
+
+    <li><code>else</code> → final fallback.</li>
+
+</ul>
+
+<h3>🔗 Often Used With</h3>
+
+<ul>
+
+    <li>if Statements</li>
+
+    <li>Comparison Operators</li>
+
+    <li>Booleans</li>
+
+</ul>
+
+<p class="spell-source">
+    📅 Added: 18 July 2026
+</p>
+
+</article>
+
+
+
+<!-- SPELL CARD 16 -->
+
+<article class="spell-card" id="comparison-operators">
+
+<h2>⚡ Comparison Operators</h2>
+
+<div class="spell-tags">
+
+    <button class="spell-tag">JavaScript</button>
+    <button class="spell-tag">Beginner</button>
+    <button class="spell-tag">Logic</button>
+
+</div>
+
+<div class="code-container">
+
+<button class="copy-spell">
+    Copy Spell 🪄
+</button>
+
+<pre><code>
+const score = 80;
+
+console.log(score > 50);
+
+console.log(score === 80);
+
+console.log(score !== 100);
+</code></pre>
+
+</div>
+
+<h3>📜 Notes</h3>
+
+<ul>
+
+    <li><code>===</code> exactly equal.</li>
+
+    <li><code>!==</code> not equal.</li>
+
+    <li><code>></code> greater than.</li>
+
+    <li><code><</code> less than.</li>
+
+    <li><code>>=</code> greater than or equal.</li>
+
+    <li><code><=</code> less than or equal.</li>
+
+    <li>Always returns <code>true</code> or <code>false</code>.</li>
+
+</ul>
+
+<h3>🧩 Structure</h3>
+
+<ul>
+
+    <li><code>===</code> compares value and type.</li>
+
+    <li><code>!==</code> checks values are different.</li>
+
+    <li><code>></code> and <code><</code> compare numbers.</li>
+
+</ul>
+
+<h3>🔗 Often Used With</h3>
+
+<ul>
+
+    <li>if Statements</li>
+
+    <li>Booleans</li>
+
+    <li>Logical Operators</li>
+
+</ul>
+
+<p class="spell-source">
+    📅 Added: 18 July 2026
+</p>
+
+</article>
+
+
+
+<!-- SPELL CARD 17 -->
+
+<article class="spell-card" id="logical-operators">
+
+<h2>⚡ Logical Operators</h2>
+
+<div class="spell-tags">
+
+    <button class="spell-tag">JavaScript</button>
+    <button class="spell-tag">Intermediate</button>
+    <button class="spell-tag">Logic</button>
+
+</div>
+
+<div class="code-container">
+
+<button class="copy-spell">
+    Copy Spell 🪄
+</button>
+
+<pre><code>
+const loggedIn = true;
+const isAdmin = false;
+
+if (loggedIn && isAdmin) {
+
+    console.log("Welcome Admin");
+
+}
+</code></pre>
+
+</div>
+
+<h3>📜 Notes</h3>
+
+<ul>
+
+    <li><code>&&</code> → AND (both must be true).</li>
+
+    <li><code>||</code> → OR (either can be true).</li>
+
+    <li><code>!</code> → NOT (reverses true/false).</li>
+
+    <li>Often combines multiple conditions.</li>
+
+</ul>
+
+<h3>🧩 Structure</h3>
+
+<ul>
+
+    <li><code>&&</code> → true AND true.</li>
+
+    <li><code>||</code> → true OR true.</li>
+
+    <li><code>!</code> → opposite value.</li>
+
+</ul>
+
+<h3>🔗 Often Used With</h3>
+
+<ul>
+
+    <li>if Statements</li>
+
+    <li>Booleans</li>
+
+    <li>Comparison Operators</li>
+
+    <li>Functions</li>
+
+</ul>
+
+<p class="spell-source">
+    📅 Added: 18 July 2026
+</p>
+
+</article>
+
+
+
+<!-- SPELL CARD 18 -->
+
+<article class="spell-card" id="text-content">
+
+<h2>⚡ textContent</h2>
+
+<div class="spell-tags">
+
+    <button class="spell-tag">JavaScript</button>
+    <button class="spell-tag">DOM</button>
+    <button class="spell-tag">Text</button>
+
+</div>
+
+<div class="code-container">
+
+<button class="copy-spell">
+    Copy Spell 🪄
+</button>
+
+<pre><code>
+const title = document.querySelector(".title");
+
+title.textContent = "New Spell Added!";
+</code></pre>
+
+</div>
+
+<h3>📜 Notes</h3>
+
+<ul>
+
+    <li>
+    Changes or reads the text inside an HTML element.
+    </li>
+
+    <li>
+    Safer than <code>innerHTML</code> because it does not allow HTML injection.
+    </li>
+
+    <li>
+    Used when updating headings, paragraphs, buttons, labels etc.
+    </li>
+
+    <li>
+    Can replace existing text.
+    </li>
+
+</ul>
+
+<h3>🧩 Structure</h3>
+
+<ul>
+
+    <li>
+    <code>title</code> → variable storing the element.
+    </li>
+
+    <li>
+    <code>.textContent</code> → property that controls the text.
+    </li>
+
+    <li>
+    <code>"New Spell Added!"</code> → new text value.
+    </li>
+
+</ul>
+
+<h3>✨ Spell Components</h3>
+
+<table class="spell-table">
+
+<tr>
+<th>Property</th>
+<th>Purpose</th>
+</tr>
+
+<tr>
+<td><code>.textContent</code></td>
+<td>Read/change text</td>
+</tr>
+
+<tr>
+<td><code>.innerHTML</code></td>
+<td>Add HTML content</td>
+</tr>
+
+<tr>
+<td><code>.value</code></td>
+<td>Read form input values</td>
+</tr>
+
+</table>
+
+<h3>🔗 Often Used With</h3>
+
+<ul>
+
+    <li>
+    <code>querySelector()</code>
+    </li>
+
+    <li>
+    <code>addEventListener()</code>
+    </li>
+
+    <li>
+    <code>value</code>
+    </li>
+
+    <li>
+    DOM manipulation
+    </li>
+
+</ul>
+
+<p class="spell-source">
+    📅 Added: 18 July 2026
+</p>
+
+</article>
+
+
+
+<!-- SPELL CARD 19 -->
+
+<article class="spell-card" id="value">
+
+<h2>⚡ value</h2>
+
+<div class="spell-tags">
+
+    <button class="spell-tag">JavaScript</button>
+    <button class="spell-tag">DOM</button>
+    <button class="spell-tag">Forms</button>
+
+</div>
+
+<div class="code-container">
+
+<button class="copy-spell">
+    Copy Spell 🪄
+</button>
+
+<pre><code>
+const username = document.querySelector("#username");
+
+console.log(username.value);
+</code></pre>
+
+</div>
+
+<h3>📜 Notes</h3>
+
+<ul>
+
+    <li>
+    Gets the information typed into form inputs.
+    </li>
+
+    <li>
+    Commonly used with input boxes, text areas and selects.
+    </li>
+
+    <li>
+    Returns the current value as a string.
+    </li>
+
+    <li>
+    Usually paired with events like <code>input</code> or <code>submit</code>.
+    </li>
+
+</ul>
+
+<h3>🧩 Structure</h3>
+
+<ul>
+
+    <li>
+    <code>username</code> → the input element.
+    </li>
+
+    <li>
+    <code>.value</code> → the text inside it.
+    </li>
+
+    <li>
+    <code>console.log()</code> → displays the value.
+    </li>
+
+</ul>
+
+<h3>✨ Spell Components</h3>
+
+<table class="spell-table">
+
+<tr>
+<th>Input Type</th>
+<th>Example</th>
+</tr>
+
+<tr>
+<td>Text</td>
+<td><code>input.value</code></td>
+</tr>
+
+<tr>
+<td>Checkbox</td>
+<td><code>checkbox.checked</code></td>
+</tr>
+
+<tr>
+<td>Select</td>
+<td><code>select.value</code></td>
+</tr>
+
+</table>
+
+<h3>🔗 Often Used With</h3>
+
+<ul>
+
+    <li>
+    <code>querySelector()</code>
+    </li>
+
+    <li>
+    <code>addEventListener()</code>
+    </li>
+
+    <li>
+    Forms
+    </li>
+
+    <li>
+    <code>preventDefault()</code>
+    </li>
+
+</ul>
+
+<p class="spell-source">
+    📅 Added: 18 July 2026
+</p>
+
+</article>
+
+
+
+<!-- SPELL CARD 20 -->
+
+<article class="spell-card" id="class-list">
+
+<h2>⚡ classList</h2>
+
+<div class="spell-tags">
+
+    <button class="spell-tag">JavaScript</button>
+    <button class="spell-tag">DOM</button>
+    <button class="spell-tag">CSS</button>
+
+</div>
+
+<div class="code-container">
+
+<button class="copy-spell">
+    Copy Spell 🪄
+</button>
+
+<pre><code>
+const card = document.querySelector(".card");
+
+card.classList.add("active");
+
+</code></pre>
+
+</div>
+
+<h3>📜 Notes</h3>
+
+<ul>
+
+    <li>
+    Controls CSS classes using JavaScript.
+    </li>
+
+    <li>
+    Allows adding, removing and checking classes.
+    </li>
+
+    <li>
+    Useful for animations, menus and changing styles.
+    </li>
+
+    <li>
+    Works by changing the HTML class attribute.
+    </li>
+
+</ul>
+
+<h3>🧩 Structure</h3>
+
+<ul>
+
+    <li>
+    <code>card</code> → selected HTML element.
+    </li>
+
+    <li>
+    <code>.classList</code> → accesses its classes.
+    </li>
+
+    <li>
+    <code>.add()</code> → adds a class.
+    </li>
+
+    <li>
+    <code>"active"</code> → class name being added.
+    </li>
+
+</ul>
+
+<h3>✨ Spell Components</h3>
+
+<table class="spell-table">
+
+<tr>
+<th>Method</th>
+<th>Purpose</th>
+</tr>
+
+<tr>
+<td><code>.add()</code></td>
+<td>Add class</td>
+</tr>
+
+<tr>
+<td><code>.remove()</code></td>
+<td>Remove class</td>
+</tr>
+
+<tr>
+<td><code>.toggle()</code></td>
+<td>Add/remove automatically</td>
+</tr>
+
+<tr>
+<td><code>.contains()</code></td>
+<td>Check if class exists</td>
+</tr>
+
+</table>
+
+<h3>🔗 Often Used With</h3>
+
+<ul>
+
+    <li>
+    <code>addEventListener()</code>
+    </li>
+
+    <li>
+    CSS animations
+    </li>
+
+    <li>
+    Buttons
+    </li>
+
+    <li>
+    Dark mode
+    </li>
+
+</ul>
+
+<p class="spell-source">
+    📅 Added: 18 July 2026
+</p>
+
+</article>
+
+
+
+<!-- SPELL CARD 21 -->
+
+<article class="spell-card" id="create-element">
+
+<h2>🧪 createElement()</h2>
+
+<div class="spell-tags">
+
+    <button class="spell-tag">JavaScript</button>
+    <button class="spell-tag">DOM</button>
+    <button class="spell-tag">Creation</button>
+
+</div>
+
+<div class="code-container">
+
+<button class="copy-spell">
+    Copy Spell 🪄
+</button>
+
+<pre><code>
+const newCard = document.createElement("div");
+
+newCard.textContent = "A new spell appears!";
+
+</code></pre>
+
+</div>
+
+<h3>📜 Notes</h3>
+
+<ul>
+
+    <li>
+    Creates a brand new HTML element using JavaScript.
+    </li>
+
+    <li>
+    The element only exists in memory until added to the page.
+    </li>
+
+    <li>
+    Useful for generating content dynamically.
+    </li>
+
+    <li>
+    Commonly used when creating cards, lists or messages.
+    </li>
+
+</ul>
+
+<h3>🧩 Structure</h3>
+
+<ul>
+
+    <li>
+    <code>document</code> → the webpage.
+    </li>
+
+    <li>
+    <code>.createElement()</code> → creates HTML.
+    </li>
+
+    <li>
+    <code>"div"</code> → the type of element to create.
+    </li>
+
+    <li>
+    <code>newCard</code> → variable storing the new element.
+    </li>
+
+</ul>
+
+<h3>✨ Spell Components</h3>
+
+<table class="spell-table">
+
+<tr>
+<th>Element</th>
+<th>Creates</th>
+</tr>
+
+<tr>
+<td><code>"div"</code></td>
+<td>Container</td>
+</tr>
+
+<tr>
+<td><code>"p"</code></td>
+<td>Paragraph</td>
+</tr>
+
+<tr>
+<td><code>"button"</code></td>
+<td>Button</td>
+</tr>
+
+<tr>
+<td><code>"img"</code></td>
+<td>Image</td>
+</tr>
+
+</table>
+
+<h3>🔗 Often Used With</h3>
+
+<ul>
+
+    <li>
+    <code>appendChild()</code>
+    </li>
+
+    <li>
+    <code>classList.add()</code>
+    </li>
+
+    <li>
+    <code>textContent</code>
+    </li>
+
+    <li>
+    <code>createElement()</code>
+    + 
+    <code>appendChild()</code>
+    </li>
+
+</ul>
+
+<p class="spell-source">
+    📅 Added: 18 July 2026
+</p>
+
+</article>
+
+
+
+<!-- SPELL CARD 22 -->
+
+<article class="spell-card" id="append-child">
+
+<h2>📌 appendChild()</h2>
+
+<div class="spell-tags">
+
+    <button class="spell-tag">JavaScript</button>
+    <button class="spell-tag">DOM</button>
+    <button class="spell-tag">Manipulation</button>
+
+</div>
+
+<div class="code-container">
+
+<button class="copy-spell">
+    Copy Spell 🪄
+</button>
+
+<pre><code>
+const container = document.querySelector(".container");
+
+container.appendChild(newCard);
+
+</code></pre>
+
+</div>
+
+<h3>📜 Notes</h3>
+
+<ul>
+
+    <li>
+    Adds an element as the last child inside another element.
+    </li>
+
+    <li>
+    Usually used after <code>createElement()</code>.
+    </li>
+
+    <li>
+    Moves the element into the visible webpage.
+    </li>
+
+    <li>
+    Think:
+    "Create it → customise it → append it."
+    </li>
+
+</ul>
+
+<h3>🧩 Structure</h3>
+
+<ul>
+
+    <li>
+    <code>container</code> → where the element goes.
+    </li>
+
+    <li>
+    <code>.appendChild()</code> → inserts the element.
+    </li>
+
+    <li>
+    <code>newCard</code> → the element being added.
+    </li>
+
+</ul>
+
+<h3>✨ Spell Components</h3>
+
+<table class="spell-table">
+
+<tr>
+<th>Method</th>
+<th>Purpose</th>
+</tr>
+
+<tr>
+<td><code>appendChild()</code></td>
+<td>Add one element</td>
+</tr>
+
+<tr>
+<td><code>append()</code></td>
+<td>Add elements or text</td>
+</tr>
+
+<tr>
+<td><code>prepend()</code></td>
+<td>Add to beginning</td>
+</tr>
+
+</table>
+
+<h3>🔗 Often Used With</h3>
+
+<ul>
+
+    <li>
+    <code>createElement()</code>
+    </li>
+
+    <li>
+    <code>textContent</code>
+    </li>
+
+    <li>
+    <code>classList.add()</code>
+    </li>
+
+    <li>
+    Arrays + loops
+    </li>
+
+</ul>
+
+<p class="spell-source">
+    📅 Added: 18 July 2026
+</p>
+
+</article>
+
+
+
+<!-- SPELL CARD 23 -->
+
+<article class="spell-card" id="remove">
+
+<h2>🗑️ remove()</h2>
+
+<div class="spell-tags">
+
+    <button class="spell-tag">JavaScript</button>
+    <button class="spell-tag">DOM</button>
+    <button class="spell-tag">Removal</button>
+
+</div>
+
+<div class="code-container">
+
+<button class="copy-spell">
+    Copy Spell 🪄
+</button>
+
+<pre><code>
+const message = document.querySelector(".message");
+
+message.remove();
+
+</code></pre>
+
+</div>
+
+<h3>📜 Notes</h3>
+
+<ul>
+
+    <li>
+    Removes an element completely from the webpage.
+    </li>
+
+    <li>
+    The element must first be selected.
+    </li>
+
+    <li>
+    Useful for deleting cards, messages and temporary content.
+    </li>
+
+    <li>
+    Unlike hiding with CSS, the element is removed.
+    </li>
+
+</ul>
+
+<h3>🧩 Structure</h3>
+
+<ul>
+
+    <li>
+    <code>message</code> → selected element.
+    </li>
+
+    <li>
+    <code>.remove()</code> → deletes it.
+    </li>
+
+</ul>
+
+<h3>✨ Spell Components</h3>
+
+<table class="spell-table">
+
+<tr>
+<th>Method</th>
+<th>Effect</th>
+</tr>
+
+<tr>
+<td><code>remove()</code></td>
+<td>Deletes element</td>
+</tr>
+
+<tr>
+<td><code>classList.add()</code></td>
+<td>Change appearance</td>
+</tr>
+
+<tr>
+<td><code>style.display="none"</code></td>
+<td>Hide element only</td>
+</tr>
+
+</table>
+
+<h3>🔗 Often Used With</h3>
+
+<ul>
+
+    <li>
+    <code>querySelector()</code>
+    </li>
+
+    <li>
+    <code>addEventListener()</code>
+    </li>
+
+    <li>
+    Buttons
+    </li>
+
+    <li>
+    Dynamic content
+    </li>
+
+</ul>
+
+<p class="spell-source">
+    📅 Added: 18 July 2026
+</p>
+
+</article>
+
+
+
+<!-- SPELL CARD 24 -->
+
+<article class="spell-card" id="if-else">
+
+<h2>🔮 if / else</h2>
+
+<div class="spell-tags">
+
+    <button class="spell-tag">JavaScript</button>
+    <button class="spell-tag">Logic</button>
+    <button class="spell-tag">Conditions</button>
+
+</div>
+
+<div class="code-container">
+
+<button class="copy-spell">
+    Copy Spell 🪄
+</button>
+
+<pre><code>
+const mana = 100;
+
+
+if (mana > 0) {
+
+    console.log("Cast spell!");
+
+}
+
+else {
+
+    console.log("Not enough mana.");
+
+}
+</code></pre>
+
+</div>
+
+<h3>📜 Notes</h3>
+
+<ul>
+
+    <li>
+    Runs different code depending on whether a condition is true or false.
+    </li>
+
+    <li>
+    The code inside <code>{ }</code> only runs when the condition is met.
+    </li>
+
+    <li>
+    <code>else</code> runs when the <code>if</code> condition is false.
+    </li>
+
+    <li>
+    Used constantly for validation, buttons, games and user choices.
+    </li>
+
+</ul>
+
+<h3>🧩 Structure</h3>
+
+<ul>
+
+    <li>
+    <code>if</code> → checks a condition.
+    </li>
+
+    <li>
+    <code>(condition)</code> → the test being performed.
+    </li>
+
+    <li>
+    <code>{ }</code> → code that runs if true.
+    </li>
+
+    <li>
+    <code>else</code> → backup option if false.
+    </li>
+
+</ul>
+
+<h3>✨ Spell Components</h3>
+
+<table class="spell-table">
+
+<tr>
+<th>Keyword</th>
+<th>Purpose</th>
+</tr>
+
+<tr>
+<td><code>if</code></td>
+<td>Run code if true</td>
+</tr>
+
+<tr>
+<td><code>else</code></td>
+<td>Run code if false</td>
+</tr>
+
+<tr>
+<td><code>else if</code></td>
+<td>Add another condition</td>
+</tr>
+
+</table>
+
+<h3>🔗 Often Used With</h3>
+
+<ul>
+
+    <li>
+    Comparison operators
+    </li>
+
+    <li>
+    Logical operators
+    </li>
+
+    <li>
+    Functions
+    </li>
+
+    <li>
+    User input
+    </li>
+
+    <li>
+    Events
+    </li>
+
+</ul>
+
+<p class="spell-source">
+    📅 Added: 18 July 2026
+</p>
+
+</article>
+
+
+
+<!-- SPELL CARD 25 -->
+
+<article class="spell-card" id="comparison-operators">
+
+<h2>⚖️ Comparison Operators</h2>
+
+<div class="spell-tags">
+
+    <button class="spell-tag">JavaScript</button>
+    <button class="spell-tag">Logic</button>
+    <button class="spell-tag">Operators</button>
+
+</div>
+
+<div class="code-container">
+
+<button class="copy-spell">
+    Copy Spell 🪄
+</button>
+
+<pre><code>
+const age = 18;
+
+
+if (age >= 18) {
+
+    console.log("Access granted");
+
+}
+</code></pre>
+
+</div>
+
+<h3>📜 Notes</h3>
+
+<ul>
+
+    <li>
+    Used to compare values.
+    </li>
+
+    <li>
+    Usually placed inside <code>if()</code> statements.
+    </li>
+
+    <li>
+    The result is always either <code>true</code> or <code>false</code>.
+    </li>
+
+    <li>
+    Use <code>===</code> instead of <code>==</code> in modern JavaScript.
+    </li>
+
+</ul>
+
+<h3>🧩 Structure</h3>
+
+<ul>
+
+    <li>
+    <code>age</code> → value being checked.
+    </li>
+
+    <li>
+    <code>>=</code> → comparison operator.
+    </li>
+
+    <li>
+    <code>18</code> → value being compared against.
+    </li>
+
+</ul>
+
+<h3>✨ Spell Components</h3>
+
+<table class="spell-table">
+
+<tr>
+<th>Operator</th>
+<th>Meaning</th>
+</tr>
+
+<tr>
+<td><code>===</code></td>
+<td>Equal value AND type</td>
+</tr>
+
+<tr>
+<td><code>!==</code></td>
+<td>Not equal</td>
+</tr>
+
+<tr>
+<td><code>></code></td>
+<td>Greater than</td>
+</tr>
+
+<tr>
+<td><code><</code></td>
+<td>Less than</td>
+</tr>
+
+<tr>
+<td><code>>=</code></td>
+<td>Greater or equal</td>
+</tr>
+
+<tr>
+<td><code><=</code></td>
+<td>Less or equal</td>
+</tr>
+
+</table>
+
+<h3>🔗 Often Used With</h3>
+
+<ul>
+
+    <li>
+    <code>if / else</code>
+    </li>
+
+    <li>
+    Loops
+    </li>
+
+    <li>
+    Functions
+    </li>
+
+    <li>
+    Input validation
+    </li>
+
+</ul>
+
+<p class="spell-source">
+    📅 Added: 18 July 2026
+</p>
+
+</article>
+
+
+
+<!-- SPELL CARD 26 -->
+
+<article class="spell-card" id="logical-operators">
+
+<h2>🔗 Logical Operators</h2>
+
+<div class="spell-tags">
+
+    <button class="spell-tag">JavaScript</button>
+    <button class="spell-tag">Logic</button>
+    <button class="spell-tag">Conditions</button>
+
+</div>
+
+<div class="code-container">
+
+<button class="copy-spell">
+    Copy Spell 🪄
+</button>
+
+<pre><code>
+const username = "RJ";
+const password = "1234";
+
+
+if (username === "RJ" && password === "1234") {
+
+    console.log("Login successful");
+
+}
+</code></pre>
+
+</div>
+
+<h3>📜 Notes</h3>
+
+<ul>
+
+    <li>
+    Combine multiple conditions together.
+    </li>
+
+    <li>
+    Often used inside <code>if()</code>.
+    </li>
+
+    <li>
+    Allows more complex decision making.
+    </li>
+
+</ul>
+
+<h3>🧩 Structure</h3>
+
+<ul>
+
+    <li>
+    <code>&&</code> → BOTH conditions must be true.
+    </li>
+
+    <li>
+    <code>||</code> → ONE condition must be true.
+    </li>
+
+    <li>
+    <code>!</code> → reverses true/false.
+    </li>
+
+</ul>
+
+<h3>✨ Spell Components</h3>
+
+<table class="spell-table">
+
+<tr>
+<th>Operator</th>
+<th>Meaning</th>
+</tr>
+
+<tr>
+<td><code>&&</code></td>
+<td>AND - both required</td>
+</tr>
+
+<tr>
+<td><code>||</code></td>
+<td>OR - either works</td>
+</tr>
+
+<tr>
+<td><code>!</code></td>
+<td>NOT - opposite value</td>
+</tr>
+
+</table>
+
+<h3>🔗 Often Used With</h3>
+
+<ul>
+
+    <li>
+    <code>if / else</code>
+    </li>
+
+    <li>
+    Comparison operators
+    </li>
+
+    <li>
+    Forms
+    </li>
+
+    <li>
+    Validation
+    </li>
+
+    <li>
+    Games
+    </li>
+
+</ul>
+
+<p class="spell-source">
+    📅 Added: 18 July 2026
+</p>
+
+</article>
+
+
+
+<!-- SPELL CARD 27 -->
+
+<article class="spell-card" id="functions">
+
+<h2>🪄 Functions</h2>
+
+<div class="spell-tags">
+
+    <button class="spell-tag">JavaScript</button>
+    <button class="spell-tag">Beginner</button>
+    <button class="spell-tag">Logic</button>
+
+</div>
+
+<div class="code-container">
+
+<button class="copy-spell">
+    Copy Spell 🪄
+</button>
+
+<pre><code>
+function castSpell() {
+
+    console.log("Fireball cast!");
+
+}
+
+
+castSpell();
+
+</code></pre>
+
+</div>
+
+<h3>📜 Notes</h3>
+
+<ul>
+
+    <li>
+    Functions are reusable blocks of code.
+    </li>
+
+    <li>
+    They only run when they are called.
+    </li>
+
+    <li>
+    Functions help avoid repeating code.
+    </li>
+
+    <li>
+    A function can receive information and return information.
+    </li>
+
+</ul>
+
+<h3>🧩 Structure</h3>
+
+<ul>
+
+    <li>
+    <code>function</code> → creates a function.
+    </li>
+
+    <li>
+    <code>castSpell</code> → function name.
+    </li>
+
+    <li>
+    <code>()</code> → where parameters go.
+    </li>
+
+    <li>
+    <code>{ }</code> → code that runs.
+    </li>
+
+    <li>
+    <code>castSpell()</code> → calling the function.
+    </li>
+
+</ul>
+
+<h3>✨ Spell Components</h3>
+
+<table class="spell-table">
+
+<tr>
+<th>Part</th>
+<th>Purpose</th>
+</tr>
+
+<tr>
+<td><code>function</code></td>
+<td>Create function</td>
+</tr>
+
+<tr>
+<td>Name</td>
+<td>Identify function</td>
+</tr>
+
+<tr>
+<td><code>()</code></td>
+<td>Receive information</td>
+</tr>
+
+<tr>
+<td><code>{ }</code></td>
+<td>Code to execute</td>
+</tr>
+
+</table>
+
+<h3>🔗 Often Used With</h3>
+
+<ul>
+
+    <li>
+    Parameters
+    </li>
+
+    <li>
+    Return values
+    </li>
+
+    <li>
+    Events
+    </li>
+
+    <li>
+    Loops
+    </li>
+
+    <li>
+    DOM manipulation
+    </li>
+
+</ul>
+
+<p class="spell-source">
+    📅 Added: 18 July 2026
+</p>
+
+</article>
+
+
+
+<!-- SPELL CARD 28 -->
+
+<article class="spell-card" id="parameters">
+
+<h2>🧩 Parameters & Arguments</h2>
+
+<div class="spell-tags">
+
+    <button class="spell-tag">JavaScript</button>
+    <button class="spell-tag">Functions</button>
+    <button class="spell-tag">Data</button>
+
+</div>
+
+<div class="code-container">
+
+<button class="copy-spell">
+    Copy Spell 🪄
+</button>
+
+<pre><code>
+function greetUser(name) {
+
+    console.log("Hello " + name);
+
+}
+
+
+greetUser("RJ");
+
+</code></pre>
+
+</div>
+
+<h3>📜 Notes</h3>
+
+<ul>
+
+    <li>
+    Parameters are placeholders inside a function.
+    </li>
+
+    <li>
+    Arguments are the actual values passed into the function.
+    </li>
+
+    <li>
+    They allow one function to work with different data.
+    </li>
+
+    <li>
+    Functions can have multiple parameters.
+    </li>
+
+</ul>
+
+<h3>🧩 Structure</h3>
+
+<ul>
+
+    <li>
+    <code>name</code> → parameter (placeholder).
+    </li>
+
+    <li>
+    <code>"RJ"</code> → argument (actual value).
+    </li>
+
+    <li>
+    The function replaces the parameter with the argument.
+    </li>
+
+</ul>
+
+<h3>✨ Spell Components</h3>
+
+<table class="spell-table">
+
+<tr>
+<th>Term</th>
+<th>Meaning</th>
+</tr>
+
+<tr>
+<td>Parameter</td>
+<td>Variable waiting for data</td>
+</tr>
+
+<tr>
+<td>Argument</td>
+<td>Actual value supplied</td>
+</tr>
+
+<tr>
+<td>Multiple parameters</td>
+<td>Separated with commas</td>
+</tr>
+
+</table>
+
+<h3>🔗 Often Used With</h3>
+
+<ul>
+
+    <li>
+    Return values
+    </li>
+
+    <li>
+    Arrays
+    </li>
+
+    <li>
+    Objects
+    </li>
+
+    <li>
+    Event listeners
+    </li>
+
+</ul>
+
+<p class="spell-source">
+    📅 Added: 18 July 2026
+</p>
+
+</article>
+
+
+
+<!-- SPELL CARD 29 -->
+
+<article class="spell-card" id="return">
+
+<h2>🎁 Return Values</h2>
+
+<div class="spell-tags">
+
+    <button class="spell-tag">JavaScript</button>
+    <button class="spell-tag">Functions</button>
+    <button class="spell-tag">Data</button>
+
+</div>
+
+<div class="code-container">
+
+<button class="copy-spell">
+    Copy Spell 🪄
+</button>
+
+<pre><code>
+function add(a, b) {
+
+    return a + b;
+
+}
+
+
+const total = add(5, 3);
+
+</code></pre>
+
+</div>
+
+<h3>📜 Notes</h3>
+
+<ul>
+
+    <li>
+    <code>return</code> sends a value back from a function.
+    </li>
+
+    <li>
+    The returned value can be stored in a variable.
+    </li>
+
+    <li>
+    Without <code>return</code>, functions give back <code>undefined</code>.
+    </li>
+
+    <li>
+    Useful for calculations and processing data.
+    </li>
+
+</ul>
+
+<h3>🧩 Structure</h3>
+
+<ul>
+
+    <li>
+    <code>a + b</code> → calculation performed.
+    </li>
+
+    <li>
+    <code>return</code> → sends result back.
+    </li>
+
+    <li>
+    <code>total</code> → stores returned value.
+    </li>
+
+</ul>
+
+<h3>✨ Spell Components</h3>
+
+<table class="spell-table">
+
+<tr>
+<th>Code</th>
+<th>Purpose</th>
+</tr>
+
+<tr>
+<td><code>return value</code></td>
+<td>Send data back</td>
+</tr>
+
+<tr>
+<td><code>return;</code></td>
+<td>Stop function</td>
+</tr>
+
+<tr>
+<td>No return</td>
+<td>Gives undefined</td>
+</tr>
+
+</table>
+
+<h3>🔗 Often Used With</h3>
+
+<ul>
+
+    <li>
+    Variables
+    </li>
+
+    <li>
+    Functions
+    </li>
+
+    <li>
+    Calculations
+    </li>
+
+    <li>
+    Array methods
+    </li>
+
+</ul>
+
+<p class="spell-source">
+    📅 Added: 18 July 2026
+</p>
+
+</article>
+
+
+
+<!-- SPELL CARD 30 -->
+
+<article class="spell-card" id="arrow-functions">
+
+<h2>⚡ Arrow Functions</h2>
+
+<div class="spell-tags">
+
+    <button class="spell-tag">JavaScript</button>
+    <button class="spell-tag">Functions</button>
+    <button class="spell-tag">Modern JS</button>
+
+</div>
+
+<div class="code-container">
+
+<button class="copy-spell">
+    Copy Spell 🪄
+</button>
+
+<pre><code>
+const castSpell = () => {
+
+    console.log("Magic!");
+
+};
+
+
+castSpell();
+
+</code></pre>
+
+</div>
+
+<h3>📜 Notes</h3>
+
+<ul>
+
+    <li>
+    A shorter way to write functions.
+    </li>
+
+    <li>
+    Introduced in modern JavaScript (ES6).
+    </li>
+
+    <li>
+    Very common with array methods and events.
+    </li>
+
+    <li>
+    Uses the arrow symbol <code>=></code>.
+    </li>
+
+</ul>
+
+<h3>🧩 Structure</h3>
+
+<ul>
+
+    <li>
+    <code>const</code> → stores function in variable.
+    </li>
+
+    <li>
+    <code>castSpell</code> → function name.
+    </li>
+
+    <li>
+    <code>()</code> → parameters.
+    </li>
+
+    <li>
+    <code>=></code> → creates arrow function.
+    </li>
+
+    <li>
+    <code>{ }</code> → function body.
+    </li>
+
+</ul>
+
+<h3>✨ Spell Components</h3>
+
+<table class="spell-table">
+
+<tr>
+<th>Normal Function</th>
+<th>Arrow Function</th>
+</tr>
+
+<tr>
+
+<td>
+
+<code>
+function test(){}
+</code>
+
+</td>
+
+<td>
+
+<code>
+const test = () => {}
+</code>
+
+</td>
+
+</tr>
+
+</table>
+
+<h3>🔗 Often Used With</h3>
+
+<ul>
+
+    <li>
+    <code>forEach()</code>
+    </li>
+
+    <li>
+    <code>map()</code>
+    </li>
+
+    <li>
+    <code>filter()</code>
+    </li>
+
+    <li>
+    Event listeners
+    </li>
+
+</ul>
+
+<p class="spell-source">
+    📅 Added: 18 July 2026
+</p>
+
+</article>
+
+
+
+<!-- SPELL CARD 31 -->
+
+<article class="spell-card" id="arrays">
+
+<h2>📚 Arrays</h2>
+
+<div class="spell-tags">
+
+    <button class="spell-tag">JavaScript</button>
+    <button class="spell-tag">Data</button>
+    <button class="spell-tag">Collections</button>
+
+</div>
+
+<div class="code-container">
+
+<button class="copy-spell">
+    Copy Spell 🪄
+</button>
+
+<pre><code>
+const spells = [
+    "Fireball",
+    "Heal",
+    "Shield"
+];
+
+
+console.log(spells[0]);
+
+</code></pre>
+
+</div>
+
+<h3>📜 Notes</h3>
+
+<ul>
+
+    <li>
+    Arrays store multiple values inside one variable.
+    </li>
+
+    <li>
+    Values are stored in an ordered list.
+    </li>
+
+    <li>
+    Arrays use square brackets <code>[]</code>.
+    </li>
+
+    <li>
+    Each item has an index number starting at <code>0</code>.
+    </li>
+
+    <li>
+    Arrays can store strings, numbers, objects, or even other arrays.
+    </li>
+
+</ul>
+
+<h3>🧩 Structure</h3>
+
+<ul>
+
+    <li>
+    <code>const</code> → creates variable.
+    </li>
+
+    <li>
+    <code>spells</code> → array name.
+    </li>
+
+    <li>
+    <code>[]</code> → creates array.
+    </li>
+
+    <li>
+    <code>"Fireball"</code> → array item.
+    </li>
+
+    <li>
+    <code>[0]</code> → accesses first item.
+    </li>
+
+</ul>
+
+<h3>✨ Spell Components</h3>
+
+<table class="spell-table">
+
+<tr>
+<th>Code</th>
+<th>Meaning</th>
+</tr>
+
+<tr>
+<td><code>array[0]</code></td>
+<td>First item</td>
+</tr>
+
+<tr>
+<td><code>array.length</code></td>
+<td>Number of items</td>
+</tr>
+
+<tr>
+<td><code>[]</code></td>
+<td>Create array</td>
+</tr>
+
+</table>
+
+<h3>🔗 Often Used With</h3>
+
+<ul>
+
+    <li>
+    <code>forEach()</code>
+    </li>
+
+    <li>
+    <code>map()</code>
+    </li>
+
+    <li>
+    <code>filter()</code>
+    </li>
+
+    <li>
+    Loops
+    </li>
+
+    <li>
+    APIs
+    </li>
+
+</ul>
+
+<p class="spell-source">
+    📅 Added: 18 July 2026
+</p>
+
+</article>
+
+
+
+<!-- SPELL CARD 32 -->
+
+<article class="spell-card" id="push">
+
+<h2>➕ push()</h2>
+
+<div class="spell-tags">
+
+    <button class="spell-tag">JavaScript</button>
+    <button class="spell-tag">Arrays</button>
+    <button class="spell-tag">Methods</button>
+
+</div>
+
+<div class="code-container">
+
+<button class="copy-spell">
+    Copy Spell 🪄
+</button>
+
+<pre><code>
+const inventory = [
+    "Sword",
+    "Shield"
+];
+
+
+inventory.push("Potion");
+
+</code></pre>
+
+</div>
+
+<h3>📜 Notes</h3>
+
+<ul>
+
+    <li>
+    Adds a new item to the END of an array.
+    </li>
+
+    <li>
+    Changes the original array.
+    </li>
+
+    <li>
+    Can add one or multiple items.
+    </li>
+
+    <li>
+    Commonly used when adding new data.
+    </li>
+
+</ul>
+
+<h3>🧩 Structure</h3>
+
+<ul>
+
+    <li>
+    <code>inventory</code> → array being changed.
+    </li>
+
+    <li>
+    <code>.push()</code> → array method.
+    </li>
+
+    <li>
+    <code>"Potion"</code> → item being added.
+    </li>
+
+</ul>
+
+<h3>✨ Spell Components</h3>
+
+<table class="spell-table">
+
+<tr>
+<th>Method</th>
+<th>Action</th>
+</tr>
+
+<tr>
+<td><code>push()</code></td>
+<td>Add to end</td>
+</tr>
+
+<tr>
+<td><code>pop()</code></td>
+<td>Remove from end</td>
+</tr>
+
+<tr>
+<td><code>unshift()</code></td>
+<td>Add to start</td>
+</tr>
+
+<tr>
+<td><code>shift()</code></td>
+<td>Remove from start</td>
+</tr>
+
+</table>
+
+<h3>🔗 Often Used With</h3>
+
+<ul>
+
+    <li>
+    Loops
+    </li>
+
+    <li>
+    User input
+    </li>
+
+    <li>
+    Objects
+    </li>
+
+    <li>
+    Games/inventories
+    </li>
+
+</ul>
+
+<p class="spell-source">
+    📅 Added: 18 July 2026
+</p>
+
+</article>
+
+
+
+<!-- SPELL CARD 33 -->
+
+<article class="spell-card" id="pop">
+
+<h2>🗑️ pop()</h2>
+
+<div class="spell-tags">
+
+    <button class="spell-tag">JavaScript</button>
+    <button class="spell-tag">Arrays</button>
+    <button class="spell-tag">Methods</button>
+
+</div>
+
+<div class="code-container">
+
+<button class="copy-spell">
+    Copy Spell 🪄
+</button>
+
+<pre><code>
+const party = [
+    "Wizard",
+    "Knight",
+    "Rogue"
+];
+
+
+party.pop();
+
+</code></pre>
+
+</div>
+
+<h3>📜 Notes</h3>
+
+<ul>
+
+    <li>
+    Removes the LAST item from an array.
+    </li>
+
+    <li>
+    Returns the removed item.
+    </li>
+
+    <li>
+    Changes the original array.
+    </li>
+
+    <li>
+    Useful for removing the latest item added.
+    </li>
+
+</ul>
+
+<h3>🧩 Structure</h3>
+
+<ul>
+
+    <li>
+    <code>party</code> → array.
+    </li>
+
+    <li>
+    <code>.pop()</code> → remove last item.
+    </li>
+
+</ul>
+
+<h3>✨ Spell Components</h3>
+
+<table class="spell-table">
+
+<tr>
+<th>Before</th>
+<th>After</th>
+</tr>
+
+<tr>
+
+<td>
+Wizard<br>
+Knight<br>
+Rogue
+</td>
+
+<td>
+Wizard<br>
+Knight
+</td>
+
+</tr>
+
+</table>
+
+<h3>🔗 Often Used With</h3>
+
+<ul>
+
+    <li>
+    <code>push()</code>
+    </li>
+
+    <li>
+    Buttons
+    </li>
+
+    <li>
+    Dynamic lists
+    </li>
+
+    <li>
+    Games
+    </li>
+
+</ul>
+
+<p class="spell-source">
+    📅 Added: 18 July 2026
+</p>
+
+</article>
+
+
+
+<!-- SPELL CARD 34 -->
+
+<article class="spell-card" id="includes">
+
+<h2>🔍 includes()</h2>
+
+<div class="spell-tags">
+
+    <button class="spell-tag">JavaScript</button>
+    <button class="spell-tag">Arrays</button>
+    <button class="spell-tag">Searching</button>
+
+</div>
+
+<div class="code-container">
+
+<button class="copy-spell">
+    Copy Spell 🪄
+</button>
+
+<pre><code>
+const items = [
+    "Potion",
+    "Sword",
+    "Shield"
+];
+
+
+console.log(items.includes("Sword"));
+
+</code></pre>
+
+</div>
+
+<h3>📜 Notes</h3>
+
+<ul>
+
+    <li>
+    Checks whether an array contains a value.
+    </li>
+
+    <li>
+    Returns either <code>true</code> or <code>false</code>.
+    </li>
+
+    <li>
+    Useful for searching and validation.
+    </li>
+
+    <li>
+    The comparison must match exactly.
+    </li>
+
+</ul>
+
+<h3>🧩 Structure</h3>
+
+<ul>
+
+    <li>
+    <code>items</code> → array being searched.
+    </li>
+
+    <li>
+    <code>.includes()</code> → search method.
+    </li>
+
+    <li>
+    <code>"Sword"</code> → value to find.
+    </li>
+
+</ul>
+
+<h3>✨ Spell Components</h3>
+
+<table class="spell-table">
+
+<tr>
+<th>Result</th>
+<th>Meaning</th>
+</tr>
+
+<tr>
+<td><code>true</code></td>
+<td>Found item</td>
+</tr>
+
+<tr>
+<td><code>false</code></td>
+<td>Missing item</td>
+</tr>
+
+</table>
+
+<h3>🔗 Often Used With</h3>
+
+<ul>
+
+    <li>
+    <code>if / else</code>
+    </li>
+
+    <li>
+    Search bars
+    </li>
+
+    <li>
+    Validation
+    </li>
+
+    <li>
+    User input
+    </li>
+
+</ul>
+
+<p class="spell-source">
+    📅 Added: 18 July 2026
+</p>
+
+</article>
+
+
+
+<!-- SPELL CARD 35 -->
+
+<article class="spell-card" id="map">
+
+<h2>🔄 map()</h2>
+
+<div class="spell-tags">
+
+    <button class="spell-tag">JavaScript</button>
+    <button class="spell-tag">Arrays</button>
+    <button class="spell-tag">Transformation</button>
+
+</div>
+
+<div class="code-container">
+
+<button class="copy-spell">
+    Copy Spell 🪄
+</button>
+
+<pre><code>
+const prices = [10, 20, 30];
+
+
+const doubled = prices.map(price => {
+
+    return price * 2;
+
+});
+
+
+console.log(doubled);
+
+</code></pre>
+
+</div>
+
+<h3>📜 Notes</h3>
+
+<ul>
+
+    <li>
+    Creates a NEW array by changing every item.
+    </li>
+
+    <li>
+    Runs a function once for every item.
+    </li>
+
+    <li>
+    Does not change the original array.
+    </li>
+
+    <li>
+    The returned value becomes the new array item.
+    </li>
+
+    <li>
+    Think:
+    "Take every item → transform it → return the result."
+    </li>
+
+</ul>
+
+<h3>🧩 Structure</h3>
+
+<ul>
+
+    <li>
+    <code>prices</code> → original array.
+    </li>
+
+    <li>
+    <code>.map()</code> → loops through every item.
+    </li>
+
+    <li>
+    <code>price</code> → current item.
+    </li>
+
+    <li>
+    <code>return</code> → what goes into the new array.
+    </li>
+
+</ul>
+
+<h3>✨ Spell Components</h3>
+
+<table class="spell-table">
+
+<tr>
+<th>Method</th>
+<th>Purpose</th>
+</tr>
+
+<tr>
+<td><code>map()</code></td>
+<td>Transform every item</td>
+</tr>
+
+<tr>
+<td>Returns</td>
+<td>New array</td>
+</tr>
+
+<tr>
+<td>Original array</td>
+<td>Unchanged</td>
+</tr>
+
+</table>
+
+<h3>🔗 Often Used With</h3>
+
+<ul>
+
+    <li>
+    Arrow functions
+    </li>
+
+    <li>
+    Objects
+    </li>
+
+    <li>
+    APIs
+    </li>
+
+    <li>
+    React components
+    </li>
+
+    <li>
+    Displaying lists
+    </li>
+
+</ul>
+
+<p class="spell-source">
+    📅 Added: 18 July 2026
+</p>
+
+</article>
+
+
+
+<!-- SPELL CARD 36 -->
+
+<article class="spell-card" id="filter">
+
+<h2>🧹 filter()</h2>
+
+<div class="spell-tags">
+
+    <button class="spell-tag">JavaScript</button>
+    <button class="spell-tag">Arrays</button>
+    <button class="spell-tag">Searching</button>
+
+</div>
+
+<div class="code-container">
+
+<button class="copy-spell">
+    Copy Spell 🪄
+</button>
+
+<pre><code>
+const monsters = [
+
+    "Dragon",
+    "Slime",
+    "Dragon"
+
+];
+
+
+const dragons = monsters.filter(monster => {
+
+    return monster === "Dragon";
+
+});
+
+</code></pre>
+
+</div>
+
+<h3>📜 Notes</h3>
+
+<ul>
+
+    <li>
+    Creates a NEW array containing only matching items.
+    </li>
+
+    <li>
+    Keeps items where the condition returns <code>true</code>.
+    </li>
+
+    <li>
+    Removes items where the condition returns <code>false</code>.
+    </li>
+
+    <li>
+    Great for searches and categories.
+    </li>
+
+</ul>
+
+<h3>🧩 Structure</h3>
+
+<ul>
+
+    <li>
+    <code>monsters</code> → original array.
+    </li>
+
+    <li>
+    <code>.filter()</code> → checks every item.
+    </li>
+
+    <li>
+    <code>monster</code> → current item.
+    </li>
+
+    <li>
+    <code>return true</code> → keep item.
+    </li>
+
+</ul>
+
+<h3>✨ Spell Components</h3>
+
+<table class="spell-table">
+
+<tr>
+<th>Result</th>
+<th>Action</th>
+</tr>
+
+<tr>
+<td><code>true</code></td>
+<td>Keep item</td>
+</tr>
+
+<tr>
+<td><code>false</code></td>
+<td>Remove item</td>
+</tr>
+
+</table>
+
+<h3>🔗 Often Used With</h3>
+
+<ul>
+
+    <li>
+    Search bars
+    </li>
+
+    <li>
+    User filters
+    </li>
+
+    <li>
+    APIs
+    </li>
+
+    <li>
+    Objects
+    </li>
+
+</ul>
+
+<p class="spell-source">
+    📅 Added: 18 July 2026
+</p>
+
+</article>
+
+
+
+<!-- SPELL CARD 37 -->
+
+<article class="spell-card" id="find">
+
+<h2>🎯 find()</h2>
+
+<div class="spell-tags">
+
+    <button class="spell-tag">JavaScript</button>
+    <button class="spell-tag">Arrays</button>
+    <button class="spell-tag">Searching</button>
+
+</div>
+
+<div class="code-container">
+
+<button class="copy-spell">
+    Copy Spell 🪄
+</button>
+
+<pre><code>
+const users = [
+
+    "RJ",
+    "Alex",
+    "Sam"
+
+];
+
+
+const user = users.find(name => {
+
+    return name === "RJ";
+
+});
+
+</code></pre>
+
+</div>
+
+<h3>📜 Notes</h3>
+
+<ul>
+
+    <li>
+    Finds the FIRST item that matches a condition.
+    </li>
+
+    <li>
+    Returns the actual item, not an array.
+    </li>
+
+    <li>
+    Stops searching after finding a match.
+    </li>
+
+    <li>
+    Returns <code>undefined</code> if nothing is found.
+    </li>
+
+</ul>
+
+<h3>🧩 Structure</h3>
+
+<ul>
+
+    <li>
+    <code>users</code> → array being searched.
+    </li>
+
+    <li>
+    <code>.find()</code> → searches items.
+    </li>
+
+    <li>
+    <code>name</code> → current item.
+    </li>
+
+    <li>
+    <code>return</code> → matching condition.
+    </li>
+
+</ul>
+
+<h3>✨ Spell Components</h3>
+
+<table class="spell-table">
+
+<tr>
+<th>Method</th>
+<th>Returns</th>
+</tr>
+
+<tr>
+<td><code>find()</code></td>
+<td>One item</td>
+</tr>
+
+<tr>
+<td>No match</td>
+<td><code>undefined</code></td>
+</tr>
+
+</table>
+
+<h3>🔗 Often Used With</h3>
+
+<ul>
+
+    <li>
+    Objects
+    </li>
+
+    <li>
+    IDs
+    </li>
+
+    <li>
+    API data
+    </li>
+
+    <li>
+    User searches
+    </li>
+
+</ul>
+
+<p class="spell-source">
+    📅 Added: 18 July 2026
+</p>
+
+</article>
+
+
+
+<!-- SPELL CARD 38 -->
+
+<article class="spell-card" id="reduce">
+
+<h2>🧮 reduce()</h2>
+
+<div class="spell-tags">
+
+    <button class="spell-tag">JavaScript</button>
+    <button class="spell-tag">Arrays</button>
+    <button class="spell-tag">Calculations</button>
+
+</div>
+
+<div class="code-container">
+
+<button class="copy-spell">
+    Copy Spell 🪄
+</button>
+
+<pre><code>
+const prices = [10, 20, 30];
+
+
+const total = prices.reduce((sum, price) => {
+
+    return sum + price;
+
+}, 0);
+
+</code></pre>
+
+</div>
+
+<h3>📜 Notes</h3>
+
+<ul>
+
+    <li>
+    Combines all array values into one final result.
+    </li>
+
+    <li>
+    Commonly used for totals and calculations.
+    </li>
+
+    <li>
+    Uses an accumulator to store progress.
+    </li>
+
+    <li>
+    Can return numbers, objects or arrays.
+    </li>
+
+</ul>
+
+<h3>🧩 Structure</h3>
+
+<ul>
+
+    <li>
+    <code>sum</code> → accumulator (running total).
+    </li>
+
+    <li>
+    <code>price</code> → current item.
+    </li>
+
+    <li>
+    <code>return</code> → updates accumulator.
+    </li>
+
+    <li>
+    <code>0</code> → starting value.
+    </li>
+
+</ul>
+
+<h3>✨ Spell Components</h3>
+
+<table class="spell-table">
+
+<tr>
+<th>Part</th>
+<th>Purpose</th>
+</tr>
+
+<tr>
+<td>Accumulator</td>
+<td>Stores result</td>
+</tr>
+
+<tr>
+<td>Current value</td>
+<td>Current array item</td>
+</tr>
+
+<tr>
+<td>Initial value</td>
+<td>Starting point</td>
+</tr>
+
+</table>
+
+<h3>🔗 Often Used With</h3>
+
+<ul>
+
+    <li>
+    Shopping carts
+    </li>
+
+    <li>
+    Statistics
+    </li>
+
+    <li>
+    Game scores
+    </li>
+
+    <li>
+    Object calculations
+    </li>
+
+</ul>
+
+<p class="spell-source">
+    📅 Added: 18 July 2026
+</p>
+
+</article>
+
+
+
+<!-- SPELL CARD 39 -->
+
+<article class="spell-card" id="for-loop">
+
+<h2>🔁 for Loop</h2>
+
+<div class="spell-tags">
+
+    <button class="spell-tag">JavaScript</button>
+    <button class="spell-tag">Loops</button>
+    <button class="spell-tag">Iteration</button>
+
+</div>
+
+<div class="code-container">
+
+<button class="copy-spell">
+    Copy Spell 🪄
+</button>
+
+<pre><code>
+for (
+    let i = 0;
+    i < 5;
+    i++
+) {
+
+    console.log(i);
+
+}
+
+</code></pre>
+
+</div>
+
+<h3>📜 Notes</h3>
+
+<ul>
+
+    <li>
+    Repeats code a specific number of times.
+    </li>
+
+    <li>
+    Best when you know how many times something should run.
+    </li>
+
+    <li>
+    Commonly used with arrays and counting.
+    </li>
+
+    <li>
+    The loop stops when the condition becomes false.
+    </li>
+
+</ul>
+
+<h3>🧩 Structure</h3>
+
+<ul>
+
+    <li>
+    <code>let i = 0</code> → starting point.
+    </li>
+
+    <li>
+    <code>i &lt; 5</code> → condition to keep running.
+    </li>
+
+    <li>
+    <code>i++</code> → increases the counter by 1.
+    </li>
+
+    <li>
+    <code>{ }</code> → code repeated each loop.
+    </li>
+
+</ul>
+
+<h3>✨ Spell Components</h3>
+
+<table class="spell-table">
+
+<tr>
+<th>Part</th>
+<th>Purpose</th>
+</tr>
+
+<tr>
+<td><code>initialisation</code></td>
+<td>Creates starting value</td>
+</tr>
+
+<tr>
+<td><code>condition</code></td>
+<td>Checks if loop continues</td>
+</tr>
+
+<tr>
+<td><code>increment</code></td>
+<td>Changes value</td>
+</tr>
+
+</table>
+
+<h3>🔗 Often Used With</h3>
+
+<ul>
+
+    <li>
+    Arrays
+    </li>
+
+    <li>
+    Indexes
+    </li>
+
+    <li>
+    DOM updates
+    </li>
+
+    <li>
+    Counters
+    </li>
+
+</ul>
+
+<p class="spell-source">
+    📅 Added: 18 July 2026
+</p>
+
+</article>
+
+
+
+<!-- SPELL CARD 40 -->
+
+<article class="spell-card" id="for-of">
+
+<h2>🔄 for...of Loop</h2>
+
+<div class="spell-tags">
+
+    <button class="spell-tag">JavaScript</button>
+    <button class="spell-tag">Loops</button>
+    <button class="spell-tag">Arrays</button>
+
+</div>
+
+<div class="code-container">
+
+<button class="copy-spell">
+    Copy Spell 🪄
+</button>
+
+<pre><code>
+const spells = [
+
+    "Fireball",
+    "Heal",
+    "Shield"
+
+];
+
+
+for (const spell of spells) {
+
+    console.log(spell);
+
+}
+
+</code></pre>
+
+</div>
+
+<h3>📜 Notes</h3>
+
+<ul>
+
+    <li>
+    Loops directly through values in an iterable.
+    </li>
+
+    <li>
+    Cleaner than a traditional <code>for</code> loop.
+    </li>
+
+    <li>
+    Usually used with arrays.
+    </li>
+
+    <li>
+    You do not need to manually track indexes.
+    </li>
+
+</ul>
+
+<h3>🧩 Structure</h3>
+
+<ul>
+
+    <li>
+    <code>const spell</code> → current item.
+    </li>
+
+    <li>
+    <code>of</code> → gets each value.
+    </li>
+
+    <li>
+    <code>spells</code> → array being looped.
+    </li>
+
+</ul>
+
+<h3>✨ Spell Components</h3>
+
+<table class="spell-table">
+
+<tr>
+<th>Loop</th>
+<th>Gets</th>
+</tr>
+
+<tr>
+<td><code>for...of</code></td>
+<td>Values</td>
+</tr>
+
+<tr>
+<td><code>for...in</code></td>
+<td>Keys / indexes</td>
+</tr>
+
+</table>
+
+<h3>🔗 Often Used With</h3>
+
+<ul>
+
+    <li>
+    Arrays
+    </li>
+
+    <li>
+    NodeLists
+    </li>
+
+    <li>
+    Strings
+    </li>
+
+    <li>
+    DOM manipulation
+    </li>
+
+</ul>
+
+<p class="spell-source">
+    📅 Added: 18 July 2026
+</p>
+
+</article>
+
+
+
+<!-- SPELL CARD 41 -->
+
+<article class="spell-card" id="for-in">
+
+<h2>🔍 for...in Loop</h2>
+
+<div class="spell-tags">
+
+    <button class="spell-tag">JavaScript</button>
+    <button class="spell-tag">Loops</button>
+    <button class="spell-tag">Objects</button>
+
+</div>
+
+<div class="code-container">
+
+<button class="copy-spell">
+    Copy Spell 🪄
+</button>
+
+<pre><code>
+const player = {
+
+    name: "RJ",
+    level: 10,
+    class: "Wizard"
+
+};
+
+
+for (const key in player) {
+
+    console.log(key);
+
+}
+
+</code></pre>
+
+</div>
+
+<h3>📜 Notes</h3>
+
+<ul>
+
+    <li>
+    Loops through object property names.
+    </li>
+
+    <li>
+    Returns keys, not values.
+    </li>
+
+    <li>
+    Mostly used with objects.
+    </li>
+
+    <li>
+    For arrays, prefer <code>for...of</code>.
+    </li>
+
+</ul>
+
+<h3>🧩 Structure</h3>
+
+<ul>
+
+    <li>
+    <code>key</code> → property name.
+    </li>
+
+    <li>
+    <code>in</code> → accesses keys.
+    </li>
+
+    <li>
+    <code>player</code> → object being searched.
+    </li>
+
+</ul>
+
+<h3>✨ Spell Components</h3>
+
+<table class="spell-table">
+
+<tr>
+<th>Example</th>
+<th>Returns</th>
+</tr>
+
+<tr>
+<td><code>name</code></td>
+<td>"RJ"</td>
+</tr>
+
+<tr>
+<td><code>level</code></td>
+<td>10</td>
+</tr>
+
+</table>
+
+<h3>🔗 Often Used With</h3>
+
+<ul>
+
+    <li>
+    Objects
+    </li>
+
+    <li>
+    JSON data
+    </li>
+
+    <li>
+    API responses
+    </li>
+
+    <li>
+    Settings objects
+    </li>
+
+</ul>
+
+<p class="spell-source">
+    📅 Added: 18 July 2026
+</p>
+
+</article>
+
+
+
+<!-- SPELL CARD 42 -->
+
+<article class="spell-card" id="while">
+
+<h2>⏳ while Loop</h2>
+
+<div class="spell-tags">
+
+    <button class="spell-tag">JavaScript</button>
+    <button class="spell-tag">Loops</button>
+    <button class="spell-tag">Conditions</button>
+
+</div>
+
+<div class="code-container">
+
+<button class="copy-spell">
+    Copy Spell 🪄
+</button>
+
+<pre><code>
+let health = 100;
+
+
+while (health > 0) {
+
+    health -= 10;
+
+}
+
+</code></pre>
+
+</div>
+
+<h3>📜 Notes</h3>
+
+<ul>
+
+    <li>
+    Repeats while a condition is true.
+    </li>
+
+    <li>
+    Useful when you do not know the exact number of repetitions.
+    </li>
+
+    <li>
+    The condition is checked before every loop.
+    </li>
+
+    <li>
+    Be careful: forgetting to update the condition creates an infinite loop.
+    </li>
+
+</ul>
+
+<h3>🧩 Structure</h3>
+
+<ul>
+
+    <li>
+    <code>while</code> → keyword.
+    </li>
+
+    <li>
+    <code>health &gt; 0</code> → condition.
+    </li>
+
+    <li>
+    <code>{ }</code> → repeated code.
+    </li>
+
+</ul>
+
+<h3>🔗 Often Used With</h3>
+
+<ul>
+
+    <li>
+    Games
+    </li>
+
+    <li>
+    Timers
+    </li>
+
+    <li>
+    User choices
+    </li>
+
+    <li>
+    Waiting conditions
+    </li>
+
+</ul>
+
+<p class="spell-source">
+    📅 Added: 18 July 2026
+</p>
+
+</article>
+
+
+
+<!-- SPELL CARD 43 -->
+
+<article class="spell-card" id="break">
+
+<h2>🛑 break</h2>
+
+<div class="spell-tags">
+
+    <button class="spell-tag">JavaScript</button>
+    <button class="spell-tag">Loops</button>
+    <button class="spell-tag">Control</button>
+
+</div>
+
+<div class="code-container">
+
+<button class="copy-spell">
+    Copy Spell 🪄
+</button>
+
+<pre><code>
+const numbers = [1,2,3,4,5];
+
+
+for (const number of numbers) {
+
+    if(number === 3){
+
+        break;
+
+    }
+
+    console.log(number);
+
+}
+
+</code></pre>
+
+</div>
+
+<h3>📜 Notes</h3>
+
+<ul>
+
+    <li>
+    Immediately stops a loop.
+    </li>
+
+    <li>
+    Used when the required item has been found.
+    </li>
+
+    <li>
+    Prevents unnecessary code running.
+    </li>
+
+</ul>
+
+<h3>🧩 Structure</h3>
+
+<ul>
+
+    <li>
+    <code>if</code> → checks condition.
+    </li>
+
+    <li>
+    <code>break</code> → exits loop.
+    </li>
+
+</ul>
+
+<h3>🔗 Often Used With</h3>
+
+<ul>
+
+    <li>
+    Searches
+    </li>
+
+    <li>
+    Validation
+    </li>
+
+    <li>
+    Loops
+    </li>
+
+</ul>
+
+<p class="spell-source">
+    📅 Added: 18 July 2026
+</p>
+
+</article>
+
+
+
+<!-- SPELL CARD 44 -->
+
+<article class="spell-card" id="continue">
+
+<h2>⏭️ continue</h2>
+
+<div class="spell-tags">
+
+    <button class="spell-tag">JavaScript</button>
+    <button class="spell-tag">Loops</button>
+    <button class="spell-tag">Control</button>
+
+</div>
+
+<div class="code-container">
+
+<button class="copy-spell">
+    Copy Spell 🪄
+</button>
+
+<pre><code>
+for (let i = 1; i <= 5; i++) {
+
+
+    if(i === 3){
+
+        continue;
+
+    }
+
+
+    console.log(i);
+
+
+}
+
+</code></pre>
+
+</div>
+
+<h3>📜 Notes</h3>
+
+<ul>
+
+    <li>
+    Skips the current loop cycle.
+    </li>
+
+    <li>
+    Continues with the next iteration.
+    </li>
+
+    <li>
+    Different from <code>break</code> because the loop continues.
+    </li>
+
+</ul>
+
+<h3>🧩 Structure</h3>
+
+<ul>
+
+    <li>
+    <code>continue</code> → skip this round.
+    </li>
+
+    <li>
+    Loop continues afterwards.
+    </li>
+
+</ul>
+
+<h3>✨ Spell Components</h3>
+
+<table class="spell-table">
+
+<tr>
+<th>Command</th>
+<th>Effect</th>
+</tr>
+
+<tr>
+<td><code>break</code></td>
+<td>Stop loop</td>
+</tr>
+
+<tr>
+<td><code>continue</code></td>
+<td>Skip one cycle</td>
+</tr>
+
+</table>
+
+<h3>🔗 Often Used With</h3>
+
+<ul>
+
+    <li>
+    Filtering data
+    </li>
+
+    <li>
+    Validation
+    </li>
+
+    <li>
+    Large loops
+    </li>
+
+</ul>
+
+<p class="spell-source">
+    📅 Added: 18 July 2026
+</p>
+
+</article>
+
+
+
+<!-- SPELL CARD 45 -->
+
+<article class="spell-card" id="objects">
+
+<h2>📦 Objects</h2>
+
+<div class="spell-tags">
+
+    <button class="spell-tag">JavaScript</button>
+    <button class="spell-tag">Objects</button>
+    <button class="spell-tag">Data</button>
+
+</div>
+
+<div class="code-container">
+
+<button class="copy-spell">
+    Copy Spell 🪄
+</button>
+
+<pre><code>
+const wizard = {
+
+    name: "RJ",
+    level: 10,
+    class: "Mage"
+
+};
+
+
+console.log(wizard);
+
+</code></pre>
+
+</div>
+
+<h3>📜 Notes</h3>
+
+<ul>
+
+    <li>
+    Objects store related information together.
+    </li>
+
+    <li>
+    Objects use <code>key: value</code> pairs.
+    </li>
+
+    <li>
+    Keys describe the information.
+    </li>
+
+    <li>
+    Values contain the actual data.
+    </li>
+
+    <li>
+    Objects are wrapped inside <code>{ }</code>.
+    </li>
+
+</ul>
+
+<h3>🧩 Structure</h3>
+
+<ul>
+
+    <li>
+    <code>const</code> → creates variable.
+    </li>
+
+    <li>
+    <code>wizard</code> → object name.
+    </li>
+
+    <li>
+    <code>name</code> → property/key.
+    </li>
+
+    <li>
+    <code>"RJ"</code> → value.
+    </li>
+
+</ul>
+
+<h3>✨ Spell Components</h3>
+
+<table class="spell-table">
+
+<tr>
+<th>Part</th>
+<th>Purpose</th>
+</tr>
+
+<tr>
+<td>Key</td>
+<td>Name of information</td>
+</tr>
+
+<tr>
+<td>Value</td>
+<td>Stored information</td>
+</tr>
+
+<tr>
+<td>Property</td>
+<td>Key + value together</td>
+</tr>
+
+</table>
+
+<h3>🔗 Often Used With</h3>
+
+<ul>
+
+    <li>
+    Arrays
+    </li>
+
+    <li>
+    JSON
+    </li>
+
+    <li>
+    APIs
+    </li>
+
+    <li>
+    Functions
+    </li>
+
+</ul>
+
+<p class="spell-source">
+    📅 Added: 18 July 2026
+</p>
+
+</article>
+
+
+
+<!-- SPELL CARD 46 -->
+
+<article class="spell-card" id="object-properties">
+
+<h2>🏷️ Object Properties</h2>
+
+<div class="spell-tags">
+
+    <button class="spell-tag">JavaScript</button>
+    <button class="spell-tag">Objects</button>
+    <button class="spell-tag">Properties</button>
+
+</div>
+
+<div class="code-container">
+
+<button class="copy-spell">
+    Copy Spell 🪄
+</button>
+
+<pre><code>
+const player = {
+
+    name: "RJ",
+    health: 100
+
+};
+
+
+player.health = 80;
+
+</code></pre>
+
+</div>
+
+<h3>📜 Notes</h3>
+
+<ul>
+
+    <li>
+    Properties describe an object.
+    </li>
+
+    <li>
+    Properties can store any data type.
+    </li>
+
+    <li>
+    Values can be changed after creation.
+    </li>
+
+    <li>
+    New properties can be added anytime.
+    </li>
+
+</ul>
+
+<h3>🧩 Structure</h3>
+
+<ul>
+
+    <li>
+    <code>player</code> → object.
+    </li>
+
+    <li>
+    <code>health</code> → property.
+    </li>
+
+    <li>
+    <code>80</code> → updated value.
+    </li>
+
+</ul>
+
+<h3>✨ Spell Components</h3>
+
+<table class="spell-table">
+
+<tr>
+<th>Syntax</th>
+<th>Meaning</th>
+</tr>
+
+<tr>
+<td><code>object.property</code></td>
+<td>Dot notation</td>
+</tr>
+
+<tr>
+<td><code>object["property"]</code></td>
+<td>Bracket notation</td>
+</tr>
+
+</table>
+
+<h3>🔗 Often Used With</h3>
+
+<ul>
+
+    <li>
+    Objects
+    </li>
+
+    <li>
+    Functions
+    </li>
+
+    <li>
+    DOM data
+    </li>
+
+    <li>
+    APIs
+    </li>
+
+</ul>
+
+<p class="spell-source">
+    📅 Added: 18 July 2026
+</p>
+
+</article>
+
+
+
+<!-- SPELL CARD 47 -->
+
+<article class="spell-card" id="object-methods">
+
+<h2>⚔️ Object Methods</h2>
+
+<div class="spell-tags">
+
+    <button class="spell-tag">JavaScript</button>
+    <button class="spell-tag">Objects</button>
+    <button class="spell-tag">Functions</button>
+
+</div>
+
+<div class="code-container">
+
+<button class="copy-spell">
+    Copy Spell 🪄
+</button>
+
+<pre><code>
+const wizard = {
+
+    name: "RJ",
+
+    castSpell() {
+
+        console.log("Fireball!");
+
+    }
+
+};
+
+
+wizard.castSpell();
+
+</code></pre>
+
+</div>
+
+<h3>📜 Notes</h3>
+
+<ul>
+
+    <li>
+    Methods are functions stored inside objects.
+    </li>
+
+    <li>
+    They describe what an object can do.
+    </li>
+
+    <li>
+    Methods use <code>()</code> because they run code.
+    </li>
+
+    <li>
+    Properties store information, methods perform actions.
+    </li>
+
+</ul>
+
+<h3>🧩 Structure</h3>
+
+<ul>
+
+    <li>
+    <code>castSpell</code> → method name.
+    </li>
+
+    <li>
+    <code>()</code> → function brackets.
+    </li>
+
+    <li>
+    <code>{ }</code> → code that runs.
+    </li>
+
+</ul>
+
+<h3>🔗 Often Used With</h3>
+
+<ul>
+
+    <li>
+    Classes
+    </li>
+
+    <li>
+    Objects
+    </li>
+
+    <li>
+    Functions
+    </li>
+
+    <li>
+    Game logic
+    </li>
+
+</ul>
+
+<p class="spell-source">
+    📅 Added: 18 July 2026
+</p>
+
+</article>
+
+
+
+<!-- SPELL CARD 48 -->
+
+<article class="spell-card" id="access-properties">
+
+<h2>🔑 Accessing Properties</h2>
+
+<div class="spell-tags">
+
+    <button class="spell-tag">JavaScript</button>
+    <button class="spell-tag">Objects</button>
+    <button class="spell-tag">Syntax</button>
+
+</div>
+
+<div class="code-container">
+
+<button class="copy-spell">
+    Copy Spell 🪄
+</button>
+
+<pre><code>
+const potion = {
+
+    name: "Health Potion"
+
+};
+
+
+console.log(potion.name);
+
+
+console.log(potion["name"]);
+
+</code></pre>
+
+</div>
+
+<h3>📜 Notes</h3>
+
+<ul>
+
+    <li>
+    Two ways to access object data.
+    </li>
+
+    <li>
+    Dot notation is most common.
+    </li>
+
+    <li>
+    Bracket notation is useful when the property name is stored in a variable.
+    </li>
+
+</ul>
+
+<h3>🧩 Structure</h3>
+
+<ul>
+
+<li>
+<code>potion.name</code> → access name property.
+</li>
+
+<li>
+<code>potion["name"]</code> → same result.
+</li>
+
+</ul>
+
+<h3>🔗 Often Used With</h3>
+
+<ul>
+
+    <li>
+    Variables
+    </li>
+
+    <li>
+    Loops
+    </li>
+
+    <li>
+    APIs
+    </li>
+
+    <li>
+    JSON
+    </li>
+
+</ul>
+
+<p class="spell-source">
+    📅 Added: 18 July 2026
+</p>
+
+</article>
+
+
+
+<!-- SPELL CARD 49 -->
+
+<article class="spell-card" id="object-destructuring">
+
+<h2>🪞 Object Destructuring</h2>
+
+<div class="spell-tags">
+
+    <button class="spell-tag">JavaScript</button>
+    <button class="spell-tag">Objects</button>
+    <button class="spell-tag">Variables</button>
+
+</div>
+
+<div class="code-container">
+
+<button class="copy-spell">
+    Copy Spell 🪄
+</button>
+
+<pre><code>
+const wizard = {
+
+    name: "RJ",
+    level: 10
+
+};
+
+
+const { name, level } = wizard;
+
+
+console.log(name);
+
+</code></pre>
+
+</div>
+
+<h3>📜 Notes</h3>
+
+<ul>
+
+    <li>
+    Extracts values from objects into variables.
+    </li>
+
+    <li>
+    Creates variables with the same names as object properties.
+    </li>
+
+    <li>
+    Makes code shorter and easier to read.
+    </li>
+
+    <li>
+    Very common with APIs and React.
+    </li>
+
+</ul>
+
+<h3>🧩 Structure</h3>
+
+<ul>
+
+    <li>
+    <code>{ }</code> → tells JavaScript to extract properties.
+    </li>
+
+    <li>
+    <code>name</code> → property being taken.
+    </li>
+
+    <li>
+    <code>wizard</code> → object being searched.
+    </li>
+
+</ul>
+
+<h3>✨ Before vs After</h3>
+
+<table class="spell-table">
+
+<tr>
+<th>Old Way</th>
+<th>Destructuring</th>
+</tr>
+
+<tr>
+
+<td>
+
+<code>
+wizard.name
+</code>
+
+</td>
+
+<td>
+
+<code>
+name
+</code>
+
+</td>
+
+</tr>
+
+</table>
+
+<h3>🔗 Often Used With</h3>
+
+<ul>
+
+    <li>
+    Functions
+    </li>
+
+    <li>
+    API responses
+    </li>
+
+    <li>
+    React components
+    </li>
+
+    <li>
+    Objects
+    </li>
+
+</ul>
+
+<p class="spell-source">
+    📅 Added: 18 July 2026
+</p>
+
+</article>
+
+
+
+<!-- SPELL CARD 50 -->
+
+<article class="spell-card" id="spread-operator">
+
+<h2>✨ Spread Operator (...)</h2>
+
+<div class="spell-tags">
+
+    <button class="spell-tag">JavaScript</button>
+    <button class="spell-tag">Objects</button>
+    <button class="spell-tag">Arrays</button>
+
+</div>
+
+<div class="code-container">
+
+<button class="copy-spell">
+    Copy Spell 🪄
+</button>
+
+<pre><code>
+const wizard = {
+
+    name: "RJ",
+    level: 10
+
+};
+
+
+const upgradedWizard = {
+
+    ...wizard,
+    level: 11
+
+};
+
+</code></pre>
+
+</div>
+
+<h3>📜 Notes</h3>
+
+<ul>
+
+    <li>
+    Copies values from another object or array.
+    </li>
+
+    <li>
+    Uses three dots:
+    <code>...</code>
+    </li>
+
+    <li>
+    Creates a shallow copy.
+    </li>
+
+    <li>
+    Existing values can be overwritten.
+    </li>
+
+</ul>
+
+<h3>🧩 Structure</h3>
+
+<ul>
+
+    <li>
+    <code>...</code> → spread everything inside.
+    </li>
+
+    <li>
+    <code>wizard</code> → object being copied.
+    </li>
+
+    <li>
+    <code>level:11</code> → replaces old value.
+    </li>
+
+</ul>
+
+<h3>✨ Spell Components</h3>
+
+<table class="spell-table">
+
+<tr>
+<th>Use</th>
+<th>Example</th>
+</tr>
+
+<tr>
+
+<td>
+Copy object
+</td>
+
+<td>
+
+<code>
+{...object}
+</code>
+
+</td>
+
+</tr>
+
+<tr>
+
+<td>
+Merge objects
+</td>
+
+<td>
+
+<code>
+{...a,...b}
+</code>
+
+</td>
+
+</tr>
+
+</table>
+
+<h3>🔗 Often Used With</h3>
+
+<ul>
+
+    <li>
+    State updates
+    </li>
+
+    <li>
+    React
+    </li>
+
+    <li>
+    Arrays
+    </li>
+
+    <li>
+    Copying data
+    </li>
+
+</ul>
+
+<p class="spell-source">
+    📅 Added: 18 July 2026
+</p>
+
+</article>
+
+
+
+<!-- SPELL CARD 51 -->
+
+<article class="spell-card" id="json">
+
+<h2>📜 JSON</h2>
+
+<div class="spell-tags">
+
+    <button class="spell-tag">JavaScript</button>
+    <button class="spell-tag">Data</button>
+    <button class="spell-tag">APIs</button>
+
+</div>
+
+<div class="code-container">
+
+<button class="copy-spell">
+    Copy Spell 🪄
+</button>
+
+<pre><code>
+{
+
+    "name": "Pikachu",
+
+    "type": "Electric"
+
+}
+
+</code></pre>
+
+</div>
+
+<h3>📜 Notes</h3>
+
+<ul>
+
+    <li>
+    JSON stands for JavaScript Object Notation.
+    </li>
+
+    <li>
+    Used for storing and transferring data.
+    </li>
+
+    <li>
+    APIs usually send data as JSON.
+    </li>
+
+    <li>
+    Looks similar to JavaScript objects.
+    </li>
+
+    <li>
+    JSON keys must use double quotes.
+    </li>
+
+</ul>
+
+<h3>🧩 Structure</h3>
+
+<ul>
+
+    <li>
+    <code>"name"</code> → key.
+    </li>
+
+    <li>
+    <code>"Pikachu"</code> → value.
+    </li>
+
+    <li>
+    <code>:</code> separates key and value.
+    </li>
+
+</ul>
+
+<h3>🔗 Often Used With</h3>
+
+<ul>
+
+    <li>
+    fetch()
+    </li>
+
+    <li>
+    APIs
+    </li>
+
+    <li>
+    localStorage
+    </li>
+
+    <li>
+    Databases
+    </li>
+
+</ul>
+
+<p class="spell-source">
+    📅 Added: 18 July 2026
+</p>
+
+</article>
+
+
+
+<!-- SPELL CARD 52 -->
+
+<article class="spell-card" id="json-parse">
+
+<h2>🔮 JSON.parse()</h2>
+
+<div class="spell-tags">
+
+    <button class="spell-tag">JavaScript</button>
+    <button class="spell-tag">JSON</button>
+    <button class="spell-tag">Conversion</button>
+
+</div>
+
+<div class="code-container">
+
+<button class="copy-spell">
+    Copy Spell 🪄
+</button>
+
+<pre><code>
+const text = '{"name":"RJ"}';
+
+
+const object = JSON.parse(text);
+
+
+console.log(object.name);
+
+</code></pre>
+
+</div>
+
+<h3>📜 Notes</h3>
+
+<ul>
+
+    <li>
+    Converts JSON text into a JavaScript object.
+    </li>
+
+    <li>
+    Allows JavaScript to access the data.
+    </li>
+
+    <li>
+    Common when reading stored data.
+    </li>
+
+</ul>
+
+<h3>🧩 Structure</h3>
+
+<ul>
+
+    <li>
+    <code>JSON.parse()</code> → converts text.
+    </li>
+
+    <li>
+    <code>text</code> → JSON string.
+    </li>
+
+    <li>
+    <code>object</code> → usable JavaScript object.
+    </li>
+
+</ul>
+
+<h3>🔗 Often Used With</h3>
+
+<ul>
+
+    <li>
+    localStorage
+    </li>
+
+    <li>
+    APIs
+    </li>
+
+    <li>
+    fetch()
+    </li>
+
+    <li>
+    Databases
+    </li>
+
+</ul>
+
+<p class="spell-source">
+    📅 Added: 18 July 2026
+</p>
+
+</article>
+
+
+
+<!-- SPELL CARD 53 -->
+
+<article class="spell-card" id="json-stringify">
+
+<h2>🧪 JSON.stringify()</h2>
+
+<div class="spell-tags">
+
+    <button class="spell-tag">JavaScript</button>
+    <button class="spell-tag">JSON</button>
+    <button class="spell-tag">Storage</button>
+
+</div>
+
+<div class="code-container">
+
+<button class="copy-spell">
+    Copy Spell 🪄
+</button>
+
+<pre><code>
+const wizard = {
+
+    name:"RJ"
+
+};
+
+
+const saved =
+JSON.stringify(wizard);
+
+</code></pre>
+
+</div>
+
+<h3>📜 Notes</h3>
+
+<ul>
+
+    <li>
+    Converts a JavaScript object into JSON text.
+    </li>
+
+    <li>
+    Often used before saving data.
+    </li>
+
+    <li>
+    localStorage only stores strings.
+    </li>
+
+</ul>
+
+<h3>🧩 Structure</h3>
+
+<ul>
+
+    <li>
+    Object → JSON string.
+    </li>
+
+    <li>
+    <code>JSON.stringify()</code> → conversion spell.
+    </li>
+
+</ul>
+
+<h3>🔗 Often Used With</h3>
+
+<ul>
+
+    <li>
+    localStorage
+    </li>
+
+    <li>
+    Save systems
+    </li>
+
+    <li>
+    Settings
+    </li>
+
+    <li>
+    APIs
+    </li>
+
+</ul>
+
+<p class="spell-source">
+    📅 Added: 18 July 2026
+</p>
+
+</article>
+
+
+
+<!-- SPELL CARD 54 -->
+
+<article class="spell-card" id="object-keys">
+
+<h2>🔑 Object.keys()</h2>
+
+<div class="spell-tags">
+
+    <button class="spell-tag">JavaScript</button>
+    <button class="spell-tag">Objects</button>
+    <button class="spell-tag">Loops</button>
+
+</div>
+
+<div class="code-container">
+
+<button class="copy-spell">
+    Copy Spell 🪄
+</button>
+
+<pre><code>
+const wizard = {
+
+    name: "RJ",
+    level: 10,
+    class: "Mage"
+
+};
+
+
+const keys = Object.keys(wizard);
+
+
+console.log(keys);
+
+</code></pre>
+
+</div>
+
+<h3>📜 Notes</h3>
+
+<ul>
+
+    <li>
+    Returns all property names from an object.
+    </li>
+
+    <li>
+    Creates an array containing the keys.
+    </li>
+
+    <li>
+    Useful when you need to loop through object properties.
+    </li>
+
+    <li>
+    Does not return the values.
+    </li>
+
+</ul>
+
+<h3>🧩 Structure</h3>
+
+<ul>
+
+    <li>
+    <code>Object</code> → built-in JavaScript object tool.
+    </li>
+
+    <li>
+    <code>.keys()</code> → gets property names.
+    </li>
+
+    <li>
+    <code>wizard</code> → object being inspected.
+    </li>
+
+</ul>
+
+<h3>✨ Result</h3>
+
+<table class="spell-table">
+
+<tr>
+<th>Object</th>
+<th>Result</th>
+</tr>
+
+<tr>
+
+<td>
+
+<pre>
+{
+name:"RJ",
+level:10
+}
+</pre>
+
+</td>
+
+<td>
+
+<pre>
+[
+"name",
+"level"
+]
+</pre>
+
+</td>
+
+</tr>
+
+</table>
+
+<h3>🔗 Often Used With</h3>
+
+<ul>
+
+    <li>
+    forEach()
+    </li>
+
+    <li>
+    for...of
+    </li>
+
+    <li>
+    Objects
+    </li>
+
+    <li>
+    APIs
+    </li>
+
+</ul>
+
+<p class="spell-source">
+    📅 Added: 18 July 2026
+</p>
+
+</article>
+
+
+
+<!-- SPELL CARD 55 -->
+
+<article class="spell-card" id="object-values">
+
+<h2>💎 Object.values()</h2>
+
+<div class="spell-tags">
+
+    <button class="spell-tag">JavaScript</button>
+    <button class="spell-tag">Objects</button>
+    <button class="spell-tag">Data</button>
+
+</div>
+
+<div class="code-container">
+
+<button class="copy-spell">
+    Copy Spell 🪄
+</button>
+
+<pre><code>
+const potion = {
+
+    name:"Health Potion",
+    power:50
+
+};
+
+
+const values = Object.values(potion);
+
+
+console.log(values);
+
+</code></pre>
+
+</div>
+
+<h3>📜 Notes</h3>
+
+<ul>
+
+    <li>
+    Returns all values from an object.
+    </li>
+
+    <li>
+    Creates a new array containing the data.
+    </li>
+
+    <li>
+    Useful when the keys are not needed.
+    </li>
+
+    <li>
+    Common for calculations and displaying information.
+    </li>
+
+</ul>
+
+<h3>🧩 Structure</h3>
+
+<ul>
+
+    <li>
+    <code>Object</code> → JavaScript object utility.
+    </li>
+
+    <li>
+    <code>.values()</code> → extracts values.
+    </li>
+
+    <li>
+    <code>potion</code> → object being searched.
+    </li>
+
+</ul>
+
+<h3>✨ Result</h3>
+
+<table class="spell-table">
+
+<tr>
+
+<th>
+Object
+</th>
+
+<th>
+Result
+</th>
+
+</tr>
+
+<tr>
+
+<td>
+
+<pre>
+{
+power:50
+}
+</pre>
+
+</td>
+
+<td>
+
+<pre>
+[
+50
+]
+</pre>
+
+</td>
+
+</tr>
+
+</table>
+
+<h3>🔗 Often Used With</h3>
+
+<ul>
+
+    <li>
+    reduce()
+    </li>
+
+    <li>
+    Calculations
+    </li>
+
+    <li>
+    Loops
+    </li>
+
+    <li>
+    Statistics
+    </li>
+
+</ul>
+
+<p class="spell-source">
+    📅 Added: 18 July 2026
+</p>
+
+</article>
+
+
+
+<!-- SPELL CARD 56 -->
+
+<article class="spell-card" id="object-entries">
+
+<h2>🔗 Object.entries()</h2>
+
+<div class="spell-tags">
+
+    <button class="spell-tag">JavaScript</button>
+    <button class="spell-tag">Objects</button>
+    <button class="spell-tag">Loops</button>
+
+</div>
+
+<div class="code-container">
+
+<button class="copy-spell">
+    Copy Spell 🪄
+</button>
+
+<pre><code>
+const player = {
+
+    name:"RJ",
+    level:10
+
+};
+
+
+const entries = Object.entries(player);
+
+
+console.log(entries);
+
+</code></pre>
+
+</div>
+
+<h3>📜 Notes</h3>
+
+<ul>
+
+    <li>
+    Returns both keys AND values.
+    </li>
+
+    <li>
+    Creates an array of smaller arrays.
+    </li>
+
+    <li>
+    Very useful for looping through objects.
+    </li>
+
+    <li>
+    Often combined with destructuring.
+    </li>
+
+</ul>
+
+<h3>🧩 Structure</h3>
+
+<ul>
+
+    <li>
+    <code>Object.entries()</code> → gets key/value pairs.
+    </li>
+
+    <li>
+    Each result becomes:
+    <code>[key, value]</code>
+    </li>
+
+    <li>
+    Can be unpacked using destructuring.
+    </li>
+
+</ul>
+
+<h3>✨ Example Loop</h3>
+
+<pre><code>
+Object.entries(player)
+.forEach(([key,value]) => {
+
+    console.log(key, value);
+
+});
+
+</code></pre>
+
+<h3>🔗 Often Used With</h3>
+
+<ul>
+
+    <li>
+    forEach()
+    </li>
+
+    <li>
+    Destructuring
+    </li>
+
+    <li>
+    APIs
+    </li>
+
+    <li>
+    Settings menus
+    </li>
+
+</ul>
+
+<p class="spell-source">
+    📅 Added: 18 July 2026
+</p>
+
+</article>
+
+
+
+<!-- SPELL CARD 57 -->
+
+<article class="spell-card" id="function-declaration">
+
+<h2>✨ Function Declaration</h2>
+
+<div class="spell-tags">
+
+    <button class="spell-tag">JavaScript</button>
+    <button class="spell-tag">Functions</button>
+    <button class="spell-tag">Beginner</button>
+
+</div>
+
+<div class="code-container">
+
+<button class="copy-spell">
+    Copy Spell 🪄
+</button>
+
+<pre><code>
+function castSpell() {
+
+    console.log("Fireball!");
+
+}
+
+
+castSpell();
+
+</code></pre>
+
+</div>
+
+<h3>📜 Notes</h3>
+
+<ul>
+
+    <li>
+    Functions store reusable blocks of code.
+    </li>
+
+    <li>
+    The code inside only runs when the function is called.
+    </li>
+
+    <li>
+    Functions prevent repeating the same code.
+    </li>
+
+    <li>
+    A function can be called many times.
+    </li>
+
+</ul>
+
+<h3>🧩 Structure</h3>
+
+<ul>
+
+    <li>
+    <code>function</code> → creates a function.
+    </li>
+
+    <li>
+    <code>castSpell</code> → function name.
+    </li>
+
+    <li>
+    <code>()</code> → holds parameters.
+    </li>
+
+    <li>
+    <code>{ }</code> → code that runs.
+    </li>
+
+    <li>
+    <code>castSpell()</code> → calls the function.
+    </li>
+
+</ul>
+
+<h3>✨ Spell Components</h3>
+
+<table class="spell-table">
+
+<tr>
+<th>Part</th>
+<th>Purpose</th>
+</tr>
+
+<tr>
+<td>Declaration</td>
+<td>Creates function</td>
+</tr>
+
+<tr>
+<td>Call</td>
+<td>Runs function</td>
+</tr>
+
+<tr>
+<td>Block</td>
+<td>Contains instructions</td>
+</tr>
+
+</table>
+
+<h3>🔗 Often Used With</h3>
+
+<ul>
+
+    <li>
+    Parameters
+    </li>
+
+    <li>
+    Events
+    </li>
+
+    <li>
+    Loops
+    </li>
+
+    <li>
+    DOM manipulation
+    </li>
+
+</ul>
+
+<p class="spell-source">
+    📅 Added: 18 July 2026
+</p>
+
+</article>
+
+
+
+<!-- SPELL CARD 58 -->
+
+<article class="spell-card" id="parameters">
+
+<h2>📜 Parameters</h2>
+
+<div class="spell-tags">
+
+    <button class="spell-tag">JavaScript</button>
+    <button class="spell-tag">Functions</button>
+    <button class="spell-tag">Data</button>
+
+</div>
+
+<div class="code-container">
+
+<button class="copy-spell">
+    Copy Spell 🪄
+</button>
+
+<pre><code>
+function greet(name) {
+
+
+    console.log("Hello " + name);
+
+
+}
+
+
+greet("RJ");
+
+</code></pre>
+
+</div>
+
+<h3>📜 Notes</h3>
+
+<ul>
+
+    <li>
+    Parameters are placeholders inside a function.
+    </li>
+
+    <li>
+    They allow functions to receive information.
+    </li>
+
+    <li>
+    A function can have multiple parameters.
+    </li>
+
+    <li>
+    Parameters become variables inside the function.
+    </li>
+
+</ul>
+
+<h3>🧩 Structure</h3>
+
+<ul>
+
+    <li>
+    <code>name</code> → parameter.
+    </li>
+
+    <li>
+    <code>"RJ"</code> → argument passed in.
+    </li>
+
+    <li>
+    <code>console.log()</code> → uses the received value.
+    </li>
+
+</ul>
+
+<h3>✨ Spell Components</h3>
+
+<table class="spell-table">
+
+<tr>
+<th>Location</th>
+<th>Name</th>
+</tr>
+
+<tr>
+<td>Function creation</td>
+<td>Parameter</td>
+</tr>
+
+<tr>
+<td>Function call</td>
+<td>Argument</td>
+</tr>
+
+</table>
+
+<h3>🔗 Often Used With</h3>
+
+<ul>
+
+    <li>
+    Arguments
+    </li>
+
+    <li>
+    Return values
+    </li>
+
+    <li>
+    Arrow functions
+    </li>
+
+    <li>
+    Callbacks
+    </li>
+
+</ul>
+
+<p class="spell-source">
+    📅 Added: 18 July 2026
+</p>
+
+</article>
+
+
+
+<!-- SPELL CARD 59 -->
+
+<article class="spell-card" id="arguments">
+
+<h2>🎯 Arguments</h2>
+
+<div class="spell-tags">
+
+    <button class="spell-tag">JavaScript</button>
+    <button class="spell-tag">Functions</button>
+    <button class="spell-tag">Data</button>
+
+</div>
+
+<div class="code-container">
+
+<button class="copy-spell">
+    Copy Spell 🪄
+</button>
+
+<pre><code>
+function attack(enemy) {
+
+
+    console.log(
+        "Attacking " + enemy
+    );
+
+
+}
+
+
+attack("Dragon");
+
+</code></pre>
+
+</div>
+
+<h3>📜 Notes</h3>
+
+<ul>
+
+    <li>
+    Arguments are the actual values sent into functions.
+    </li>
+
+    <li>
+    They replace the parameters.
+    </li>
+
+    <li>
+    You provide arguments when calling a function.
+    </li>
+
+    <li>
+    Different calls can use different arguments.
+    </li>
+
+</ul>
+
+<h3>🧩 Structure</h3>
+
+<ul>
+
+    <li>
+    <code>enemy</code> → parameter.
+    </li>
+
+    <li>
+    <code>"Dragon"</code> → argument.
+    </li>
+
+    <li>
+    <code>attack()</code> → function call.
+    </li>
+
+</ul>
+
+<h3>✨ Example</h3>
+
+<pre><code>
+
+attack("Goblin");
+
+attack("Dragon");
+
+attack("Skeleton");
+
+</code></pre>
+
+<h3>🔗 Often Used With</h3>
+
+<ul>
+
+    <li>
+    Parameters
+    </li>
+
+    <li>
+    Functions
+    </li>
+
+    <li>
+    User input
+    </li>
+
+    <li>
+    Events
+    </li>
+
+</ul>
+
+<p class="spell-source">
+    📅 Added: 18 July 2026
+</p>
+
+</article>
+
+
+
+<!-- SPELL CARD 60 -->
+
+<article class="spell-card" id="return-values">
+
+<h2>🔮 Return Values</h2>
+
+<div class="spell-tags">
+
+    <button class="spell-tag">JavaScript</button>
+    <button class="spell-tag">Functions</button>
+    <button class="spell-tag">Data</button>
+
+</div>
+
+<div class="code-container">
+
+<button class="copy-spell">
+    Copy Spell 🪄
+</button>
+
+<pre><code>
+function add(a,b) {
+
+
+    return a + b;
+
+
+}
+
+
+const result = add(5,3);
+
+
+console.log(result);
+
+</code></pre>
+
+</div>
+
+<h3>📜 Notes</h3>
+
+<ul>
+
+    <li>
+    Returns sends a value back from a function.
+    </li>
+
+    <li>
+    Without return, functions give back <code>undefined</code>.
+    </li>
+
+    <li>
+    Returned values can be stored in variables.
+    </li>
+
+    <li>
+    Functions can calculate and provide results.
+    </li>
+
+</ul>
+
+<h3>🧩 Structure</h3>
+
+<ul>
+
+    <li>
+    <code>return</code> → sends value back.
+    </li>
+
+    <li>
+    <code>a + b</code> → calculation.
+    </li>
+
+    <li>
+    <code>result</code> → stores returned value.
+    </li>
+
+</ul>
+
+<h3>✨ Spell Components</h3>
+
+<table class="spell-table">
+
+<tr>
+<th>Command</th>
+<th>Purpose</th>
+</tr>
+
+<tr>
+<td><code>return</code></td>
+<td>Send value back</td>
+</tr>
+
+<tr>
+<td><code>console.log()</code></td>
+<td>Display value</td>
+</tr>
+
+</table>
+
+<h3>🔗 Often Used With</h3>
+
+<ul>
+
+    <li>
+    Variables
+    </li>
+
+    <li>
+    Calculations
+    </li>
+
+    <li>
+    APIs
+    </li>
+
+    <li>
+    Functions
+    </li>
+
+</ul>
+
+<p class="spell-source">
+    📅 Added: 18 July 2026
+</p>
+
+</article>
+
+
+
+<!-- SPELL CARD 61 -->
+
+<article class="spell-card" id="arrow-functions">
+
+<h2>⚡ Arrow Functions</h2>
+
+<div class="spell-tags">
+
+    <button class="spell-tag">JavaScript</button>
+    <button class="spell-tag">Functions</button>
+    <button class="spell-tag">Modern JS</button>
+
+</div>
+
+<div class="code-container">
+
+<button class="copy-spell">
+    Copy Spell 🪄
+</button>
+
+<pre><code>
+const castSpell = () => {
+
+    console.log("Fireball!");
+
+};
+
+
+castSpell();
+
+</code></pre>
+
+</div>
+
+<h3>📜 Notes</h3>
+
+<ul>
+
+    <li>
+    Arrow functions are a shorter way to write functions.
+    </li>
+
+    <li>
+    Created using <code>=&gt;</code> (arrow syntax).
+    </li>
+
+    <li>
+    Common in modern JavaScript.
+    </li>
+
+    <li>
+    Often used with arrays and callbacks.
+    </li>
+
+</ul>
+
+<h3>🧩 Structure</h3>
+
+<ul>
+
+    <li>
+    <code>const</code> → stores function in a variable.
+    </li>
+
+    <li>
+    <code>castSpell</code> → function name.
+    </li>
+
+    <li>
+    <code>()</code> → parameters.
+    </li>
+
+    <li>
+    <code>=&gt;</code> → creates arrow function.
+    </li>
+
+    <li>
+    <code>{ }</code> → function code.
+    </li>
+
+</ul>
+
+<h3>✨ Before vs After</h3>
+
+<table class="spell-table">
+
+<tr>
+<th>Normal Function</th>
+<th>Arrow Function</th>
+</tr>
+
+<tr>
+
+<td>
+
+<code>
+function attack(){}
+</code>
+
+</td>
+
+<td>
+
+<code>
+const attack = () =&gt; {}
+</code>
+
+</td>
+
+</tr>
+
+</table>
+
+<h3>🔗 Often Used With</h3>
+
+<ul>
+
+    <li>
+    forEach()
+    </li>
+
+    <li>
+    addEventListener()
+    </li>
+
+    <li>
+    Promises
+    </li>
+
+    <li>
+    Array methods
+    </li>
+
+</ul>
+
+<p class="spell-source">
+    📅 Added: 18 July 2026
+</p>
+
+</article>
+
+
+
+<!-- SPELL CARD 62 -->
+
+<article class="spell-card" id="callback-functions">
+
+<h2>🪄 Callback Functions</h2>
+
+<div class="spell-tags">
+
+    <button class="spell-tag">JavaScript</button>
+    <button class="spell-tag">Functions</button>
+    <button class="spell-tag">Events</button>
+
+</div>
+
+<div class="code-container">
+
+<button class="copy-spell">
+    Copy Spell 🪄
+</button>
+
+<pre><code>
+function summonWizard(callback) {
+
+
+    console.log("Wizard summoned");
+
+
+    callback();
+
+
+}
+
+
+summonWizard(() => {
+
+    console.log("Spell cast!");
+
+});
+
+</code></pre>
+
+</div>
+
+<h3>📜 Notes</h3>
+
+<ul>
+
+    <li>
+    A callback is a function passed into another function.
+    </li>
+
+    <li>
+    The receiving function decides when to run it.
+    </li>
+
+    <li>
+    Very common for events and asynchronous code.
+    </li>
+
+    <li>
+    You have already used callbacks with:
+    <code>forEach()</code> and <code>addEventListener()</code>.
+    </li>
+
+</ul>
+
+<h3>🧩 Structure</h3>
+
+<ul>
+
+    <li>
+    <code>callback</code> → function being received.
+    </li>
+
+    <li>
+    <code>callback()</code> → runs the function.
+    </li>
+
+    <li>
+    <code>() =&gt; { }</code> → callback function.
+    </li>
+
+</ul>
+
+<h3>✨ Example You Already Know</h3>
+
+<pre><code>
+
+button.addEventListener(
+"click",
+() => {
+
+    console.log("Clicked!");
+
+});
+
+</code></pre>
+
+<h3>🔗 Often Used With</h3>
+
+<ul>
+
+    <li>
+    Events
+    </li>
+
+    <li>
+    forEach()
+    </li>
+
+    <li>
+    setTimeout()
+    </li>
+
+    <li>
+    Promises
+    </li>
+
+</ul>
+
+<p class="spell-source">
+    📅 Added: 18 July 2026
+</p>
+
+</article>
+
+
+
+<!-- SPELL CARD 63 -->
+
+<article class="spell-card" id="scope">
+
+<h2>🌎 Scope</h2>
+
+<div class="spell-tags">
+
+    <button class="spell-tag">JavaScript</button>
+    <button class="spell-tag">Variables</button>
+    <button class="spell-tag">Functions</button>
+
+</div>
+
+<div class="code-container">
+
+<button class="copy-spell">
+    Copy Spell 🪄
+</button>
+
+<pre><code>
+const outside = "Global";
+
+
+function spell() {
+
+
+    const inside = "Local";
+
+
+    console.log(inside);
+
+
+}
+
+</code></pre>
+
+</div>
+
+<h3>📜 Notes</h3>
+
+<ul>
+
+    <li>
+    Scope determines where variables can be accessed.
+    </li>
+
+    <li>
+    Variables created inside functions stay inside that function.
+    </li>
+
+    <li>
+    Variables outside functions can usually be accessed anywhere.
+    </li>
+
+    <li>
+    Scope prevents naming conflicts.
+    </li>
+
+</ul>
+
+<h3>🧩 Structure</h3>
+
+<ul>
+
+    <li>
+    <code>outside</code> → global scope.
+    </li>
+
+    <li>
+    <code>inside</code> → function scope.
+    </li>
+
+    <li>
+    Function creates its own protected area.
+    </li>
+
+</ul>
+
+<h3>✨ Scope Rule</h3>
+
+<table class="spell-table">
+
+<tr>
+<th>Created Here</th>
+<th>Available Here</th>
+</tr>
+
+<tr>
+
+<td>
+Inside function
+</td>
+
+<td>
+Only inside function
+</td>
+
+</tr>
+
+<tr>
+
+<td>
+Outside function
+</td>
+
+<td>
+Whole file
+</td>
+
+</tr>
+
+</table>
+
+<h3>🔗 Often Used With</h3>
+
+<ul>
+
+    <li>
+    let
+    </li>
+
+    <li>
+    const
+    </li>
+
+    <li>
+    Functions
+    </li>
+
+    <li>
+    Closures
+    </li>
+
+</ul>
+
+<p class="spell-source">
+    📅 Added: 18 July 2026
+</p>
+
+</article>
+
+
+
+<!-- SPELL CARD 64 -->
+
+<article class="spell-card" id="global-local">
+
+<h2>🏰 Global vs Local Scope</h2>
+
+<div class="spell-tags">
+
+    <button class="spell-tag">JavaScript</button>
+    <button class="spell-tag">Scope</button>
+    <button class="spell-tag">Variables</button>
+
+</div>
+
+<div class="code-container">
+
+<button class="copy-spell">
+    Copy Spell 🪄
+</button>
+
+<pre><code>
+const spellBook = "Magic";
+
+
+function wizard() {
+
+
+    const spell = "Fireball";
+
+
+    console.log(spellBook);
+
+
+}
+
+</code></pre>
+
+</div>
+
+<h3>📜 Notes</h3>
+
+<ul>
+
+    <li>
+    Global variables exist outside functions.
+    </li>
+
+    <li>
+    Local variables exist inside functions.
+    </li>
+
+    <li>
+    Local variables cannot be accessed outside their function.
+    </li>
+
+    <li>
+    Avoid too many global variables because they can cause bugs.
+    </li>
+
+</ul>
+
+<h3>🧩 Structure</h3>
+
+<ul>
+
+    <li>
+    <code>spellBook</code> → global.
+    </li>
+
+    <li>
+    <code>spell</code> → local.
+    </li>
+
+    <li>
+    Function can access outside variables.
+    </li>
+
+</ul>
+
+<h3>✨ Scope Hierarchy</h3>
+
+<table class="spell-table">
+
+<tr>
+<th>Scope</th>
+<th>Visibility</th>
+</tr>
+
+<tr>
+<td>
+Global
+</td>
+<td>
+Everywhere
+</td>
+</tr>
+
+<tr>
+<td>
+Function
+</td>
+<td>
+Inside function
+</td>
+</tr>
+
+<tr>
+<td>
+Block
+</td>
+<td>
+Inside { }
+</td>
+</tr>
+
+</table>
+
+<h3>🔗 Often Used With</h3>
+
+<ul>
+
+    <li>
+    Functions
+    </li>
+
+    <li>
+    Loops
+    </li>
+
+    <li>
+    if statements
+    </li>
+
+    <li>
+    let / const
+    </li>
+
+</ul>
+
+<p class="spell-source">
+    📅 Added: 18 July 2026
+</p>
+
+</article>
+
+
+
+<!-- SPELL CARD 65 -->
+
+<article class="spell-card" id="closures">
+
+<h2>🔒 Closures</h2>
+
+<div class="spell-tags">
+
+    <button class="spell-tag">JavaScript</button>
+    <button class="spell-tag">Functions</button>
+    <button class="spell-tag">Advanced</button>
+
+</div>
+
+<div class="code-container">
+
+<button class="copy-spell">
+    Copy Spell 🪄
+</button>
+
+<pre><code>
+function createCounter() {
+
+
+    let count = 0;
+
+
+    return function() {
+
+
+        count++;
+
+
+        console.log(count);
+
+
+    };
+
+
+}
+
+
+const counter = createCounter();
+
+
+counter();
+
+</code></pre>
+
+</div>
+
+<h3>📜 Notes</h3>
+
+<ul>
+
+    <li>
+    A closure allows a function to remember variables from where it was created.
+    </li>
+
+    <li>
+    The inner function keeps access to outer variables.
+    </li>
+
+    <li>
+    Useful for private data and state management.
+    </li>
+
+    <li>
+    Common in advanced JavaScript.
+    </li>
+
+</ul>
+
+<h3>🧩 Structure</h3>
+
+<ul>
+
+    <li>
+    Outer function creates variable.
+    </li>
+
+    <li>
+    Inner function remembers that variable.
+    </li>
+
+    <li>
+    Returned function keeps access.
+    </li>
+
+</ul>
+
+<h3>✨ Simple Example</h3>
+
+<ul>
+
+    <li>
+    A counter remembers its number even after the original function finished.
+    </li>
+
+    <li>
+    The variable is protected from outside changes.
+    </li>
+
+</ul>
+
+<h3>🔗 Often Used With</h3>
+
+<ul>
+
+    <li>
+    React state
+    </li>
+
+    <li>
+    Private variables
+    </li>
+
+    <li>
+    Factory functions
+    </li>
+
+    <li>
+    Advanced patterns
+    </li>
+
+</ul>
+
+<p class="spell-source">
+    📅 Added: 18 July 2026
+</p>
+
+</article>
+
+
+
+<!-- SPELL CARD 66 -->
+
+<article class="spell-card" id="template-literals">
+
+<h2>📝 Template Literals</h2>
+
+<div class="spell-tags">
+
+    <button class="spell-tag">JavaScript</button>
+    <button class="spell-tag">Strings</button>
+    <button class="spell-tag">Modern JS</button>
+
+</div>
+
+<div class="code-container">
+
+<button class="copy-spell">
+    Copy Spell 🪄
+</button>
+
+<pre><code>
+const name = "RJ";
+
+
+const message = `Hello ${name}!`;
+
+
+console.log(message);
+
+</code></pre>
+
+</div>
+
+<h3>📜 Notes</h3>
+
+<ul>
+
+    <li>
+    Template literals create strings using backticks:
+    <code>` `</code>
+    </li>
+
+    <li>
+    Variables can be inserted using:
+    <code>${ }</code>
+    </li>
+
+    <li>
+    They are cleaner than joining strings with <code>+</code>.
+    </li>
+
+    <li>
+    They allow multi-line strings.
+    </li>
+
+</ul>
+
+<h3>🧩 Structure</h3>
+
+<ul>
+
+    <li>
+    <code>` `</code> → creates template literal.
+    </li>
+
+    <li>
+    <code>${ }</code> → inserts JavaScript inside text.
+    </li>
+
+    <li>
+    <code>name</code> → variable being inserted.
+    </li>
+
+</ul>
+
+<h3>✨ Before vs After</h3>
+
+<table class="spell-table">
+
+<tr>
+<th>Old Way</th>
+<th>Template Literal</th>
+</tr>
+
+<tr>
+
+<td>
+
+<code>
+"Hello " + name
+</code>
+
+</td>
+
+<td>
+
+<code>
+`Hello ${name}`
+</code>
+
+</td>
+
+</tr>
+
+</table>
+
+<h3>🔗 Often Used With</h3>
+
+<ul>
+
+    <li>
+    DOM updates
+    </li>
+
+    <li>
+    HTML templates
+    </li>
+
+    <li>
+    API data
+    </li>
+
+    <li>
+    Console messages
+    </li>
+
+</ul>
+
+<p class="spell-source">
+    📅 Added: 18 July 2026
+</p>
+
+</article>
+
+
+
+<!-- SPELL CARD 67 -->
+
+<article class="spell-card" id="default-parameters">
+
+<h2>🪄 Default Parameters</h2>
+
+<div class="spell-tags">
+
+    <button class="spell-tag">JavaScript</button>
+    <button class="spell-tag">Functions</button>
+    <button class="spell-tag">Modern JS</button>
+
+</div>
+
+<div class="code-container">
+
+<button class="copy-spell">
+    Copy Spell 🪄
+</button>
+
+<pre><code>
+function greet(name = "Wizard") {
+
+
+    console.log(`Hello ${name}`);
+
+
+}
+
+
+greet();
+
+
+greet("RJ");
+
+</code></pre>
+
+</div>
+
+<h3>📜 Notes</h3>
+
+<ul>
+
+    <li>
+    Default parameters give a value if none is provided.
+    </li>
+
+    <li>
+    They prevent <code>undefined</code> appearing.
+    </li>
+
+    <li>
+    Useful when functions have optional information.
+    </li>
+
+</ul>
+
+<h3>🧩 Structure</h3>
+
+<ul>
+
+    <li>
+    <code>name</code> → parameter.
+    </li>
+
+    <li>
+    <code>= "Wizard"</code> → fallback value.
+    </li>
+
+    <li>
+    <code>greet()</code> → uses default.
+    </li>
+
+    <li>
+    <code>greet("RJ")</code> → replaces default.
+    </li>
+
+</ul>
+
+<h3>🔗 Often Used With</h3>
+
+<ul>
+
+    <li>
+    Functions
+    </li>
+
+    <li>
+    Arrow functions
+    </li>
+
+    <li>
+    API options
+    </li>
+
+    <li>
+    Objects
+    </li>
+
+</ul>
+
+<p class="spell-source">
+    📅 Added: 18 July 2026
+</p>
+
+</article>
+
+
+
+<!-- SPELL CARD 68 -->
+
+<article class="spell-card" id="optional-chaining">
+
+<h2>❓ Optional Chaining ?.</h2>
+
+<div class="spell-tags">
+
+    <button class="spell-tag">JavaScript</button>
+    <button class="spell-tag">Objects</button>
+    <button class="spell-tag">Error Handling</button>
+
+</div>
+
+<div class="code-container">
+
+<button class="copy-spell">
+    Copy Spell 🪄
+</button>
+
+<pre><code>
+const player = {
+
+
+    inventory: {
+
+
+        weapon: "Sword"
+
+
+    }
+
+
+};
+
+
+console.log(player.inventory?.weapon);
+
+</code></pre>
+
+</div>
+
+<h3>📜 Notes</h3>
+
+<ul>
+
+    <li>
+    Optional chaining safely checks if something exists.
+    </li>
+
+    <li>
+    Stops errors when trying to access missing data.
+    </li>
+
+    <li>
+    Returns <code>undefined</code> instead of crashing.
+    </li>
+
+    <li>
+    Very common when working with APIs.
+    </li>
+
+</ul>
+
+<h3>🧩 Structure</h3>
+
+<ul>
+
+    <li>
+    <code>?</code> → checks if value exists.
+    </li>
+
+    <li>
+    <code>.</code> → accesses property.
+    </li>
+
+    <li>
+    <code>player.inventory?.weapon</code> → safely accesses weapon.
+    </li>
+
+</ul>
+
+<h3>✨ Without Optional Chaining</h3>
+
+<pre><code>
+player.inventory.weapon
+
+
+// Error if inventory does not exist
+
+</code></pre>
+
+<h3>🔗 Often Used With</h3>
+
+<ul>
+
+    <li>
+    fetch()
+    </li>
+
+    <li>
+    JSON data
+    </li>
+
+    <li>
+    Objects
+    </li>
+
+    <li>
+    APIs
+    </li>
+
+</ul>
+
+<p class="spell-source">
+    📅 Added: 18 July 2026
+</p>
+
+</article>
+
+
+
+<!-- SPELL CARD 69 -->
+
+<article class="spell-card" id="nullish-coalescing">
+
+<h2>🤔 Nullish Coalescing ??</h2>
+
+<div class="spell-tags">
+
+    <button class="spell-tag">JavaScript</button>
+    <button class="spell-tag">Logic</button>
+    <button class="spell-tag">Modern JS</button>
+
+</div>
+
+<div class="code-container">
+
+<button class="copy-spell">
+    Copy Spell 🪄
+</button>
+
+<pre><code>
+const username = null;
+
+
+const displayName = username ?? "Guest";
+
+
+console.log(displayName);
+
+</code></pre>
+
+</div>
+
+<h3>📜 Notes</h3>
+
+<ul>
+
+    <li>
+    Uses a backup value when something is:
+    <code>null</code> or <code>undefined</code>.
+    </li>
+
+    <li>
+    Different from <code>||</code>.
+    </li>
+
+    <li>
+    Useful when handling missing data.
+    </li>
+
+</ul>
+
+<h3>🧩 Structure</h3>
+
+<ul>
+
+    <li>
+    Left side → value to check.
+    </li>
+
+    <li>
+    <code>??</code> → fallback operator.
+    </li>
+
+    <li>
+    Right side → backup value.
+    </li>
+
+</ul>
+
+<h3>✨ Example</h3>
+
+<pre><code>
+const coins = 0;
+
+
+coins ?? 100;
+
+
+// returns 0
+
+</code></pre>
+
+<p>
+Because 0 exists, it is kept.
+</p>
+
+<h3>🔗 Often Used With</h3>
+
+<ul>
+
+    <li>
+    API responses
+    </li>
+
+    <li>
+    Objects
+    </li>
+
+    <li>
+    Default values
+    </li>
+
+    <li>
+    Optional chaining
+    </li>
+
+</ul>
+
+<p class="spell-source">
+    📅 Added: 18 July 2026
+</p>
+
+</article>
+
+
+
+<!-- SPELL CARD 70 -->
+
+<article class="spell-card" id="modules">
+
+<h2>📦 Export / Import Modules</h2>
+
+<div class="spell-tags">
+
+    <button class="spell-tag">JavaScript</button>
+    <button class="spell-tag">Modules</button>
+    <button class="spell-tag">Files</button>
+
+</div>
+
+<div class="code-container">
+
+<button class="copy-spell">
+    Copy Spell 🪄
+</button>
+
+<pre><code>
+// spells.js
+
+
+export function fireball() {
+
+
+    console.log("🔥");
+
+
+}
+
+
+// main.js
+
+
+import { fireball } from "./spells.js";
+
+
+fireball();
+
+</code></pre>
+
+</div>
+
+<h3>📜 Notes</h3>
+
+<ul>
+
+    <li>
+    Modules allow JavaScript to be split across files.
+    </li>
+
+    <li>
+    <code>export</code> makes code available elsewhere.
+    </li>
+
+    <li>
+    <code>import</code> brings code into another file.
+    </li>
+
+    <li>
+    Keeps projects organised.
+    </li>
+
+</ul>
+
+<h3>🧩 Structure</h3>
+
+<ul>
+
+    <li>
+    <code>export</code> → share code.
+    </li>
+
+    <li>
+    <code>import</code> → receive code.
+    </li>
+
+    <li>
+    <code>./</code> → current folder.
+    </li>
+
+    <li>
+    <code>.js</code> → JavaScript file.
+    </li>
+
+</ul>
+
+<h3>🔗 Often Used With</h3>
+
+<ul>
+
+    <li>
+    Large projects
+    </li>
+
+    <li>
+    React
+    </li>
+
+    <li>
+    Node.js
+    </li>
+
+    <li>
+    Reusable functions
+    </li>
+
+</ul>
+
+<p class="spell-source">
+    📅 Added: 18 July 2026
+</p>
+
+</article>
+
+
+
+<!-- SPELL CARD 71 -->
+
+<article class="spell-card" id="set-timeout">
+
+<h2>⏱️ setTimeout()</h2>
+
+<div class="spell-tags">
+
+    <button class="spell-tag">JavaScript</button>
+    <button class="spell-tag">Timing</button>
+    <button class="spell-tag">Functions</button>
+
+</div>
+
+<div class="code-container">
+
+<button class="copy-spell">
+    Copy Spell 🪄
+</button>
+
+<pre><code>
+setTimeout(() => {
+
+
+    console.log("Spell activated!");
+
+
+}, 3000);
+
+</code></pre>
+
+</div>
+
+<h3>📜 Notes</h3>
+
+<ul>
+
+    <li>
+    Runs a function once after a delay.
+    </li>
+
+    <li>
+    The delay is measured in milliseconds.
+    </li>
+
+    <li>
+    1000 milliseconds = 1 second.
+    </li>
+
+    <li>
+    The timer does not stop other JavaScript from running.
+    </li>
+
+</ul>
+
+<h3>🧩 Structure</h3>
+
+<ul>
+
+    <li>
+    <code>setTimeout()</code> → creates delayed action.
+    </li>
+
+    <li>
+    <code>() =&gt; { }</code> → function to run later.
+    </li>
+
+    <li>
+    <code>3000</code> → delay time in milliseconds.
+    </li>
+
+</ul>
+
+<h3>✨ Timing Reference</h3>
+
+<table class="spell-table">
+
+<tr>
+<th>Milliseconds</th>
+<th>Time</th>
+</tr>
+
+<tr>
+<td>1000</td>
+<td>1 second</td>
+</tr>
+
+<tr>
+<td>5000</td>
+<td>5 seconds</td>
+</tr>
+
+<tr>
+<td>60000</td>
+<td>1 minute</td>
+</tr>
+
+</table>
+
+<h3>🔗 Often Used With</h3>
+
+<ul>
+
+    <li>
+    Animations
+    </li>
+
+    <li>
+    Notifications
+    </li>
+
+    <li>
+    Loading screens
+    </li>
+
+    <li>
+    Games
+    </li>
+
+</ul>
+
+<p class="spell-source">
+    📅 Added: 18 July 2026
+</p>
+
+</article>
+
+
+
+<!-- SPELL CARD 72 -->
+
+<article class="spell-card" id="set-interval">
+
+<h2>🔁 setInterval()</h2>
+
+<div class="spell-tags">
+
+    <button class="spell-tag">JavaScript</button>
+    <button class="spell-tag">Timing</button>
+    <button class="spell-tag">Loops</button>
+
+</div>
+
+<div class="code-container">
+
+<button class="copy-spell">
+    Copy Spell 🪄
+</button>
+
+<pre><code>
+setInterval(() => {
+
+
+    console.log("Tick");
+
+
+}, 1000);
+
+</code></pre>
+
+</div>
+
+<h3>📜 Notes</h3>
+
+<ul>
+
+    <li>
+    Repeats a function after a set amount of time.
+    </li>
+
+    <li>
+    Unlike <code>setTimeout()</code>, it keeps running.
+    </li>
+
+    <li>
+    Useful for repeated actions.
+    </li>
+
+    <li>
+    Can be stopped with <code>clearInterval()</code>.
+    </li>
+
+</ul>
+
+<h3>🧩 Structure</h3>
+
+<ul>
+
+    <li>
+    <code>setInterval()</code> → repeats code.
+    </li>
+
+    <li>
+    <code>() =&gt; { }</code> → repeated function.
+    </li>
+
+    <li>
+    <code>1000</code> → repeat every second.
+    </li>
+
+</ul>
+
+<h3>✨ Stopping Interval</h3>
+
+<pre><code>
+const timer = setInterval(() => {
+
+
+    console.log("Running");
+
+
+}, 1000);
+
+
+
+clearInterval(timer);
+
+</code></pre>
+
+<h3>🔗 Often Used With</h3>
+
+<ul>
+
+    <li>
+    Clocks
+    </li>
+
+    <li>
+    Games
+    </li>
+
+    <li>
+    Countdowns
+    </li>
+
+    <li>
+    Timers
+    </li>
+
+</ul>
+
+<p class="spell-source">
+    📅 Added: 18 July 2026
+</p>
+
+</article>
+
+
+
+<!-- SPELL CARD 73 -->
+
+<article class="spell-card" id="fetch">
+
+<h2>🌐 fetch()</h2>
+
+<div class="spell-tags">
+
+    <button class="spell-tag">JavaScript</button>
+    <button class="spell-tag">API</button>
+    <button class="spell-tag">Data</button>
+
+</div>
+
+<div class="code-container">
+
+<button class="copy-spell">
+    Copy Spell 🪄
+</button>
+
+<pre><code>
+fetch("https://api.example.com/data")
+
+.then(response => response.json())
+
+.then(data => {
+
+    console.log(data);
+
+});
+
+</code></pre>
+
+</div>
+
+<h3>📜 Notes</h3>
+
+<ul>
+
+    <li>
+    Fetch requests data from another location.
+    </li>
+
+    <li>
+    Usually used with APIs.
+    </li>
+
+    <li>
+    Returns a Promise.
+    </li>
+
+    <li>
+    The response must usually be converted with:
+    <code>.json()</code>
+    </li>
+
+</ul>
+
+<h3>🧩 Structure</h3>
+
+<ul>
+
+    <li>
+    <code>fetch()</code> → sends request.
+    </li>
+
+    <li>
+    URL → location of data.
+    </li>
+
+    <li>
+    <code>response</code> → server reply.
+    </li>
+
+    <li>
+    <code>json()</code> → converts response into JavaScript.
+    </li>
+
+    <li>
+    <code>data</code> → usable information.
+    </li>
+
+</ul>
+
+<h3>✨ API Flow</h3>
+
+<table class="spell-table">
+
+<tr>
+<th>Stage</th>
+<th>Action</th>
+</tr>
+
+<tr>
+<td>
+1
+</td>
+<td>
+Request data
+</td>
+</tr>
+
+<tr>
+<td>
+2
+</td>
+<td>
+Receive response
+</td>
+</tr>
+
+<tr>
+<td>
+3
+</td>
+<td>
+Convert JSON
+</td>
+</tr>
+
+<tr>
+<td>
+4
+</td>
+<td>
+Use data
+</td>
+</tr>
+
+</table>
+
+<h3>🔗 Often Used With</h3>
+
+<ul>
+
+    <li>
+    Promises
+    </li>
+
+    <li>
+    async / await
+    </li>
+
+    <li>
+    JSON
+    </li>
+
+    <li>
+    APIs
+    </li>
+
+</ul>
+
+<p class="spell-source">
+    📅 Added: 18 July 2026
+</p>
+
+</article>
+
+
+
+<!-- SPELL CARD 74 -->
+
+<article class="spell-card" id="promises">
+
+<h2>💤 Promises</h2>
+
+<div class="spell-tags">
+
+    <button class="spell-tag">JavaScript</button>
+    <button class="spell-tag">Async</button>
+    <button class="spell-tag">API</button>
+
+</div>
+
+<div class="code-container">
+
+<button class="copy-spell">
+    Copy Spell 🪄
+</button>
+
+<pre><code>
+const spell = new Promise((resolve, reject) => {
+
+
+    let success = true;
+
+
+    if(success) {
+
+        resolve("Spell worked!");
+
+    } else {
+
+        reject("Spell failed!");
+
+    }
+
+
+});
+
+</code></pre>
+
+</div>
+
+<h3>📜 Notes</h3>
+
+<ul>
+
+    <li>
+    A Promise represents something that will finish later.
+    </li>
+
+    <li>
+    It has three states:
+    <code>pending</code>,
+    <code>fulfilled</code>,
+    <code>rejected</code>.
+    </li>
+
+    <li>
+    Used heavily with APIs.
+    </li>
+
+    <li>
+    Promises replace older callback patterns.
+    </li>
+
+</ul>
+
+<h3>🧩 Structure</h3>
+
+<ul>
+
+    <li>
+    <code>new Promise()</code> → creates promise.
+    </li>
+
+    <li>
+    <code>resolve()</code> → success.
+    </li>
+
+    <li>
+    <code>reject()</code> → failure.
+    </li>
+
+</ul>
+
+<h3>✨ Promise States</h3>
+
+<table class="spell-table">
+
+<tr>
+<th>State</th>
+<th>Meaning</th>
+</tr>
+
+<tr>
+<td>
+Pending
+</td>
+<td>
+Still waiting
+</td>
+</tr>
+
+<tr>
+<td>
+Fulfilled
+</td>
+<td>
+Completed successfully
+</td>
+</tr>
+
+<tr>
+<td>
+Rejected
+</td>
+<td>
+Something failed
+</td>
+</tr>
+
+</table>
+
+<h3>🔗 Often Used With</h3>
+
+<ul>
+
+    <li>
+    fetch()
+    </li>
+
+    <li>
+    async / await
+    </li>
+
+    <li>
+    .then()
+    </li>
+
+    <li>
+    .catch()
+    </li>
+
+</ul>
+
+<p class="spell-source">
+    📅 Added: 18 July 2026
+</p>
+
+</article>
+
+
+
+<!-- SPELL CARD 75 -->
+
+<article class="spell-card" id="async-await">
+
+<h2>⚡ async / await</h2>
+
+<div class="spell-tags">
+
+    <button class="spell-tag">JavaScript</button>
+    <button class="spell-tag">Async</button>
+    <button class="spell-tag">API</button>
+
+</div>
+
+<div class="code-container">
+
+<button class="copy-spell">
+    Copy Spell 🪄
+</button>
+
+<pre><code>
+async function getPokemon() {
+
+
+    const response = await fetch(
+        "https://pokeapi.co/api/v2/pokemon/pikachu"
+    );
+
+
+    const data = await response.json();
+
+
+    console.log(data);
+
+
+}
+
+
+getPokemon();
+
+</code></pre>
+
+</div>
+
+<h3>📜 Notes</h3>
+
+<ul>
+
+    <li>
+    Makes asynchronous code easier to read.
+    </li>
+
+    <li>
+    <code>async</code> creates an asynchronous function.
+    </li>
+
+    <li>
+    <code>await</code> pauses the function until the Promise finishes.
+    </li>
+
+    <li>
+    Usually cleaner than long Promise chains.
+    </li>
+
+</ul>
+
+<h3>🧩 Structure</h3>
+
+<ul>
+
+    <li>
+    <code>async</code> → allows await.
+    </li>
+
+    <li>
+    <code>await</code> → waits for result.
+    </li>
+
+    <li>
+    <code>fetch()</code> → gets data.
+    </li>
+
+    <li>
+    <code>response.json()</code> → converts data.
+    </li>
+
+</ul>
+
+<h3>✨ Promise vs async/await</h3>
+
+<table class="spell-table">
+
+<tr>
+<th>Promise</th>
+<th>async/await</th>
+</tr>
+
+<tr>
+
+<td>
+
+.then()
+
+</td>
+
+<td>
+
+await
+
+</td>
+
+</tr>
+
+<tr>
+
+<td>
+
+Chains
+
+</td>
+
+<td>
+
+Reads like normal code
+
+</td>
+
+</tr>
+
+</table>
+
+<h3>🔗 Often Used With</h3>
+
+<ul>
+
+    <li>
+    fetch()
+    </li>
+
+    <li>
+    APIs
+    </li>
+
+    <li>
+    try/catch
+    </li>
+
+    <li>
+    JSON
+    </li>
+
+</ul>
+
+<p class="spell-source">
+    📅 Added: 18 July 2026
+</p>
+
+</article>
+
+
+
+<!-- SPELL CARD 76 -->
+
+<article class="spell-card" id="console-methods">
+
+<h2>🐛 Console Methods</h2>
+
+<div class="spell-tags">
+
+    <button class="spell-tag">JavaScript</button>
+    <button class="spell-tag">Debugging</button>
+    <button class="spell-tag">Developer Tools</button>
+
+</div>
+
+<div class="code-container">
+
+<button class="copy-spell">
+    Copy Spell 🪄
+</button>
+
+<pre><code>
+console.log("Hello");
+
+
+console.warn("Warning!");
+
+
+console.error("Something broke!");
+
+
+console.table([
+    
+    {
+        name: "RJ",
+        level: 10
+    }
+
+]);
+
+</code></pre>
+
+</div>
+
+<h3>📜 Notes</h3>
+
+<ul>
+
+    <li>
+    Console methods display information in browser developer tools.
+    </li>
+
+    <li>
+    Used constantly when debugging code.
+    </li>
+
+    <li>
+    Open DevTools with:
+    <code>F12 → Console</code>
+    </li>
+
+    <li>
+    Remove debugging logs before finishing projects.
+    </li>
+
+</ul>
+
+<h3>🧩 Structure</h3>
+
+<ul>
+
+    <li>
+    <code>console</code> → browser console object.
+    </li>
+
+    <li>
+    <code>.</code> → accesses a method.
+    </li>
+
+    <li>
+    <code>log()</code> → displays information.
+    </li>
+
+</ul>
+
+<h3>✨ Quick Reference</h3>
+
+<table class="spell-table">
+
+<tr>
+
+<th>
+Method
+</th>
+
+<th>
+Purpose
+</th>
+
+</tr>
+
+<tr>
+
+<td>
+console.log()
+</td>
+
+<td>
+Normal information
+</td>
+
+</tr>
+
+<tr>
+
+<td>
+console.warn()
+</td>
+
+<td>
+Warning message
+</td>
+
+</tr>
+
+<tr>
+
+<td>
+console.error()
+</td>
+
+<td>
+Error message
+</td>
+
+</tr>
+
+<tr>
+
+<td>
+console.table()
+</td>
+
+<td>
+Displays arrays/objects as tables
+</td>
+
+</tr>
+
+</table>
+
+<h3>🔗 Often Used With</h3>
+
+<ul>
+
+    <li>
+    Variables
+    </li>
+
+    <li>
+    Functions
+    </li>
+
+    <li>
+    fetch()
+    </li>
+
+    <li>
+    DOM events
+    </li>
+
+</ul>
+
+<p class="spell-source">
+    📅 Added: 18 July 2026
+</p>
+
+</article>
+
+
+
+<!-- SPELL CARD 77 -->
+
+<article class="spell-card" id="try-catch">
+
+<h2>🚨 try / catch</h2>
+
+<div class="spell-tags">
+
+    <button class="spell-tag">JavaScript</button>
+    <button class="spell-tag">Errors</button>
+    <button class="spell-tag">Debugging</button>
+
+</div>
+
+<div class="code-container">
+
+<button class="copy-spell">
+    Copy Spell 🪄
+</button>
+
+<pre><code>
+try {
+
+
+    riskySpell();
+
+
+}
+
+
+catch(error) {
+
+
+    console.log(error);
+
+
+}
+
+</code></pre>
+
+</div>
+
+<h3>📜 Notes</h3>
+
+<ul>
+
+    <li>
+    Allows code to fail safely.
+    </li>
+
+    <li>
+    Instead of crashing, JavaScript runs the <code>catch</code> block.
+    </li>
+
+    <li>
+    Useful when working with APIs, JSON and user input.
+    </li>
+
+    <li>
+    Very common with <code>async/await</code>.
+    </li>
+
+</ul>
+
+<h3>🧩 Structure</h3>
+
+<ul>
+
+    <li>
+    <code>try</code> → code that may fail.
+    </li>
+
+    <li>
+    <code>catch</code> → handles the error.
+    </li>
+
+    <li>
+    <code>error</code> → information about what went wrong.
+    </li>
+
+</ul>
+
+<h3>✨ Real Example</h3>
+
+<pre><code>
+try {
+
+
+    JSON.parse("wrong data");
+
+
+}
+
+
+catch(error) {
+
+
+    console.log("Invalid JSON");
+
+
+}
+
+</code></pre>
+
+<h3>🔗 Often Used With</h3>
+
+<ul>
+
+<li>
+fetch()
+</li>
+
+<li>
+JSON.parse()
+</li>
+
+<li>
+async / await
+</li>
+
+<li>
+Forms
+</li>
+
+</ul>
+
+<p class="spell-source">
+    📅 Added: 18 July 2026
+</p>
+
+</article>
+
+
+
+<!-- SPELL CARD 78 -->
+
+<article class="spell-card" id="throw-errors">
+
+<h2>❌ throw Errors</h2>
+
+<div class="spell-tags">
+
+    <button class="spell-tag">JavaScript</button>
+    <button class="spell-tag">Errors</button>
+    <button class="spell-tag">Validation</button>
+
+</div>
+
+<div class="code-container">
+
+<button class="copy-spell">
+    Copy Spell 🪄
+</button>
+
+<pre><code>
+function checkAge(age) {
+
+
+    if(age &lt; 18) {
+
+
+        throw new Error(
+            "Too young"
+        );
+
+
+    }
+
+
+}
+
+</code></pre>
+
+</div>
+
+<h3>📜 Notes</h3>
+
+<ul>
+
+    <li>
+    <code>throw</code> manually creates an error.
+    </li>
+
+    <li>
+    Useful when you want to stop invalid code.
+    </li>
+
+    <li>
+    Usually combined with <code>try/catch</code>.
+    </li>
+
+    <li>
+    Makes errors easier to understand.
+    </li>
+
+</ul>
+
+<h3>🧩 Structure</h3>
+
+<ul>
+
+    <li>
+    <code>throw</code> → creates error.
+    </li>
+
+    <li>
+    <code>new Error()</code> → creates error object.
+    </li>
+
+    <li>
+    Message explains what happened.
+    </li>
+
+</ul>
+
+<h3>✨ Example</h3>
+
+<pre><code>
+if(username === "") {
+
+
+    throw new Error(
+        "Username required"
+    );
+
+
+}
+
+</code></pre>
+
+<h3>🔗 Often Used With</h3>
+
+<ul>
+
+    <li>
+    Forms
+    </li>
+
+    <li>
+    Validation
+    </li>
+
+    <li>
+    APIs
+    </li>
+
+    <li>
+    try/catch
+    </li>
+
+</ul>
+
+<p class="spell-source">
+    📅 Added: 18 July 2026
+</p>
+
+</article>
+
+
+
+<!-- SPELL CARD 79 -->
+
+<article class="spell-card" id="debugger">
+
+<h2>🔍 Debugger</h2>
+
+<div class="spell-tags">
+
+    <button class="spell-tag">JavaScript</button>
+    <button class="spell-tag">Debugging</button>
+    <button class="spell-tag">Developer Tools</button>
+
+</div>
+
+<div class="code-container">
+
+<button class="copy-spell">
+    Copy Spell 🪄
+</button>
+
+<pre><code>
+function calculateDamage() {
+
+
+    let damage = 50;
+
+
+    debugger;
+
+
+    damage += 20;
+
+
+    return damage;
+
+
+}
+
+</code></pre>
+
+</div>
+
+<h3>📜 Notes</h3>
+
+<ul>
+
+    <li>
+    <code>debugger;</code> pauses JavaScript execution.
+    </li>
+
+    <li>
+    Allows you to inspect variables step-by-step.
+    </li>
+
+    <li>
+    Works inside browser developer tools.
+    </li>
+
+    <li>
+    Better than adding hundreds of console logs.
+    </li>
+
+</ul>
+
+<h3>🧩 Structure</h3>
+
+<ul>
+
+    <li>
+    Place <code>debugger;</code> where you want JavaScript to pause.
+    </li>
+
+    <li>
+    Browser opens debugging tools.
+    </li>
+
+    <li>
+    Inspect variables and code flow.
+    </li>
+
+</ul>
+
+<h3>✨ Debugging Tools</h3>
+
+<table class="spell-table">
+
+<tr>
+
+<th>
+Tool
+</th>
+
+<th>
+Purpose
+</th>
+
+</tr>
+
+<tr>
+
+<td>
+Breakpoint
+</td>
+
+<td>
+Pause code
+</td>
+
+</tr>
+
+<tr>
+
+<td>
+Step Over
+</td>
+
+<td>
+Move line by line
+</td>
+
+</tr>
+
+<tr>
+
+<td>
+Watch
+</td>
+
+<td>
+Monitor values
+</td>
+
+</tr>
+
+</table>
+
+<h3>🔗 Often Used With</h3>
+
+<ul>
+
+    <li>
+    Chrome DevTools
+    </li>
+
+    <li>
+    Console
+    </li>
+
+    <li>
+    Functions
+    </li>
+
+    <li>
+    Loops
+    </li>
+
+</ul>
+
+<p class="spell-source">
+    📅 Added: 18 July 2026
+</p>
+
+</article>
+
+
+
+<!-- SPELL CARD 80 -->
+
+<article class="spell-card" id="validation">
+
+<h2>🛡️ Validation Checks</h2>
+
+<div class="spell-tags">
+
+    <button class="spell-tag">JavaScript</button>
+    <button class="spell-tag">Forms</button>
+    <button class="spell-tag">Validation</button>
+
+</div>
+
+<div class="code-container">
+
+<button class="copy-spell">
+    Copy Spell 🪄
+</button>
+
+<pre><code>
+const username = "";
+
+
+if(username === "") {
+
+
+    console.log(
+        "Username required"
+    );
+
+
+}
+
+</code></pre>
+
+</div>
+
+<h3>📜 Notes</h3>
+
+<ul>
+
+    <li>
+    Validation checks whether data is acceptable.
+    </li>
+
+    <li>
+    Prevents bad information entering your application.
+    </li>
+
+    <li>
+    Common with forms.
+    </li>
+
+    <li>
+    Always validate user input.
+    </li>
+
+</ul>
+
+<h3>🧩 Structure</h3>
+
+<ul>
+
+    <li>
+    Value being checked:
+    <code>username</code>
+    </li>
+
+    <li>
+    Condition:
+    <code>=== ""</code>
+    </li>
+
+    <li>
+    Action:
+    inside <code>{ }</code>
+    </li>
+
+</ul>
+
+<h3>✨ Common Checks</h3>
+
+<table class="spell-table">
+
+<tr>
+
+<th>
+Check
+</th>
+
+<th>
+Example
+</th>
+
+</tr>
+
+<tr>
+
+<td>
+Empty value
+</td>
+
+<td>
+<code>value === ""</code>
+</td>
+
+</tr>
+
+<tr>
+
+<td>
+Length
+</td>
+
+<td>
+<code>value.length</code>
+</td>
+
+</tr>
+
+<tr>
+
+<td>
+Number
+</td>
+
+<td>
+<code>typeof value</code>
+</td>
+
+</tr>
+
+</table>
+
+<h3>🔗 Often Used With</h3>
+
+<ul>
+
+    <li>
+    Forms
+    </li>
+
+    <li>
+    Input values
+    </li>
+
+    <li>
+    Regular expressions
+    </li>
+
+    <li>
+    try/catch
+    </li>
+
+</ul>
+
+<p class="spell-source">
+    📅 Added: 18 July 2026
+</p>
+
+</article>
+
+
+
+
 
 </main>
 

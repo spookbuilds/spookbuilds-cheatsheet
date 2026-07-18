@@ -656,3 +656,21 @@ footer {
     margin-left:5px;
 
 }
+
+
+.spell-table{
+    width:100%;
+    border-collapse:collapse;
+    margin:15px 0;
+}
+
+.spell-table th{
+    background:#2a170d;
+    color:#ff9a2f;
+    padding:10px;
+}
+
+.spell-table td{
+    padding:8px 10px;
+    border-top:1px solid rgba(255,140,0,.15);
+}
