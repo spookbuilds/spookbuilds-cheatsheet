@@ -13783,13 +13783,551 @@ Changes CSS classes
 
 <!-- SPELL CARD 93 -->
 
+<article class="spell-card" id="matches">
 
+<h2>🔍 matches()</h2>
+
+<div class="spell-tags">
+
+    <button class="spell-tag">JavaScript</button>
+    <button class="spell-tag">DOM</button>
+    <button class="spell-tag">Elements</button>
+
+</div>
+
+<div class="code-container">
+
+<button class="copy-spell">
+    Copy Spell 🪄
+</button>
+
+<pre><code>
+document
+.querySelector(".spell-list")
+.addEventListener(
+"click",
+(event) => {
+
+
+if (
+event.target.matches(".spell")
+) {
+
+console.log(
+"Spell clicked!"
+);
+
+}
+
+
+});
+
+</code></pre>
+
+</div>
+
+<h3>📜 Notes</h3>
+
+<ul>
+
+    <li>
+    <code>matches()</code> checks whether an element matches a CSS selector.
+    </li>
+
+    <li>
+    Returns either
+    <code>true</code>
+    or
+    <code>false</code>.
+    </li>
+
+    <li>
+    Works with any valid CSS selector.
+    </li>
+
+    <li>
+    Very common when using Event Delegation.
+    </li>
+
+    <li>
+    Does not change the element.
+    </li>
+
+</ul>
+
+<h3>🧩 Structure</h3>
+
+<ul>
+
+    <li>
+    <code>event.target</code>
+    → the clicked element.
+    </li>
+
+    <li>
+    <code>matches()</code>
+    → checks the selector.
+    </li>
+
+    <li>
+    <code>".spell"</code>
+    → CSS selector to test.
+    </li>
+
+    <li>
+    Returns a boolean value.
+    </li>
+
+</ul>
+
+<h3>✨ Common Examples</h3>
+
+<table class="spell-table">
+
+<tr>
+
+<th>
+Code
+</th>
+
+<th>
+Checks For
+</th>
+
+</tr>
+
+<tr>
+
+<td>
+<code>.matches(".card")</code>
+</td>
+
+<td>
+Class
+</td>
+
+</tr>
+
+<tr>
+
+<td>
+<code>.matches("#menu")</code>
+</td>
+
+<td>
+ID
+</td>
+
+</tr>
+
+<tr>
+
+<td>
+<code>.matches("button")</code>
+</td>
+
+<td>
+Element type
+</td>
+
+</tr>
+
+<tr>
+
+<td>
+<code>.matches("input")</code>
+</td>
+
+<td>
+Input element
+</td>
+
+</tr>
+
+</table>
+
+<h3>✨ Example</h3>
+
+<pre><code>
+document
+.addEventListener(
+"click",
+(event) => {
+
+
+if (
+event.target.matches("button")
+) {
+
+console.log(
+"A button was clicked!"
+);
+
+}
+
+
+});
+
+</code></pre>
+
+<ul>
+
+    <li>
+    Only runs when a button is clicked.
+    </li>
+
+    <li>
+    Ignores every other element.
+    </li>
+
+</ul>
+
+<h3>⚔️ matches() vs querySelector()</h3>
+
+<table class="spell-table">
+
+<tr>
+
+<th>
+matches()
+</th>
+
+<th>
+querySelector()
+</th>
+
+</tr>
+
+<tr>
+
+<td>
+Checks one existing element
+</td>
+
+<td>
+Finds an element
+</td>
+
+</tr>
+
+<tr>
+
+<td>
+Returns true/false
+</td>
+
+<td>
+Returns an element
+</td>
+
+</tr>
+
+<tr>
+
+<td>
+Great for Event Delegation
+</td>
+
+<td>
+Great for selecting elements
+</td>
+
+</tr>
+
+</table>
+
+<h3>🔗 Often Used With</h3>
+
+<ul>
+
+    <li>
+    <code>event.target</code>
+    </li>
+
+    <li>
+    Event Delegation
+    </li>
+
+    <li>
+    <code>addEventListener()</code>
+    </li>
+
+    <li>
+    <code>closest()</code>
+    </li>
+
+    <li>
+    Buttons
+    </li>
+
+    <li>
+    Dynamic HTML
+    </li>
+
+</ul>
+
+<p class="spell-source">
+    📅 Added: 18 July 2026
+</p>
+
+</article>
 
 
 
 <!-- SPELL CARD 94 -->
 
+<article class="spell-card" id="mouse-events">
 
+<h2>🖱️ Mouse Events</h2>
+
+<div class="spell-tags">
+
+    <button class="spell-tag">JavaScript</button>
+    <button class="spell-tag">Events</button>
+    <button class="spell-tag">DOM</button>
+
+</div>
+
+<div class="code-container">
+
+<button class="copy-spell">
+    Copy Spell 🪄
+</button>
+
+<pre><code>
+const button =
+document.querySelector("button");
+
+
+button.addEventListener(
+"click",
+() => {
+
+console.log(
+"Spell cast!"
+);
+
+});
+
+</code></pre>
+
+</div>
+
+<h3>📜 Notes</h3>
+
+<ul>
+
+    <li>
+    Mouse events happen when the user interacts with the mouse.
+    </li>
+
+    <li>
+    They are usually attached using
+    <code>addEventListener()</code>.
+    </li>
+
+    <li>
+    Each event triggers different code.
+    </li>
+
+    <li>
+    Very common in buttons, menus, games and interactive websites.
+    </li>
+
+</ul>
+
+<h3>🧩 Structure</h3>
+
+<ul>
+
+    <li>
+    <code>button</code>
+    → selected element.
+    </li>
+
+    <li>
+    <code>addEventListener()</code>
+    → listens for an event.
+    </li>
+
+    <li>
+    <code>"click"</code>
+    → event name.
+    </li>
+
+    <li>
+    Arrow function
+    → runs when the event happens.
+    </li>
+
+</ul>
+
+<h3>✨ Common Mouse Events</h3>
+
+<table class="spell-table">
+
+<tr>
+
+<th>
+Event
+</th>
+
+<th>
+When It Happens
+</th>
+
+</tr>
+
+<tr>
+
+<td>
+<code>click</code>
+</td>
+
+<td>
+Single click
+</td>
+
+</tr>
+
+<tr>
+
+<td>
+<code>dblclick</code>
+</td>
+
+<td>
+Double click
+</td>
+
+</tr>
+
+<tr>
+
+<td>
+<code>mousedown</code>
+</td>
+
+<td>
+Mouse button pressed
+</td>
+
+</tr>
+
+<tr>
+
+<td>
+<code>mouseup</code>
+</td>
+
+<td>
+Mouse button released
+</td>
+
+</tr>
+
+<tr>
+
+<td>
+<code>mouseenter</code>
+</td>
+
+<td>
+Pointer enters element
+</td>
+
+</tr>
+
+<tr>
+
+<td>
+<code>mouseleave</code>
+</td>
+
+<td>
+Pointer leaves element
+</td>
+
+</tr>
+
+<tr>
+
+<td>
+<code>mousemove</code>
+</td>
+
+<td>
+Pointer moves over element
+</td>
+
+</tr>
+
+</table>
+
+<h3>✨ Example</h3>
+
+<pre><code>
+card.addEventListener(
+
+"mouseenter",
+
+() => {
+
+card.classList.add(
+"hover"
+);
+
+});
+
+</code></pre>
+
+<ul>
+
+    <li>
+    Runs when the mouse enters the card.
+    </li>
+
+    <li>
+    Often used for hover animations.
+    </li>
+
+</ul>
+
+<h3>🔗 Often Used With</h3>
+
+<ul>
+
+    <li>
+    <code>addEventListener()</code>
+    </li>
+
+    <li>
+    Event Object
+    </li>
+
+    <li>
+    <code>classList</code>
+    </li>
+
+    <li>
+    <code>matches()</code>
+    </li>
+
+    <li>
+    Event Delegation
+    </li>
+
+    <li>
+    Dynamic HTML
+    </li>
+
+</ul>
+
+<p class="spell-source">
+    📅 Added: 18 July 2026
+</p>
+
+</article>
 
 
 
@@ -13935,19 +14473,961 @@ document
 
 <!-- SPELL CARD 96 -->
 
+<article class="spell-card" id="keyboard-events">
 
+<h2>⌨️ Keyboard Events</h2>
+
+<div class="spell-tags">
+
+    <button class="spell-tag">JavaScript</button>
+    <button class="spell-tag">Events</button>
+    <button class="spell-tag">DOM</button>
+
+</div>
+
+<div class="code-container">
+
+<button class="copy-spell">
+    Copy Spell 🪄
+</button>
+
+<pre><code>
+document.addEventListener(
+
+"keydown",
+
+(event) => {
+
+console.log(event.key);
+
+}
+
+);
+
+</code></pre>
+
+</div>
+
+<h3>📜 Notes</h3>
+
+<ul>
+
+    <li>
+    Keyboard events run when the user presses or releases keys.
+    </li>
+
+    <li>
+    They are handled using
+    <code>addEventListener()</code>.
+    </li>
+
+    <li>
+    The Event Object gives information about the key pressed.
+    </li>
+
+    <li>
+    Commonly used for shortcuts, controls and forms.
+    </li>
+
+    <li>
+    Does not change the page unless you add code to do so.
+    </li>
+
+</ul>
+
+<h3>🧩 Structure</h3>
+
+<ul>
+
+    <li>
+    <code>keydown</code>
+    → runs when a key is pressed.
+    </li>
+
+    <li>
+    <code>keyup</code>
+    → runs when a key is released.
+    </li>
+
+    <li>
+    <code>event</code>
+    → stores information about the action.
+    </li>
+
+    <li>
+    <code>event.key</code>
+    → gets the key name.
+    </li>
+
+</ul>
+
+<h3>✨ Keyboard Events Reference</h3>
+
+<table class="spell-table">
+
+<tr>
+
+<th>
+Event
+</th>
+
+<th>
+When It Runs
+</th>
+
+</tr>
+
+<tr>
+
+<td>
+<code>keydown</code>
+</td>
+
+<td>
+Key pressed down
+</td>
+
+</tr>
+
+<tr>
+
+<td>
+<code>keyup</code>
+</td>
+
+<td>
+Key released
+</td>
+
+</tr>
+
+<tr>
+
+<td>
+<code>keypress</code>
+</td>
+
+<td>
+Older key event (avoid for new code)
+</td>
+
+</tr>
+
+</table>
+
+<h3>✨ Event Object Reference</h3>
+
+<table class="spell-table">
+
+<tr>
+
+<th>
+Property
+</th>
+
+<th>
+Returns
+</th>
+
+</tr>
+
+<tr>
+
+<td>
+<code>event.key</code>
+</td>
+
+<td>
+The key value
+</td>
+
+</tr>
+
+<tr>
+
+<td>
+<code>event.code</code>
+</td>
+
+<td>
+Physical keyboard key
+</td>
+
+</tr>
+
+<tr>
+
+<td>
+<code>event.target</code>
+</td>
+
+<td>
+Element that triggered event
+</td>
+
+</tr>
+
+<tr>
+
+<td>
+<code>event.preventDefault()</code>
+</td>
+
+<td>
+Stops default action
+</td>
+
+</tr>
+
+</table>
+
+<h3>✨ Common Key Checks</h3>
+
+<pre><code>
+document.addEventListener(
+
+"keydown",
+
+(event) => {
+
+
+if(event.key === "Enter") {
+
+console.log(
+"Submitted"
+);
+
+}
+
+
+});
+
+</code></pre>
+
+<table class="spell-table">
+
+<tr>
+
+<th>
+Key
+</th>
+
+<th>
+Common Use
+</th>
+
+</tr>
+
+<tr>
+
+<td>
+<code>Enter</code>
+</td>
+
+<td>
+Submit actions
+</td>
+
+</tr>
+
+<tr>
+
+<td>
+<code>Escape</code>
+</td>
+
+<td>
+Close menus/modals
+</td>
+
+</tr>
+
+<tr>
+
+<td>
+<code>ArrowUp</code>
+</td>
+
+<td>
+Move upwards
+</td>
+
+</tr>
+
+<tr>
+
+<td>
+<code>ArrowDown</code>
+</td>
+
+<td>
+Move downwards
+</td>
+
+</tr>
+
+<tr>
+
+<td>
+<code>Space</code>
+</td>
+
+<td>
+Actions/jumps
+</td>
+
+</tr>
+
+</table>
+
+<h3>🔗 Often Used With</h3>
+
+<ul>
+
+<li>
+<code>addEventListener()</code>
+</li>
+
+<li>
+Event Object
+</li>
+
+<li>
+<code>preventDefault()</code>
+</li>
+
+<li>
+Forms
+</li>
+
+<li>
+Games
+</li>
+
+<li>
+Keyboard shortcuts
+</li>
+
+<li>
+Input fields
+</li>
+
+</ul>
+
+<p class="spell-source">
+    📅 Added: 18 July 2026
+</p>
+
+</article>
 
 
 
 <!-- SPELL CARD 97 -->
 
+<article class="spell-card" id="form-handling">
 
+<h2>📝 Form Handling</h2>
+
+<div class="spell-tags">
+
+    <button class="spell-tag">JavaScript</button>
+    <button class="spell-tag">Forms</button>
+    <button class="spell-tag">DOM</button>
+
+</div>
+
+<div class="code-container">
+
+<button class="copy-spell">
+    Copy Spell 🪄
+</button>
+
+<pre><code>
+const form =
+document.querySelector("form");
+
+
+const input =
+document.querySelector("input");
+
+
+form.addEventListener(
+
+"submit",
+
+(event) => {
+
+
+event.preventDefault();
+
+
+console.log(
+input.value
+);
+
+
+});
+
+</code></pre>
+
+</div>
+
+<h3>📜 Notes</h3>
+
+<ul>
+
+    <li>
+    Form handling controls what happens when a user submits information.
+    </li>
+
+    <li>
+    Forms normally refresh the page when submitted.
+    </li>
+
+    <li>
+    <code>preventDefault()</code>
+    stops the normal submission.
+    </li>
+
+    <li>
+    <code>value</code>
+    gets the user's input.
+    </li>
+
+    <li>
+    JavaScript can validate, store or send the data.
+    </li>
+
+</ul>
+
+<h3>🧩 Structure</h3>
+
+<ul>
+
+    <li>
+    <code>form</code>
+    → the HTML form element.
+    </li>
+
+    <li>
+    <code>submit</code>
+    → event triggered when submitted.
+    </li>
+
+    <li>
+    <code>event</code>
+    → contains submission information.
+    </li>
+
+    <li>
+    <code>preventDefault()</code>
+    → stops page refresh.
+    </li>
+
+    <li>
+    <code>input.value</code>
+    → gets entered text.
+    </li>
+
+</ul>
+
+<h3>✨ Form Workflow</h3>
+
+<table class="spell-table">
+
+<tr>
+
+<th>
+Step
+</th>
+
+<th>
+Spell
+</th>
+
+</tr>
+
+<tr>
+
+<td>
+Find form
+</td>
+
+<td>
+<code>querySelector()</code>
+</td>
+
+</tr>
+
+<tr>
+
+<td>
+Listen for submit
+</td>
+
+<td>
+<code>addEventListener()</code>
+</td>
+
+</tr>
+
+<tr>
+
+<td>
+Stop refresh
+</td>
+
+<td>
+<code>preventDefault()</code>
+</td>
+
+</tr>
+
+<tr>
+
+<td>
+Get user input
+</td>
+
+<td>
+<code>value</code>
+</td>
+
+</tr>
+
+<tr>
+
+<td>
+Check data
+</td>
+
+<td>
+Validation
+</td>
+
+</tr>
+
+</table>
+
+<h3>✨ Multiple Inputs</h3>
+
+<pre><code>
+const username =
+document.querySelector("#username");
+
+
+const email =
+document.querySelector("#email");
+
+
+form.addEventListener(
+
+"submit",
+
+(event) => {
+
+
+event.preventDefault();
+
+
+console.log(
+username.value
+);
+
+
+console.log(
+email.value
+);
+
+
+});
+
+</code></pre>
+
+<h3>⚠️ Common Mistakes</h3>
+
+<ul>
+
+    <li>
+    Forgetting
+    <code>preventDefault()</code>
+    and the page refreshes.
+    </li>
+
+    <li>
+    Using the input element instead of:
+    <code>input.value</code>
+    </li>
+
+    <li>
+    Not validating user data.
+    </li>
+
+    <li>
+    Not handling empty fields.
+    </li>
+
+</ul>
+
+<h3>🔗 Often Used With</h3>
+
+<ul>
+
+    <li>
+    <code>preventDefault()</code>
+    </li>
+
+    <li>
+    <code>value</code>
+    </li>
+
+    <li>
+    <code>addEventListener()</code>
+    </li>
+
+    <li>
+    Validation Checks
+    </li>
+
+    <li>
+    <code>FormData</code>
+    </li>
+
+    <li>
+    localStorage
+    </li>
+
+    <li>
+    fetch()
+    </li>
+
+</ul>
+
+<p class="spell-source">
+    📅 Added: 18 July 2026
+</p>
+
+</article>
 
 
 
 <!-- SPELL CARD 98 -->
 
+<article class="spell-card" id="form-data">
 
+<h2>📤 FormData</h2>
+
+<div class="spell-tags">
+
+    <button class="spell-tag">JavaScript</button>
+    <button class="spell-tag">Forms</button>
+    <button class="spell-tag">API</button>
+
+</div>
+
+<div class="code-container">
+
+<button class="copy-spell">
+    Copy Spell 🪄
+</button>
+
+<pre><code>
+const form =
+document.querySelector("form");
+
+
+const data =
+new FormData(form);
+
+
+console.log(
+data
+);
+
+</code></pre>
+
+</div>
+
+<h3>📜 Notes</h3>
+
+<ul>
+
+    <li>
+    <code>FormData</code> collects information from a form.
+    </li>
+
+    <li>
+    Creates a special object containing form values.
+    </li>
+
+    <li>
+    Useful for sending data to servers.
+    </li>
+
+    <li>
+    Often used with:
+    <code>fetch()</code>
+    </li>
+
+    <li>
+    Can handle text fields and file uploads.
+    </li>
+
+</ul>
+
+<h3>🧩 Structure</h3>
+
+<ul>
+
+    <li>
+    <code>new</code>
+    → creates a new object.
+    </li>
+
+    <li>
+    <code>FormData()</code>
+    → browser form data constructor.
+    </li>
+
+    <li>
+    <code>form</code>
+    → the form being collected.
+    </li>
+
+    <li>
+    <code>data</code>
+    → stores the collected values.
+    </li>
+
+</ul>
+
+<h3>✨ Getting Values</h3>
+
+<pre><code>
+const username =
+data.get("username");
+
+
+console.log(username);
+
+</code></pre>
+
+<table class="spell-table">
+
+<tr>
+
+<th>
+Method
+</th>
+
+<th>
+Purpose
+</th>
+
+</tr>
+
+<tr>
+
+<td>
+<code>get()</code>
+</td>
+
+<td>
+Gets a value
+</td>
+
+</tr>
+
+<tr>
+
+<td>
+<code>set()</code>
+</td>
+
+<td>
+Changes a value
+</td>
+
+</tr>
+
+<tr>
+
+<td>
+<code>append()</code>
+</td>
+
+<td>
+Adds a value
+</td>
+
+</tr>
+
+<tr>
+
+<td>
+<code>delete()</code>
+</td>
+
+<td>
+Removes a value
+</td>
+
+</tr>
+
+<tr>
+
+<td>
+<code>has()</code>
+</td>
+
+<td>
+Checks if value exists
+</td>
+
+</tr>
+
+</table>
+
+<h3>✨ Example Form</h3>
+
+<pre><code>
+&lt;form&gt;
+
+&lt;input 
+name="username"&gt;
+
+&lt;input 
+name="email"&gt;
+
+&lt;/form&gt;
+</code></pre>
+
+<pre><code>
+const data =
+new FormData(form);
+
+
+console.log(
+data.get("email")
+);
+
+</code></pre>
+
+<h3>✨ Sending With fetch()</h3>
+
+<pre><code>
+fetch("/signup", {
+
+method: "POST",
+
+body: data
+
+});
+
+</code></pre>
+
+<ul>
+
+    <li>
+    Browser automatically formats the data.
+    </li>
+
+    <li>
+    Common for sending forms to APIs.
+    </li>
+
+</ul>
+
+
+<h3>⚔️ FormData vs value</h3>
+
+<table class="spell-table">
+
+<tr>
+
+<th>
+value
+</th>
+
+<th>
+FormData
+</th>
+
+</tr>
+
+<tr>
+
+<td>
+One input
+</td>
+
+<td>
+Whole form
+</td>
+
+</tr>
+
+<tr>
+
+<td>
+Manual collection
+</td>
+
+<td>
+Automatic collection
+</td>
+
+</tr>
+
+<tr>
+
+<td>
+Small forms
+</td>
+
+<td>
+Larger forms/uploads
+</td>
+
+</tr>
+
+</table>
+
+<h3>🔗 Often Used With</h3>
+
+<ul>
+
+<li>
+Form Handling
+</li>
+
+<li>
+<code>preventDefault()</code>
+</li>
+
+<li>
+<code>fetch()</code>
+</li>
+
+<li>
+APIs
+</li>
+
+<li>
+File uploads
+</li>
+
+<li>
+Validation Checks
+</li>
+
+</ul>
+
+<p class="spell-source">
+    📅 Added: 18 July 2026
+</p>
+
+</article>
 
 
 
@@ -14263,33 +15743,23 @@ Timer
 
 <!-- SPELL CARD 101 -->
 
-
-
-
-
-<!-- SPELL CARD 102 -->
-
 <article class="spell-card" id="promise-states">
-
 
 <h2>⏳ Promise States</h2>
 
-
 <div class="spell-tags">
 
-<button class="spell-tag">JavaScript</button>
-<button class="spell-tag">Async</button>
-<button class="spell-tag">Promises</button>
+    <button class="spell-tag">JavaScript</button>
+    <button class="spell-tag">Async</button>
+    <button class="spell-tag">Promises</button>
 
 </div>
-
 
 <div class="code-container">
 
 <button class="copy-spell">
 Copy Spell 🪄
 </button>
-
 
 <pre><code>
 
@@ -14311,38 +15781,33 @@ console.log(error);
 
 });
 
-
 </code></pre>
 
-
 </div>
-
 
 <h3>📜 Notes</h3>
 
 <ul>
 
-<li>
-Every Promise has a current state.
-</li>
+    <li>
+    Every Promise has a current state.
+    </li>
 
-<li>
-A Promise starts as pending.
-</li>
+    <li>
+    A Promise starts as pending.
+    </li>
 
-<li>
-It becomes fulfilled when successful.
-</li>
+    <li>
+    It becomes fulfilled when successful.
+    </li>
 
-<li>
-It becomes rejected when failed.
-</li>
+    <li>
+    It becomes rejected when failed.
+    </li>
 
 </ul>
 
-
 <h3>🧩 Promise States</h3>
-
 
 <table class="spell-table">
 
@@ -14358,7 +15823,6 @@ Meaning
 
 </tr>
 
-
 <tr>
 
 <td>
@@ -14370,7 +15834,6 @@ Still waiting
 </td>
 
 </tr>
-
 
 <tr>
 
@@ -14384,7 +15847,6 @@ Completed successfully
 
 </tr>
 
-
 <tr>
 
 <td>
@@ -14397,68 +15859,59 @@ Something went wrong
 
 </tr>
 
-
 </table>
-
 
 <h3>🔗 Often Used With</h3>
 
 <ul>
 
-<li>
-.then()
-</li>
+    <li>
+    .then()
+    </li>
 
-<li>
-.catch()
-</li>
+    <li>
+    .catch()
+    </li>
 
-<li>
-fetch()
-</li>
+    <li>
+    fetch()
+    </li>
 
-<li>
-async / await
-</li>
+    <li>
+    async / await
+    </li>
 
 </ul>
 
-
 <p class="spell-source">
-📅 Added: 18 July 2026
+    📅 Added: 18 July 2026
 </p>
-
 
 </article>
 
 
 
-<!-- SPELL CARD 103 -->
+<!-- SPELL CARD 102 -->
 
 <article class="spell-card" id="fetch-api">
 
-
 <h2>🌍 Fetch API</h2>
-
 
 <div class="spell-tags">
 
-<button class="spell-tag">JavaScript</button>
-<button class="spell-tag">API</button>
-<button class="spell-tag">Async</button>
+    <button class="spell-tag">JavaScript</button>
+    <button class="spell-tag">API</button>
+    <button class="spell-tag">Async</button>
 
 </div>
-
 
 <div class="code-container">
 
 <button class="copy-spell">
-Copy Spell 🪄
+    Copy Spell 🪄
 </button>
 
-
 <pre><code>
-
 fetch(
 "https://api.example.com/data"
 )
@@ -14481,150 +15934,131 @@ console.log(data);
 
 });
 
-
 </code></pre>
 
-
 </div>
-
 
 <h3>📜 Notes</h3>
 
 <ul>
 
-<li>
-<code>fetch()</code> requests data from another source.
-</li>
+    <li>
+    <code>fetch()</code> requests data from another source.
+    </li>
 
-<li>
-Commonly used with APIs.
-</li>
+    <li>
+    Commonly used with APIs.
+    </li>
 
-<li>
-Returns a Promise.
-</li>
+    <li>
+    Returns a Promise.
+    </li>
 
-<li>
-Usually followed by converting the response using <code>.json()</code>.
-</li>
+    <li>
+    Usually followed by converting the response using <code>.json()</code>.
+    </li>
 
-<li>
-The returned data can then be used in your webpage.
-</li>
+    <li>
+    The returned data can then be used in your webpage.
+    </li>
 
 </ul>
-
 
 <h3>🧩 Structure</h3>
 
 <ul>
 
-<li>
-URL → where data comes from.
-</li>
+    <li>
+    URL → where data comes from.
+    </li>
 
-<li>
-Response → server reply.
-</li>
+    <li>
+    Response → server reply.
+    </li>
 
-<li>
-<code>.json()</code>
-→ converts data into JavaScript.
-</li>
+    <li>
+    <code>.json()</code>
+    → converts data into JavaScript.
+    </li>
 
-<li>
-Data → usable information.
-</li>
+    <li>
+    Data → usable information.
+    </li>
 
 </ul>
-
 
 <h3>✨ Real Example</h3>
 
 <ul>
 
-<li>
-Weather app:
-gets weather data.
-</li>
+    <li>
+    Weather app:
+    gets weather data.
+    </li>
 
-<li>
-Pokémon app:
-gets Pokémon information.
-</li>
+    <li>
+    Pokémon app:
+    gets Pokémon information.
+    </li>
 
-<li>
-Shop:
-gets product data.
-</li>
+    <li>
+    Shop:
+    gets product data.
+    </li>
 
 </ul>
-
 
 <h3>🔗 Often Used With</h3>
 
 <ul>
 
-<li>
-Promises
-</li>
+    <li>
+    Promises
+    </li>
 
-<li>
-async / await
-</li>
+    <li>
+    async / await
+    </li>
 
-<li>
-JSON
-</li>
+    <li>
+    JSON
+    </li>
 
-<li>
-DOM manipulation
-</li>
+    <li>
+    DOM manipulation
+    </li>
 
 </ul>
 
-
 <p class="spell-source">
-📅 Added: 18 July 2026
+    📅 Added: 18 July 2026
 </p>
-
 
 </article>
 
 
 
-<!-- SPELL CARD 104 -->
-
-
-
-
-
-<!-- SPELL CARD 105 -->
+<!-- SPELL CARD 103 -->
 
 <article class="spell-card" id="async-errors">
 
-
 <h2>🛡️ Async Error Handling</h2>
-
 
 <div class="spell-tags">
 
-<button class="spell-tag">JavaScript</button>
-<button class="spell-tag">Async</button>
-<button class="spell-tag">Errors</button>
+    <button class="spell-tag">JavaScript</button>
+    <button class="spell-tag">Async</button>
+    <button class="spell-tag">Errors</button>
 
 </div>
-
 
 <div class="code-container">
 
 <button class="copy-spell">
-Copy Spell 🪄
+    Copy Spell 🪄
 </button>
 
-
 <pre><code>
-
 async function getData() {
 
 
@@ -14659,143 +16093,130 @@ error
 
 }
 
-
 </code></pre>
 
-
 </div>
-
 
 <h3>📜 Notes</h3>
 
 <ul>
 
-<li>
-Errors can happen when using APIs.
-</li>
+    <li>
+    Errors can happen when using APIs.
+    </li>
 
-<li>
-<code>try</code> contains code that might fail.
-</li>
+    <li>
+    <code>try</code> contains code that might fail.
+    </li>
 
-<li>
-<code>catch</code> handles the problem.
-</li>
+    <li>
+    <code>catch</code> handles the problem.
+    </li>
 
-<li>
-Prevents your application crashing.
-</li>
+    <li>
+    Prevents your application crashing.
+    </li>
 
-<li>
-Important for real-world applications.
-</li>
+    <li>
+    Important for real-world applications.
+    </li>
 
 </ul>
-
 
 <h3>🧩 Structure</h3>
 
 <ul>
 
-<li>
-<code>try</code>
-→ attempt code.
-</li>
+    <li>
+    <code>try</code>
+    → attempt code.
+    </li>
 
-<li>
-<code>catch</code>
-→ handle failure.
-</li>
+    <li>
+    <code>catch</code>
+    → handle failure.
+    </li>
 
-<li>
-<code>error</code>
-→ information about what happened.
-</li>
+    <li>
+    <code>error</code>
+    → information about what happened.
+    </li>
 
 </ul>
-
 
 <h3>✨ Common Errors</h3>
 
 <ul>
 
-<li>
-No internet connection.
-</li>
+    <li>
+    No internet connection.
+    </li>
 
-<li>
-Wrong API URL.
-</li>
+    <li>
+    Wrong API URL.
+    </li>
 
-<li>
-Invalid data.
-</li>
+    <li>
+    Invalid data.
+    </li>
 
-<li>
-Server problems.
-</li>
+    <li>
+    Server problems.
+    </li>
 
 </ul>
-
 
 <h3>🔗 Often Used With</h3>
 
 <ul>
 
-<li>
-fetch()
-</li>
+    <li>
+    fetch()
+    </li>
 
-<li>
-async / await
-</li>
+    <li>
+    async / await
+    </li>
 
-<li>
-APIs
-</li>
+    <li>
+    APIs
+    </li>
 
-<li>
-JSON
-</li>
+    <li>
+    JSON
+    </li>
 
 </ul>
 
-
 <p class="spell-source">
-📅 Added: 18 July 2026
+    📅 Added: 18 July 2026
 </p>
-
 
 </article>
 
 
 
-<!-- SPELL CARD 106 -->
+<!-- SPELL CARD 104 -->
 
 <article class="spell-card" id="destructuring">
 
-
 <h2>🧩 Destructuring</h2>
-
 
 <div class="spell-tags">
 
-<button class="spell-tag">JavaScript</button>
-<button class="spell-tag">Objects</button>
-<button class="spell-tag">Arrays</button>
+    <button class="spell-tag">JavaScript</button>
+    <button class="spell-tag">Objects</button>
+    <button class="spell-tag">Arrays</button>
 
 </div>
-
 
 <div class="code-container">
 
 <button class="copy-spell">
-Copy Spell 🪄
+    Copy Spell 🪄
 </button>
 
-
 <pre><code>
-
 const wizard = {
 
     name: "Merlin",
@@ -14809,64 +16230,57 @@ const { name, power } = wizard;
 
 console.log(name);
 
-
 </code></pre>
 
-
 </div>
-
 
 <h3>📜 Notes</h3>
 
 <ul>
 
-<li>
-Destructuring extracts values from objects or arrays.
-</li>
+    <li>
+    Destructuring extracts values from objects or arrays.
+    </li>
 
-<li>
-Creates variables from existing data.
-</li>
+    <li>
+    Creates variables from existing data.
+    </li>
 
-<li>
-Makes code shorter and easier to read.
-</li>
+    <li>
+    Makes code shorter and easier to read.
+    </li>
 
-<li>
-Very common when working with API data.
-</li>
+    <li>
+    Very common when working with API data.
+    </li>
 
 </ul>
-
 
 <h3>🧩 Structure</h3>
 
 <ul>
 
-<li>
-<code>{ }</code> → object destructuring.
-</li>
+    <li>
+    <code>{ }</code> → object destructuring.
+    </li>
 
-<li>
-<code>[ ]</code> → array destructuring.
-</li>
+    <li>
+    <code>[ ]</code> → array destructuring.
+    </li>
 
-<li>
-<code>name</code> → property being extracted.
-</li>
+    <li>
+    <code>name</code> → property being extracted.
+    </li>
 
-<li>
-<code>wizard</code> → object being unpacked.
-</li>
+    <li>
+    <code>wizard</code> → object being unpacked.
+    </li>
 
 </ul>
 
-
 <h3>✨ Array Example</h3>
 
-
 <pre><code>
-
 const spells = [
 
 "Fireball",
@@ -14878,74 +16292,59 @@ const spells = [
 
 const [first, second] = spells;
 
-
 </code></pre>
-
 
 <h3>🔗 Often Used With</h3>
 
 <ul>
 
-<li>
-Objects
-</li>
+    <li>
+    Objects
+    </li>
 
-<li>
-Arrays
-</li>
+    <li>
+    Arrays
+    </li>
 
-<li>
-fetch()
-</li>
+    <li>
+    fetch()
+    </li>
 
-<li>
-React props
-</li>
+    <li>
+    React props
+    </li>
 
 </ul>
 
-
 <p class="spell-source">
-📅 Added: 18 July 2026
+    📅 Added: 18 July 2026
 </p>
-
 
 </article>
 
 
 
-<!-- SPELL CARD 107 -->
-
-
-
-
-
-<!-- SPELL CARD 108 -->
+<!-- SPELL CARD 105 -->
 
 <article class="spell-card" id="rest-parameters">
 
-
 <h2>📦 Rest Parameters (...)</h2>
-
 
 <div class="spell-tags">
 
-<button class="spell-tag">JavaScript</button>
-<button class="spell-tag">Functions</button>
-<button class="spell-tag">Arrays</button>
+    <button class="spell-tag">JavaScript</button>
+    <button class="spell-tag">Functions</button>
+    <button class="spell-tag">Arrays</button>
 
 </div>
-
 
 <div class="code-container">
 
 <button class="copy-spell">
-Copy Spell 🪄
+    Copy Spell 🪄
 </button>
 
-
 <pre><code>
-
 function castSpell(...spells) {
 
 
@@ -14961,57 +16360,51 @@ castSpell(
 "Heal"
 );
 
-
 </code></pre>
 
-
 </div>
-
 
 <h3>📜 Notes</h3>
 
 <ul>
 
-<li>
-Rest collects multiple values into one array.
-</li>
+    <li>
+    Rest collects multiple values into one array.
+    </li>
 
-<li>
-Used inside function parameters.
-</li>
+    <li>
+    Used inside function parameters.
+    </li>
 
-<li>
-Allows functions to accept unlimited arguments.
-</li>
+    <li>
+    Allows functions to accept unlimited arguments.
+    </li>
 
-<li>
-Looks identical to spread but works differently.
-</li>
+    <li>
+    Looks identical to spread but works differently.
+    </li>
 
 </ul>
-
 
 <h3>🧩 Structure</h3>
 
 <ul>
 
-<li>
-<code>...</code> → collect remaining values.
-</li>
+    <li>
+    <code>...</code> → collect remaining values.
+    </li>
 
-<li>
-<code>spells</code> → becomes an array.
-</li>
+    <li>
+    <code>spells</code> → becomes an array.
+    </li>
 
-<li>
-Arguments → values passed into function.
-</li>
+    <li>
+    Arguments → values passed into function.
+    </li>
 
 </ul>
 
-
 <h3>⚔️ Spread vs Rest</h3>
-
 
 <table class="spell-table">
 
@@ -15027,7 +16420,6 @@ Action
 
 </tr>
 
-
 <tr>
 
 <td>
@@ -15039,7 +16431,6 @@ Expands values
 </td>
 
 </tr>
-
 
 <tr>
 
@@ -15053,74 +16444,59 @@ Collects values
 
 </tr>
 
-
 </table>
-
 
 <h3>🔗 Often Used With</h3>
 
 <ul>
 
-<li>
-Functions
-</li>
+    <li>
+    Functions
+    </li>
 
-<li>
-Arrays
-</li>
+    <li>
+    Arrays
+    </li>
 
-<li>
-Destructuring
-</li>
+    <li>
+    Destructuring
+    </li>
 
-<li>
-Spread operator
-</li>
+    <li>
+    Spread operator
+    </li>
 
 </ul>
 
-
 <p class="spell-source">
-📅 Added: 18 July 2026
+    📅 Added: 18 July 2026
 </p>
-
 
 </article>
 
 
 
-<!-- SPELL CARD 109 -->
-
-
-
-
-
-<!-- SPELL CARD 110 -->
+<!-- SPELL CARD 106 -->
 
 <article class="spell-card" id="optional-chaining">
 
-
 <h2>🛡️ Optional Chaining (?.)</h2>
-
 
 <div class="spell-tags">
 
-<button class="spell-tag">JavaScript</button>
-<button class="spell-tag">Objects</button>
-<button class="spell-tag">Errors</button>
+    <button class="spell-tag">JavaScript</button>
+    <button class="spell-tag">Objects</button>
+    <button class="spell-tag">Errors</button>
 
 </div>
-
 
 <div class="code-container">
 
 <button class="copy-spell">
-Copy Spell 🪄
+    Copy Spell 🪄
 </button>
 
-
 <pre><code>
-
 const player = {
 
 
@@ -15140,112 +16516,1441 @@ console.log(
 player.weapon?.name
 );
 
-
 </code></pre>
 
-
 </div>
-
 
 <h3>📜 Notes</h3>
 
 <ul>
 
-<li>
-Optional chaining safely accesses nested data.
-</li>
+    <li>
+    Optional chaining safely accesses nested data.
+    </li>
 
-<li>
-Prevents errors when something does not exist.
-</li>
+    <li>
+    Prevents errors when something does not exist.
+    </li>
 
-<li>
-Returns <code>undefined</code> instead of crashing.
-</li>
+    <li>
+    Returns <code>undefined</code> instead of crashing.
+    </li>
 
-<li>
-Very useful with API responses.
-</li>
+    <li>
+    Very useful with API responses.
+    </li>
 
 </ul>
-
 
 <h3>🧩 Structure</h3>
 
 <ul>
 
-<li>
-<code>?.</code> → check if value exists.
-</li>
+    <li>
+    <code>?.</code> → check if value exists.
+    </li>
 
-<li>
-If it exists → continue.
-</li>
+    <li>
+    If it exists → continue.
+    </li>
 
-<li>
-If missing → return undefined.
-</li>
+    <li>
+    If missing → return undefined.
+    </li>
 
 </ul>
 
-
 <h3>✨ Without Optional Chaining</h3>
 
-
 <pre><code>
-
 player.weapon.name
 
 
 // Error if weapon missing
 
-
 </code></pre>
-
 
 <h3>✨ With Optional Chaining</h3>
 
-
 <pre><code>
-
 player.weapon?.name
 
 
 // Safe
 
-
 </code></pre>
-
 
 <h3>🔗 Often Used With</h3>
 
 <ul>
 
-<li>
-APIs
-</li>
+    <li>
+    APIs
+    </li>
 
-<li>
-Objects
-</li>
+    <li>
+    Objects
+    </li>
 
-<li>
-JSON data
-</li>
+    <li>
+    JSON data
+    </li>
 
-<li>
-fetch()
-</li>
+    <li>
+    fetch()
+    </li>
 
 </ul>
 
-
 <p class="spell-source">
-📅 Added: 18 July 2026
+    📅 Added: 18 July 2026
 </p>
 
+</article>
+
+
+
+<!-- SPELL CARD 107 -->
+
+<article class="spell-card" id="url-search-params">
+
+<h2>🔗 URLSearchParams</h2>
+
+<div class="spell-tags">
+
+    <button class="spell-tag">JavaScript</button>
+    <button class="spell-tag">URLs</button>
+    <button class="spell-tag">APIs</button>
+
+</div>
+
+<div class="code-container">
+
+<button class="copy-spell">
+    Copy Spell 🪄
+</button>
+
+<pre><code>
+const params =
+new URLSearchParams(
+window.location.search
+);
+
+
+const spell =
+params.get("spell");
+
+
+console.log(spell);
+
+</code></pre>
+
+</div>
+
+<h3>📜 Notes</h3>
+
+<ul>
+
+    <li>
+    <code>URLSearchParams</code> works with URL query parameters.
+    </li>
+
+    <li>
+    Query parameters are values after:
+    <code>?</code>
+    in a URL.
+    </li>
+
+    <li>
+    Allows JavaScript to read, add, update and remove URL data.
+    </li>
+
+    <li>
+    Commonly used for searches, filters and pagination.
+    </li>
+
+    <li>
+    Useful when working with APIs.
+    </li>
+
+</ul>
+
+<h3>🧩 Structure</h3>
+
+<ul>
+
+    <li>
+    <code>URLSearchParams()</code>
+    → creates a URL parameter object.
+    </li>
+
+    <li>
+    <code>window.location.search</code>
+    → gets the URL query section.
+    </li>
+
+    <li>
+    <code>get()</code>
+    → retrieves a value.
+    </li>
+
+    <li>
+    <code>params</code>
+    → stores the parameters.
+    </li>
+
+</ul>
+
+<h3>✨ URL Example</h3>
+
+<table class="spell-table">
+
+<tr>
+
+<th>
+URL
+</th>
+
+<th>
+Meaning
+</th>
+
+</tr>
+
+<tr>
+
+<td>
+<code>
+/search?spell=fire
+</code>
+</td>
+
+<td>
+Search for fire
+</td>
+
+</tr>
+
+<tr>
+
+<td>
+<code>
+?page=2
+</code>
+</td>
+
+<td>
+Page number
+</td>
+
+</tr>
+
+<tr>
+
+<td>
+<code>
+?category=magic
+</code>
+</td>
+
+<td>
+Filter category
+</td>
+
+</tr>
+
+</table>
+
+<h3>✨ Reading Parameters</h3>
+
+<pre><code>
+const params =
+new URLSearchParams(
+"?spell=fire&level=5"
+);
+
+
+console.log(
+params.get("spell")
+);
+
+
+console.log(
+params.get("level")
+);
+
+</code></pre>
+
+<table class="spell-table">
+
+<tr>
+
+<th>
+Method
+</th>
+
+<th>
+Purpose
+</th>
+
+</tr>
+
+<tr>
+
+<td>
+<code>get()</code>
+</td>
+
+<td>
+Gets a value
+</td>
+
+</tr>
+
+<tr>
+
+<td>
+<code>set()</code>
+</td>
+
+<td>
+Updates a value
+</td>
+
+</tr>
+
+<tr>
+
+<td>
+<code>append()</code>
+</td>
+
+<td>
+Adds a value
+</td>
+
+</tr>
+
+<tr>
+
+<td>
+<code>delete()</code>
+</td>
+
+<td>
+Removes a value
+</td>
+
+</tr>
+
+<tr>
+
+<td>
+<code>has()</code>
+</td>
+
+<td>
+Checks if value exists
+</td>
+
+</tr>
+
+</table>
+
+<h3>✨ Creating A URL</h3>
+
+<pre><code>
+const params =
+new URLSearchParams();
+
+
+params.set(
+"spell",
+"fire"
+);
+
+
+params.set(
+"level",
+"5"
+);
+
+
+console.log(
+params.toString()
+);
+
+</code></pre>
+
+<ul>
+
+    <li>
+    Creates:
+    <code>spell=fire&amp;level=5</code>
+    </li>
+
+    <li>
+    Useful for building dynamic URLs.
+    </li>
+
+</ul>
+
+<h3>⚔️ URLSearchParams vs FormData</h3>
+
+<table class="spell-table">
+
+<tr>
+
+<th>
+URLSearchParams
+</th>
+
+<th>
+FormData
+</th>
+
+</tr>
+
+<tr>
+
+<td>
+Works with URLs
+</td>
+
+<td>
+Works with forms
+</td>
+
+</tr>
+
+<tr>
+
+<td>
+Search/filter data
+</td>
+
+<td>
+Submit user data
+</td>
+
+</tr>
+
+<tr>
+
+<td>
+Usually GET requests
+</td>
+
+<td>
+Often POST requests
+</td>
+
+</tr>
+
+</table>
+
+<h3>🔗 Often Used With</h3>
+
+<ul>
+
+    <li>
+    <code>fetch()</code>
+    </li>
+
+    <li>
+    APIs
+    </li>
+
+    <li>
+    Search bars
+    </li>
+
+    <li>
+    Filters
+    </li>
+
+    <li>
+    Pagination
+    </li>
+
+    <li>
+    Forms
+    </li>
+
+    <li>
+    <code>window.location</code>
+    </li>
+
+</ul>
+
+<p class="spell-source">
+    📅 Added: 18 July 2026
+</p>
 
 </article>
+
+
+
+<!-- SPELL CARD 108 -->
+
+<article class="spell-card" id="deep-shallow-copy">
+
+<h2>🧠 Deep vs Shallow Copy</h2>
+
+<div class="spell-tags">
+
+    <button class="spell-tag">JavaScript</button>
+    <button class="spell-tag">Objects</button>
+    <button class="spell-tag">Arrays</button>
+
+</div>
+
+<div class="code-container">
+
+<button class="copy-spell">
+    Copy Spell 🪄
+</button>
+
+<pre><code>
+const wizard = {
+
+name: "RJ",
+
+inventory: {
+
+spell: "Fireball"
+
+}
+
+};
+
+
+const copy = {
+
+...wizard
+
+};
+
+
+copy.inventory.spell =
+"Ice";
+
+
+console.log(
+wizard.inventory.spell
+);
+
+</code></pre>
+
+</div>
+
+<h3>📜 Notes</h3>
+
+<ul>
+
+    <li>
+    A copy can either copy the value itself or the reference to the value.
+    </li>
+
+    <li>
+    Primitive values create independent copies.
+    </li>
+
+    <li>
+    Objects and arrays can share references.
+    </li>
+
+    <li>
+    A shallow copy only copies the first level.
+    </li>
+
+    <li>
+    A deep copy duplicates nested data as well.
+    </li>
+
+    <li>
+    The spread operator creates a shallow copy.
+    </li>
+
+</ul>
+
+<h3>🧩 Structure</h3>
+
+<ul>
+
+    <li>
+    Shallow copy
+    → copies the outer object only.
+    </li>
+
+    <li>
+    Deep copy
+    → copies all nested objects and arrays.
+    </li>
+
+    <li>
+    Reference
+    → points to the same data in memory.
+    </li>
+
+</ul>
+
+<h3>✨ Shallow Copy Example</h3>
+
+<pre><code>
+const player = {
+
+name: "Mage",
+
+level: 10
+
+};
+
+
+const copy = {
+
+...player
+
+};
+
+</code></pre>
+
+<table class="spell-table">
+
+<tr>
+
+<th>
+Original
+</th>
+
+<th>
+Copy
+</th>
+
+</tr>
+
+<tr>
+
+<td>
+Separate object
+</td>
+
+<td>
+Separate object
+</td>
+
+</tr>
+
+<tr>
+
+<td>
+Nested data still shared
+</td>
+
+<td>
+Nested data still shared
+</td>
+
+</tr>
+
+</table>
+
+<h3>✨ Deep Copy Example</h3>
+
+<pre><code>
+const copy =
+structuredClone(player);
+
+</code></pre>
+
+<ul>
+
+    <li>
+    Creates a completely independent copy.
+    </li>
+
+    <li>
+    Nested objects are copied too.
+    </li>
+
+    <li>
+    Modern JavaScript method.
+    </li>
+
+</ul>
+
+<h3>⚔️ Comparison Table</h3>
+
+<table class="spell-table">
+
+<tr>
+
+<th>
+Type
+</th>
+
+<th>
+Copies
+</th>
+
+</tr>
+
+<tr>
+
+<td>
+Primitive Copy
+</td>
+
+<td>
+Actual value
+</td>
+
+</tr>
+
+<tr>
+
+<td>
+Shallow Copy
+</td>
+
+<td>
+First level only
+</td>
+
+</tr>
+
+<tr>
+
+<td>
+Deep Copy
+</td>
+
+<td>
+Everything
+</td>
+
+</tr>
+
+</table>
+
+<h3>✨ Common Copy Methods</h3>
+
+<table class="spell-table">
+
+<tr>
+
+<th>
+Method
+</th>
+
+<th>
+Copy Type
+</th>
+
+</tr>
+
+<tr>
+
+<td>
+<code>...</code>
+</td>
+
+<td>
+Shallow copy
+</td>
+
+</tr>
+
+<tr>
+
+<td>
+<code>Object.assign()</code>
+</td>
+
+<td>
+Shallow copy
+</td>
+
+</tr>
+
+<tr>
+
+<td>
+<code>structuredClone()</code>
+</td>
+
+<td>
+Deep copy
+</td>
+
+</tr>
+
+<tr>
+
+<td>
+JSON.parse(JSON.stringify())
+</code>
+</td>
+
+<td>
+Older deep copy technique
+</td>
+
+</tr>
+
+</table>
+
+<h3>⚠️ Common Mistake</h3>
+
+<pre><code>
+const a = {
+
+name: "Wizard"
+
+};
+
+
+const b = a;
+
+
+b.name = "Knight";
+
+
+console.log(a.name);
+
+</code></pre>
+
+<ul>
+
+    <li>
+    Both variables point to the same object.
+    </li>
+
+    <li>
+    Changing one changes the other.
+    </li>
+
+</ul>
+
+<h3>🔗 Often Used With</h3>
+
+<ul>
+
+    <li>
+    Objects
+    </li>
+
+    <li>
+    Arrays
+    </li>
+
+    <li>
+    Spread Operator
+    </li>
+
+    <li>
+    Destructuring
+    </li>
+
+    <li>
+    localStorage
+    </li>
+
+    <li>
+    State management
+    </li>
+
+    <li>
+    structuredClone()
+    </li>
+
+</ul>
+
+<p class="spell-source">
+    📅 Added: 18 July 2026
+</p>
+
+</article>
+
+
+
+<!-- SPELL CARD 109 -->
+
+<article class="spell-card" id="object-freeze">
+
+<h2>🧊 Object.freeze()</h2>
+
+<div class="spell-tags">
+
+    <button class="spell-tag">JavaScript</button>
+    <button class="spell-tag">Objects</button>
+    <button class="spell-tag">Immutability</button>
+
+</div>
+
+<div class="code-container">
+
+<button class="copy-spell">
+    Copy Spell 🪄
+</button>
+
+<pre><code>
+const wizard = {
+
+name: "RJ",
+
+level: 10
+
+};
+
+
+Object.freeze(wizard);
+
+
+wizard.level = 20;
+
+
+console.log(
+wizard.level
+);
+
+</code></pre>
+
+</div>
+
+<h3>📜 Notes</h3>
+
+<ul>
+
+    <li>
+    <code>Object.freeze()</code> prevents changes to an object.
+    </li>
+
+    <li>
+    Frozen objects cannot have properties added, removed or changed.
+    </li>
+
+    <li>
+    The object itself becomes read-only.
+    </li>
+
+    <li>
+    Useful for protecting important data.
+    </li>
+
+    <li>
+    Only freezes the first level of the object.
+    </li>
+
+</ul>
+
+<h3>🧩 Structure</h3>
+
+<ul>
+
+    <li>
+    <code>Object</code>
+    → JavaScript object utility.
+    </li>
+
+    <li>
+    <code>freeze()</code>
+    → locks the object.
+    </li>
+
+    <li>
+    <code>wizard</code>
+    → object being frozen.
+    </li>
+
+    <li>
+    Changes after freezing are ignored.
+    </li>
+
+</ul>
+
+<h3>✨ Freeze Example</h3>
+
+<pre><code>
+const settings = {
+
+theme: "dark",
+
+sound: true
+
+};
+
+
+Object.freeze(settings);
+
+</code></pre>
+
+<ul>
+
+    <li>
+    Settings cannot be changed.
+    </li>
+
+    <li>
+    Useful for constants and configuration.
+    </li>
+
+</ul>
+
+<h3>✨ What Freeze Blocks</h3>
+
+<table class="spell-table">
+
+<tr>
+
+<th>
+Action
+</th>
+
+<th>
+Allowed?
+</th>
+
+</tr>
+
+<tr>
+
+<td>
+Change property
+</td>
+
+<td>
+❌ No
+</td>
+
+</tr>
+
+<tr>
+
+<td>
+Add property
+</td>
+
+<td>
+❌ No
+</td>
+
+</tr>
+
+<tr>
+
+<td>
+Delete property
+</td>
+
+<td>
+❌ No
+</td>
+
+</tr>
+
+<tr>
+
+<td>
+Read property
+</td>
+
+<td>
+✅ Yes
+</td>
+
+</tr>
+
+</table>
+
+<h3>⚔️ Object.freeze() vs const</h3>
+
+<table class="spell-table">
+
+<tr>
+
+<th>
+const
+</th>
+
+<th>
+Object.freeze()
+</th>
+
+</tr>
+
+<tr>
+
+<td>
+Stops reassignment
+</td>
+
+<td>
+Stops object changes
+</td>
+
+</tr>
+
+<tr>
+
+<td>
+Properties can change
+</td>
+
+<td>
+Properties are locked
+</td>
+
+</tr>
+
+</table>
+
+<h3>✨ Example Difference</h3>
+
+<pre><code>
+const player = {
+
+level: 10
+
+};
+
+
+player.level = 20;
+
+
+// Works ✅
+
+</code></pre>
+
+<pre><code>
+Object.freeze(player);
+
+
+player.level = 30;
+
+
+// Does not change ❌
+
+</code></pre>
+
+<h3>⚠️ Important Note</h3>
+
+<ul>
+
+    <li>
+    Freeze is shallow.
+    </li>
+
+    <li>
+    Nested objects can still change.
+    </li>
+
+    <li>
+    Use deep copying techniques for nested data.
+    </li>
+
+</ul>
+
+<h3>🔗 Often Used With</h3>
+
+<ul>
+
+    <li>
+    Objects
+    </li>
+
+    <li>
+    Spread Operator
+    </li>
+
+    <li>
+    Deep vs Shallow Copy
+    </li>
+
+    <li>
+    Configuration data
+    </li>
+
+    <li>
+    State management
+    </li>
+
+</ul>
+
+<p class="spell-source">
+    📅 Added: 18 July 2026
+</p>
+
+</article>
+
+
+
+<!-- SPELL CARD 110 -->
+
+<article class="spell-card" id="garbage-collection">
+
+<h2>🧹 Garbage Collection Basics</h2>
+
+<div class="spell-tags">
+
+    <button class="spell-tag">JavaScript</button>
+    <button class="spell-tag">Memory</button>
+    <button class="spell-tag">Basics</button>
+
+</div>
+
+<div class="code-container">
+
+<button class="copy-spell">
+    Copy Spell 🪄
+</button>
+
+<pre><code>
+let wizard = {
+
+name: "RJ"
+
+};
+
+
+wizard = null;
+
+</code></pre>
+
+</div>
+
+<h3>📜 Notes</h3>
+
+<ul>
+
+    <li>
+    Garbage collection automatically removes unused data from memory.
+    </li>
+
+    <li>
+    JavaScript manages memory for you.
+    </li>
+
+    <li>
+    Objects remain in memory while they are still reachable.
+    </li>
+
+    <li>
+    When nothing can access data anymore, it can be cleaned up.
+    </li>
+
+    <li>
+    Developers do not manually delete memory.
+    </li>
+
+</ul>
+
+<h3>🧩 Structure</h3>
+
+<ul>
+
+    <li>
+    Memory
+    → where JavaScript stores data.
+    </li>
+
+    <li>
+    Reference
+    → something that can access the data.
+    </li>
+
+    <li>
+    Reachable
+    → still being used by code.
+    </li>
+
+    <li>
+    Unreachable
+    → can be removed.
+    </li>
+
+</ul>
+
+<h3>✨ Memory Example</h3>
+
+<pre><code>
+function createWizard() {
+
+
+const spell = "Fireball";
+
+
+}
+
+
+createWizard();
+
+</code></pre>
+
+<ul>
+
+    <li>
+    The function creates data.
+    </li>
+
+    <li>
+    The function finishes.
+    </li>
+
+    <li>
+    The variable is no longer reachable.
+    </li>
+
+    <li>
+    JavaScript can clean it from memory.
+    </li>
+
+</ul>
+
+<h3>✨ Removing References</h3>
+
+<pre><code>
+let player = {
+
+name: "Mage"
+
+};
+
+
+player = null;
+
+</code></pre>
+
+<table class="spell-table">
+
+<tr>
+
+<th>
+Before
+</th>
+
+<th>
+After
+</th>
+
+</tr>
+
+<tr>
+
+<td>
+Object has a reference
+</td>
+
+<td>
+No reference remains
+</td>
+
+</tr>
+
+<tr>
+
+<td>
+Memory is being used
+</td>
+
+<td>
+Can be cleaned up
+</td>
+
+</tr>
+
+</table>
+
+<h3>⚠️ Common Memory Problems</h3>
+
+<table class="spell-table">
+
+<tr>
+
+<th>
+Problem
+</th>
+
+<th>
+Cause
+</th>
+
+</tr>
+
+<tr>
+
+<td>
+Memory Leak
+</td>
+
+<td>
+Unused data still referenced
+</td>
+
+</tr>
+
+<tr>
+
+<td>
+Large Objects
+</td>
+
+<td>
+Keeping unnecessary data
+</td>
+
+</tr>
+
+<tr>
+
+<td>
+Event Listeners
+</td>
+
+<td>
+Not removing unused listeners
+</td>
+
+</tr>
+
+</table>
+
+<h3>🔗 Often Used With</h3>
+
+<ul>
+
+    <li>
+    Scope
+    </li>
+
+    <li>
+    Closures
+    </li>
+
+    <li>
+    Objects
+    </li>
+
+    <li>
+    Arrays
+    </li>
+
+    <li>
+    Event Listeners
+    </li>
+
+    <li>
+    Memory Management
+    </li>
+
+</ul>
+
+<p class="spell-source">
+    📅 Added: 18 July 2026
+</p>
+
+</article>
+
 
 
 
